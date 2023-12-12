@@ -49,11 +49,11 @@ compatible GPU is required. Please see the
 
 1. Open the **Settings** app.
 
-   ![Gear icon of the Windows Settings app](../../data/install/windows/000-settings-light.png "Windows Settings app icon")
+   ![Gear icon of the Windows Settings app](../../data/install/000-settings-light.png "Windows Settings app icon")
 
 2. Navigate to **System > About**.
 
-   ![Settings app panel showing device and OS information](../../data/install/windows/001-about-light.png "Settings > About page")
+   ![Settings app panel showing device and OS information](../../data/install/001-about-light.png "Settings > About page")
 
 3. Confirm that the obtained information matches {ref}`windows-support`.
 
@@ -171,35 +171,35 @@ To start the installation, follow these steps:
 
 2. Launch the installer by clicking the **Setup** icon.
 
-    ![Icon with AMD arrow logo and User Access Control Shield overlay](../../data/install/windows/000-setup-icon.png "Setup Icon")
+    ![Icon with AMD arrow logo and User Access Control Shield overlay](../../data/install/000-setup-icon.png "Setup Icon")
 
     The installer requires Administrator Privileges, so you may be greeted with a
     User Access Control (UAC) pop-up. Click Yes.
 
-    ![User Access Control pop-up](../../data/install/windows/001-uac-light.png "User Access Control pop-up")
+    ![User Access Control pop-up](../../data/install/001-uac-light.png "User Access Control pop-up")
 
     The installer executable temporarily extracts installer packages to `C:\AMD`; it removes these after the
     installation completes.
 
-    ![Window with AMD arrow logo, futuristic background and progress counter](../../data/install/windows/002-initializing.png "Installer initialization window")
+    ![Window with AMD arrow logo, futuristic background and progress counter](../../data/install/002-initializing.png "Installer initialization window")
 
     The installer detects your system configuration to determine which installable components
     are applicable to your system.
 
-    ![Window with AMD arrow logo, futuristic background and activity indicator](../../data/install/windows/003-detecting-system-config.png "Installer initialization window")
+    ![Window with AMD arrow logo, futuristic background and activity indicator](../../data/install/003-detecting-system-config.png "Installer initialization window")
 
 3. Customize your installation. When the installer launches, it displays a window that lets you customize
     your installation. By default, all components are selected.
 
-    ![Window with AMD arrow logo, futuristic background and activity indicator](../../data/install/windows/004-installer-window.png "Installer initialization window")
+    ![Window with AMD arrow logo, futuristic background and activity indicator](../../data/install/004-installer-window.png "Installer initialization window")
 
 4. Wait for the installation to complete.
 
-    ![Window with AMD arrow logo, futuristic background and progress meter](../../data/install/windows/012-install-progress.png "Installation progress")
+    ![Window with AMD arrow logo, futuristic background and progress meter](../../data/install/012-install-progress.png "Installation progress")
 
     When installation is complete, the installer window may prompt you for a system restart.
 
-    ![Window with AMD arrow logo, futuristic background and completion notice](../../data/install/windows/013-install-complete.png "Installation complete")
+    ![Window with AMD arrow logo, futuristic background and completion notice](../../data/install/013-install-complete.png "Installation complete")
 
     ```{error}
     If the installer terminates mid-installation, the temporary directory created under `C:\AMD` can be
@@ -249,7 +249,7 @@ Start-Process ~\Downloads\Setup.exe -ArgumentList '-uninstall' -NoNewWindow -Wai
 Uninstallation of HIP SDK components can be done through the Windows Settings app. Navigate to
 "Apps > Installed apps" and click the ellipsis (...) on the far right next to the component you want to uninstall. Click "Uninstall".
 
-![Installed apps section of the settings app showing installed HIP SDK components](../../data/install/windows/014-uninstall-light.png "Removing the SDK via the settings app")
+![Installed apps section of the settings app showing installed HIP SDK components](../../data/install/014-uninstall-light.png "Removing the SDK via the settings app")
 
 For visual studio extension uninstallation, refer to
 <https://github.com/ROCm-Developer-Tools/HIP-VS/blob/master/README.md>.
