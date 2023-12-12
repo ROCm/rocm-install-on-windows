@@ -1,7 +1,7 @@
 .. _rocm-install-home:
 
 ****************************************************************
-ROCm installation for Linux
+HIP SDK installation for Windows
 ****************************************************************
 
 If you're new to ROCm, we recommend using the :ref:`rocm-install-quick` guide. If you want more
