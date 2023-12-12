@@ -4,6 +4,8 @@
   <meta name="keywords" content="Windows, install, HIP, SDK">
 </head>
 
+.. _hip-install-full:
+
 # Install HIP SDK
 
 To install the HIP SDK on Windows, use the [quick-start guide](../tutorial/install-quick.md) or follow

@@ -1,9 +1,9 @@
-# HIP SDK Installation on Windows Documentation
+# HIP SDK installation documentation (Windows)
 
 ## Building our documentation
 
 For a quick-start build, use the following code. For more options and detail, refer to
-[Building documentation](./contribute/building.md).
+[Building documentation](https://rocm.docs.amd.com/en/latest/contribute/building.html).
 
 ```bash
 cd docs
