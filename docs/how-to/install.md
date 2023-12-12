@@ -1,6 +1,13 @@
-# Install HIP SDK on Windows
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Windows quick-start installation guide">
+  <meta name="keywords" content="Windows, install, HIP, SDK">
+</head>
 
-To install the HIP SDK on Windows, use the [quick-start guide](./install-quick.md) or follow the instructions below.
+# Install HIP SDK
+
+To install the HIP SDK on Windows, use the [quick-start guide](../tutorial/install-quick.md) or follow
+the instructions below.
 
 follow the instructions listed below.
 
@@ -11,6 +18,8 @@ follow the instructions listed below.
 * [Upgrade HIP SDK](#upgrade-hip-sdk)
 * [Uninstall HIP SDK](#uninstall-hip-sdk)
 
+.. _hip-prerequisites:
+
 ## Prerequisites
 
 Verify that your system meets all the installation requirements. The installation is only supported
@@ -19,7 +28,7 @@ only on specific host architectures, Windows Editions, and update versions.
 The HIP SDK is supported on Windows 10 and 11. It can be installed on a
 system without AMD GPUs to use the build toolchains, but to run HIP applications, a
 compatible GPU is required. Please see the
-[supported GPU guide](../../about/compatibility/windows-support.md) for more details.
+{doc}`supported GPU guide<rocm:about/compatibility/windows-support>` for more details.
 
 ::::{tab-set}
 
@@ -49,16 +58,18 @@ compatible GPU is required. Please see the
 
 1. Open the **Settings** app.
 
-   ![Gear icon of the Windows Settings app](../../data/install/000-settings-light.png "Windows Settings app icon")
+   ![Gear icon of the Windows Settings app](../data/how-to/000-settings-light.png "Windows Settings app icon")
 
 2. Navigate to **System > About**.
 
-   ![Settings app panel showing device and OS information](../../data/install/001-about-light.png "Settings > About page")
+   ![Settings app panel showing device and OS information](../data/how-to/001-about-light.png "Settings > About page")
 
 3. Confirm that the obtained information matches {ref}`windows-support`.
 
 :::
 ::::
+
+.. _hip-install:
 
 ## Install HIP SDK
 
@@ -211,10 +222,14 @@ To start the installation, follow these steps:
 
 ::::
 
+.. _hip-upgrade:
+
 ## Upgrade HIP SDK
 
 To upgrade the HIP SDK, you can run the installer for the newer version without uninstalling the
 existing version. You can also uninstall the HIP SDK before installing the newest version.
+
+.. _hip-uninstall:
 
 ## Uninstall HIP SDK
 

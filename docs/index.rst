@@ -1,11 +1,12 @@
-.. _rocm-install-home:
+.. _hip-install-home:
 
-****************************************************************
+*****************************************************************************
 HIP SDK installation for Windows
-****************************************************************
+*****************************************************************************
 
-If you're new to ROCm, we recommend using the :ref:`rocm-install-quick` guide. If you want more
-complete instructions, refer to the following sections.
+To use ROCm on Windows, you must install the HIP SDK. If you're new to ROCm, we recommend using
+the :ref:`rocm-install-quick` guide. If you want more complete instructions, refer to the following
+sections.
 
 Prepare to install
 ========================================
@@ -14,32 +15,21 @@ Prepare to install
     :gutter: 1
 
     .. grid-item-card:: Prerequisites
-        :link: how-to/prerequisites.rst
+        :ref: hip-prerequisites
 
         The prerequisites page lists the required steps *before* installation.
 
-    .. grid-item-card:: Install options
-        :link: /tutorial/install-overview.rst
-
-        Package manager vs AMDGPU installer
-
-        Single-version vs multi-version
-
-Choose your install method
-========================================
+Install HIP
+============================================================
 
 .. grid:: 2
     :gutter: 1
 
-    .. grid-item-card:: Package manager
-        :link: how-to/native-install/index.rst
+    .. grid-item-card:: Installation process
+        :ref: hip-install
 
-        Directly use your distribution's package manager to install ROCm.
+        Directly use your distribution's package manager to install the HIP SDK.
 
-    .. grid-item-card:: AMDGPU installer
-        :link: how-to/amdgpu-install.rst
-
-        Use an installer tool that orchestrates changes via the package manager.
 
 Additional resources
 ========================================
@@ -47,19 +37,9 @@ Additional resources
 .. grid:: 2
     :gutter: 1
 
-    .. grid-item-card:: Reference material
+    .. grid-item-card:: Update HIP
+        :ref: hip-update
 
-        - :doc:`reference/system-requirements`
-        - :doc:`reference/docker-image-support-matrix`
-        - :doc:`reference/3rd-party-support-matrix`
 
-    .. grid-item-card:: Tutorials
-
-            - :doc:`how-to/3rd-party/magma-install`
-            - :doc:`how-to/3rd-party/pytorch-install`
-            - :doc:`how-to/3rd-party/tensorflow-install`
-
-    .. grid-item-card:: How-to guides
-
-            - :doc:`how-to/docker`
-            - :doc:`how-to/spack`
+    .. grid-item-card:: Uninstall HIP
+        :ref: hip-uninstall
