@@ -8,8 +8,7 @@
 Install HIP SDK
 *******************************************************************
 
-To install the HIP SDK on Windows, use the `quick-start guide<../tutorial/install-quick.md>`_ or follow
-the instructions below.
+To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or follow the instructions below.
 
 **Topics:**
 
@@ -29,7 +28,7 @@ only on specific host architectures, Windows Editions, and update versions.
 The HIP SDK is supported on Windows 10 and 11. It can be installed on a
 system without AMD GPUs to use the build toolchains, but to run HIP applications, a
 compatible GPU is required. Please see the
-{doc}`supported GPU guide<rocm:about/compatibility/windows-support>` for more details.
+:doc:`supported GPU guide<rocm:about/compatibility/windows-support>` for more details.
 
 .. tab-set::
 
@@ -38,35 +37,35 @@ compatible GPU is required. Please see the
 
         1. Type the following command on your system from a PowerShell command-line interface (CLI):
 
-            ..  code-block:: shell
-                Get-ComputerInfo | Format-Table CsSystemType,OSName,OSDisplayVersion
+        ..  code-block::
+            Get-ComputerInfo | Format-Table CsSystemType,OSName,OSDisplayVersion
 
         Running this command on a Windows system may result in the following output:
 
-        ..  code-block:: shell
+        ..  code-block::
             CsSystemType OsName                   OSDisplayVersion
             ------------ ------                             ----------------
             x64-based PC Microsoft Windows 11 Pro 22H2
 
 
-        2. Confirm that the obtained information matches with those listed in {ref}`windows-support`.
+        2. Confirm that the obtained information matches with those listed in :ref:`windows-support`.
 
     .. tab-item:: GUI
         :sync: gui
 
         1. Open the **Settings** app.
 
-            .. image:: ../data/how-to/000-settings-light.png
-                :width: 400
-                :alt: Gear icon of the Windows Settings app
+        .. image:: ../data/how-to/000-settings-light.png
+            :width: 400
+            :alt: Gear icon of the Windows Settings app
 
         2. Navigate to **System > About**.
 
-            .. image:: ../data/how-to/001-about-light.png
-                :width: 400
-                :alt: Settings app panel showing device and OS information
+        .. image:: ../data/how-to/001-about-light.png
+            :width: 400
+            :alt: Settings app panel showing device and OS information.
 
-        3. Confirm that the obtained information matches {ref}`windows-support`.
+        3. Confirm that the obtained information matches :ref:`windows-support`.
 
 .. _hip-install:
 
@@ -103,16 +102,16 @@ Install HIP SDK
         point, even when called on the command line. This means that the application lifetime is tied to a
         window, even on headless systems where that window may not be visible.
 
-            ..  code-block:: shell
-                Start-Process $InstallerExecutable -ArgumentList $InstallerArgs -NoNewWindow -Wait
+        ..  code-block:: shell
+            Start-Process $InstallerExecutable -ArgumentList $InstallerArgs -NoNewWindow -Wait
 
-            .. important::
-                Running the installer requires Administrator Privileges.
+        .. important::
+            Running the installer requires Administrator Privileges.
 
-            To install all components:
+        To install all components:
 
-            ..  code-block:: shell
-                Start-Process ~\Downloads\Setup.exe -ArgumentList '-install','-log',"${env:USERPROFILE}\installer_log.txt" -NoNewWindow -Wait
+        ..  code-block:: shell
+            Start-Process ~\Downloads\Setup.exe -ArgumentList '-install','-log',"${env:USERPROFILE}\installer_log.txt" -NoNewWindow -Wait
 
     .. tab-item:: GUI
         :sync: gui
@@ -168,49 +167,49 @@ Install HIP SDK
 
         2. Launch the installer by clicking the **Setup** icon.
 
-            .. image:: ../../data/install/000-setup-icon.png
-                :width: 400
-                :alt: Icon with AMD arrow logo and User Access Control Shield overlay
+        .. image:: ../../data/install/000-setup-icon.png
+            :width: 400
+            :alt: Icon with AMD arrow logo and User Access Control Shield overlay
 
-            The installer requires Administrator Privileges, so you may be greeted with a
-            User Access Control (UAC) pop-up. Click Yes.
+        The installer requires Administrator Privileges, so you may be greeted with a
+        User Access Control (UAC) pop-up. Click Yes.
 
-            .. image:: ../../data/install/001-uac-light.png
-                :width: 400
-                :alt: User Access Control pop-up
+        .. image:: ../../data/install/001-uac-light.png
+            :width: 400
+            :alt: User Access Control pop-up
 
-            The installer executable temporarily extracts installer packages to `C:\AMD`; it removes these after the
-            installation completes.
+        The installer executable temporarily extracts installer packages to `C:\AMD`; it removes these after the
+        installation completes.
 
-            .. image:: ../../data/install/002-initializing.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and progress counter
+        .. image:: ../../data/install/002-initializing.png
+            :width: 400
+            :alt: Window with AMD arrow logo, futuristic background and progress counter
 
-            The installer detects your system configuration to determine which installable components
-            are applicable to your system.
+        The installer detects your system configuration to determine which installable components
+        are applicable to your system.
 
-            .. image:: ../../data/install/003-detecting-system-config.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and activity indicator
+        .. image:: ../../data/install/003-detecting-system-config.png
+            :width: 400
+            :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
         3. Customize your installation. When the installer launches, it displays a window that lets you customize
             your installation. By default, all components are selected.
 
-            .. image:: ../../data/install/004-installer-window.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and activity indicator
+        .. image:: ../../data/install/004-installer-window.png
+            :width: 400
+            :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
         4. Wait for the installation to complete.
 
-            .. image:: ../../data/install/012-install-progress.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and progress meter
+        .. image:: ../../data/install/012-install-progress.png
+            :width: 400
+            :alt: Window with AMD arrow logo, futuristic background and progress meter
 
-            When installation is complete, the installer window may prompt you for a system restart.
+        When installation is complete, the installer window may prompt you for a system restart.
 
-            .. image:: ../../data/install/013-install-complete.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and completion notice
+        .. image:: ../../data/install/013-install-complete.png
+            :width: 400
+            :alt: Window with AMD arrow logo, futuristic background and completion notice
 
         .. important::
             If the installer terminates mid-installation, the temporary directory created under `C:\AMD` can be
