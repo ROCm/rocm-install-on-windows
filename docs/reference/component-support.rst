@@ -19,7 +19,7 @@ between Windows and Linux releases.
     "Driver", "Radeon Software for Linux", "AMD Software Pro Edition"
     "Compiler", "`hipcc`/`amdclang++`", "`hipcc`/`clang++`"
     "Debugger", "`rocgdb`", "no debugger available"
-    "Profiler", "`rocprof`", "`Radeon GPU Profiler<https://gpuopen.com/rgp/>`_"
+    "Profiler", "`rocprof`", "`Radeon GPU Profiler <https://gpuopen.com/rgp/>`_"
     "Porting Tools", "HIPIFY", "Coming Soon"
     "Runtime", "HIP (open sourced)", "HIP (closed source)"
     "Math Libraries", "Supported", "Supported"
@@ -36,5 +36,6 @@ AMD is continuing to invest in Windows support and AMD plans to release enhanced
 features in subsequent revisions.
 
 .. note::
+
   The 5.5 Windows Installer collectively groups the Math and Primitives
   libraries.
