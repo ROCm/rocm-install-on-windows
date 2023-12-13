@@ -200,11 +200,14 @@ Install HIP SDK
                 :width: 400
                 :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
-        3. Customize your installation. When the installer launches, it displays a window that lets you customize your installation. By default, all components are selected.
+        3. Customize your installation.
 
             .. image:: ../data/how-to/004-installer-window.png
                 :width: 400
                 :alt: Window with AMD arrow logo, futuristic background and activity indicator
+
+            When the installer launches, it displays a window that lets you customize your installation. By
+            default, all components are selected.
 
         4. Wait for the installation to complete.
 
