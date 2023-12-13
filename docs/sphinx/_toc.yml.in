@@ -4,8 +4,6 @@ defaults:
 root: index
 subtrees:
 - entries:
-    - file: tutorial/install-quick
-      title: Quick-start install guide
     - file: reference/component-support
       title: ROCm component support
     - file: how-to/install
