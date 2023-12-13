@@ -57,15 +57,15 @@ compatible GPU is required. Please see the
 
         1. Open the **Settings** app.
 
-        .. image:: ../data/how-to/000-settings-light.png
-            :width: 400
-            :alt: Gear icon of the Windows Settings app
+            .. image:: ../data/how-to/000-settings-light.png
+                :width: 400
+                :alt: Gear icon of the Windows Settings app
 
         2. Navigate to **System > About**.
 
-        .. image:: ../data/how-to/001-about-light.png
-            :width: 400
-            :alt: Settings app panel showing device and OS information.
+            .. image:: ../data/how-to/001-about-light.png
+                :width: 400
+                :alt: Settings app panel showing device and OS information.
 
         3. Confirm that the obtained information matches :ref:`windows-support`.
 
@@ -98,8 +98,7 @@ Install HIP SDK
 
         To start the installation, follow these steps:
 
-        1. Download the installer from the
-        `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+        1. Download the installer from the `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
 
         2. Launch the installer. Note that the installer is a graphical application with a `WinMain` entry
         point, even when called on the command line. This means that the application lifetime is tied to a
@@ -147,9 +146,9 @@ Install HIP SDK
             convenient.
 
         The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The
-        supported install options are summarized in the following table:
+        supported install options and types are summarized in the following tables:
 
-        .. csv-table::  AMD Display Driver Install Options
+        .. csv-table::
             :widths: 30, 70
             :header: "Install option", "Description"
 
@@ -157,7 +156,7 @@ Install HIP SDK
             "Install Type", "The breadth of components to be installed."
             "Factory Reset (optional)", "A Factory Reset will remove all prior versions of AMD HIP SDK and drivers. You will not be able to roll back to previously installed drivers."
 
-        .. csv-table::  AMD Display Driver Install Types
+        .. csv-table::
             :widths: 30, 70
             :header: "Install type", "Description"
 
@@ -171,8 +170,7 @@ Install HIP SDK
 
         To start the installation, follow these steps:
 
-        1. Download the installer from the
-        `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+        1. Download the installer from the `HIP SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
 
         2. Launch the installer by clicking the **Setup** icon.
 
@@ -201,8 +199,8 @@ Install HIP SDK
                 :width: 400
                 :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
-        3. Customize your installation. When the installer launches, it displays a window that lets you customize
-            your installation. By default, all components are selected.
+        3. Customize your installation. When the installer launches, it displays a window that lets you
+        customize your installation. By default, all components are selected.
 
             .. image:: ../../data/install/004-installer-window.png
                 :width: 400
@@ -266,7 +264,7 @@ Uninstall HIP SDK
         :sync: gui
 
         Uninstallation of HIP SDK components can be done through the Windows Settings app. Navigate to
-        "Apps > Installed apps" and click the ellipsis (...) on the far right next to the component you want to uninstall. Click "Uninstall".
+        "Apps \> Installed apps" and click the ellipsis (...) on the far right next to the component you want to uninstall. Click "Uninstall".
 
         .. image:: ../../data/install/014-uninstall-light.png
             :width: 400
