@@ -20,24 +20,24 @@ HIP SDK installation
 1. Download the installer
 
     Download the installer from the
-    `HIP-SDK download page<https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+    `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
 
 2. Launch the installer
 
     To launch the AMD HIP SDK Installer, click the **Setup** icon shown in the following image.
 
-    .. image:: ../data/how-to/000-setup-icon.png
+    .. image:: ./data/how-to/000-setup-icon.png
         :width: 400
         :alt: Icon with AMD arrow logo and User Access Control Shield overlay
 
     The installer requires Administrator Privileges, so you may be greeted with a
     User Access Control (UAC) pop-up. Click Yes.
 
-    .. image:: ../data/how-to/001-uac-dark.png
+    .. image:: ./data/how-to/001-uac-dark.png
         :width: 400
         :alt: User Access Control pop-up
 
-    .. image:: ../data/how-to/001-uac-light.png
+    .. image:: ./data/how-to/001-uac-light.png
         :width: 400
         :alt: User Access Control pop-up
 
@@ -45,14 +45,14 @@ HIP SDK installation
     which it will remove after installation completes. This extraction is signified
     by the "Initializing install" window in the following image.
 
-    .. image:: ../data/how-to/002-initializing.png
+    .. image:: ./data/how-to/002-initializing.png
         :width: 400
         :alt: Window with AMD arrow logo, futuristic background and progress counter
 
     The installer will then detect your system configuration to determine which installable components
     are applicable to your system.
 
-    .. image:: ../data/how-to/003-detecting-system-config.png
+    .. image:: ./data/how-to/003-detecting-system-config.png
         :width: 400
         :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
@@ -63,7 +63,7 @@ HIP SDK installation
     Refer to the following image for an instance when the Select All option
     is turned on.
 
-    .. image:: ../data/how-to/004-installer-window.png
+    .. image:: ./data/how-to/004-installer-window.png
         :width: 400
         :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
@@ -119,7 +119,7 @@ HIP SDK installation
 
     Please wait for the installation to complete during as shown in the following image.
 
-    .. image:: ../data/how-to/012-install-progress.png
+    .. image:: ./data/how-to/012-install-progress.png
             :width: 400
             :alt: Window with AMD arrow logo, futuristic background and progress meter
 
@@ -128,9 +128,9 @@ HIP SDK installation
     Once the installation is complete, the installer window may prompt you for a
     system restart. Click **Restart** at the lower right corner, shown in the following image.
 
-    .. image:: ../data/how-to/013-install-complete.png
-            :width: 400
-            :alt: Window with AMD arrow logo, futuristic background and completion notice
+    .. image:: ./data/how-to/013-install-complete.png
+        :width: 400
+        :alt: Window with AMD arrow logo, futuristic background and completion notice
 
     .. note::
         Should the installer terminate due to unexpected circumstances, or the user
@@ -147,10 +147,10 @@ through the Windows
 Settings app. Navigate to "Apps > Installed apps", click the "..." on the far
 right next to the component to uninstall, and click "Uninstall".
 
-.. image:: ../data/how-to/014-uninstall-dark.png
-        :width: 400
-        :alt: Installed apps section of the settings app showing installed HIP SDK components
+.. image:: ./data/how-to/014-uninstall-dark.png
+    :width: 400
+    :alt: Installed apps section of the settings app showing installed HIP SDK components
 
-.. image:: ../data/how-to/014-uninstall-light.png
-        :width: 400
-        :alt: Installed apps section of the settings app showing installed HIP SDK components
+.. image:: ./data/how-to/014-uninstall-light.png
+    :width: 400
+    :alt: Installed apps section of the settings app showing installed HIP SDK components
