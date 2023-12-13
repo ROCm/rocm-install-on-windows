@@ -4,7 +4,7 @@
 Windows quick-start installation guide
 ************************************************************************************************
 
-For a quick summary on installing ROCm (HIP SDK) on Windows, follow the steps listed on this page. If
+For a quick summary on installing HIP SDK on Windows, follow the steps listed on this page. If
 you want a more in-depth installation guide, see :ref:`hip-install-full`.
 
 System requirements
@@ -27,7 +27,7 @@ HIP SDK installation
     To launch the AMD HIP SDK Installer, click the **Setup** icon shown in the following image.
 
     .. image:: ./data/how-to/000-setup-icon.png
-        :width: 400
+        :width: 50
         :alt: Icon with AMD arrow logo and User Access Control Shield overlay
 
     The installer requires Administrator Privileges, so you may be greeted with a
