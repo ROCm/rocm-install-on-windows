@@ -45,9 +45,9 @@ compatible GPU is required. Please see the
 
             ..  code-block::
 
-                CsSystemType OsName                   OSDisplayVersion
-                ------------ ------                             ----------------
-                x64-based PC Microsoft Windows 11 Pro 22H2
+                CsSystemType    OsName          OSDisplayVersion
+                ------------    ------          ----------------
+                x64-based PC    Microsoft Windows 11 Pro    22H2
 
 
         2. Confirm that the obtained information matches with those listed in :ref:`windows-support`.
@@ -85,7 +85,7 @@ Install HIP SDK
             :widths: 30, 70
             :header: "Install option", "Description"
 
-            " `-install`", "Command used to install packages, both driver and applications. No output to the screen."
+            "`-install`", "Command used to install packages, both driver and applications. No output to the screen."
             "`-install -boot`", "Silent install with auto reboot."
             "`-install -log <absolute path>`", "Write install result code to the specified log file. The specified log file must be on a local machine. Double quotes are needed if there are spaces in the log file path."
             "`-uninstall`", "Command to uninstall all packages installed by this installer on the system. There is no option to specify which packages to uninstall."
@@ -98,7 +98,8 @@ Install HIP SDK
 
         To start the installation, follow these steps:
 
-        1. Download the installer from the `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+        1. Download the installer from the
+        `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
 
         2. Launch the installer. Note that the installer is a graphical application with a `WinMain` entry
         point, even when called on the command line. This means that the application lifetime is tied to a
@@ -174,47 +175,46 @@ Install HIP SDK
 
         2. Launch the installer by clicking the **Setup** icon.
 
-            .. image:: ../../data/install/000-setup-icon.png
+            .. image:: ../data/how-to/000-setup-icon.png
                 :width: 400
                 :alt: Icon with AMD arrow logo and User Access Control Shield overlay
 
-            The installer requires Administrator Privileges, so you may be greeted with a
-            User Access Control (UAC) pop-up. Click Yes.
+            The installer requires Administrator Privileges, so you may be greeted with a User Access
+            Control (UAC) pop-up. Click Yes.
 
-            .. image:: ../../data/install/001-uac-light.png
+            .. image:: ../data/how-to/001-uac-light.png
                 :width: 400
                 :alt: User Access Control pop-up
 
-            The installer executable temporarily extracts installer packages to `C:\AMD`; it removes these after the
-            installation completes.
+            The installer executable temporarily extracts installer packages to `C:\AMD`; it removes these
+            after the installation completes.
 
-            .. image:: ../../data/install/002-initializing.png
+            .. image:: ../data/how-to/002-initializing.png
                 :width: 400
                 :alt: Window with AMD arrow logo, futuristic background and progress counter
 
             The installer detects your system configuration to determine which installable components
             are applicable to your system.
 
-            .. image:: ../../data/install/003-detecting-system-config.png
+            .. image:: ../data/how-to/003-detecting-system-config.png
                 :width: 400
                 :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
-        3. Customize your installation. When the installer launches, it displays a window that lets you
-        customize your installation. By default, all components are selected.
+        3. Customize your installation. When the installer launches, it displays a window that lets you customize your installation. By default, all components are selected.
 
-            .. image:: ../../data/install/004-installer-window.png
+            .. image:: ../data/how-to/004-installer-window.png
                 :width: 400
                 :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
         4. Wait for the installation to complete.
 
-            .. image:: ../../data/install/012-install-progress.png
+            .. image:: ../data/how-to/012-install-progress.png
                 :width: 400
                 :alt: Window with AMD arrow logo, futuristic background and progress meter
 
             When installation is complete, the installer window may prompt you for a system restart.
 
-            .. image:: ../../data/install/013-install-complete.png
+            .. image:: ../data/how-to/013-install-complete.png
                 :width: 400
                 :alt: Window with AMD arrow logo, futuristic background and completion notice
 
@@ -264,8 +264,8 @@ Uninstall HIP SDK
         :sync: gui
 
         Uninstallation of HIP SDK components can be done through the Windows Settings app. Navigate to
-        "Apps \> Installed apps" and click the ellipsis (...) on the far right next to the component you want to uninstall. Click "Uninstall".
+        "Apps > Installed apps" and click the ellipsis (...) on the far right next to the component you want to uninstall. Click "Uninstall".
 
-        .. image:: ../../data/install/014-uninstall-light.png
+        .. image:: ../data/how-to/014-uninstall-light.png
             :width: 400
             :alt: Installed apps section of the settings app showing installed HIP SDK components
