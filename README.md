@@ -1,9 +1,13 @@
-# HIP SDK Installation on Windows Documentation
+# HIP SDK installation documentation (Windows)
+
+This repository contains installation instructions for the HIP SDK on Windows, along with installation-related information.
+
+For Linux-related installation information, refer to the [Linux installation GitHub repository](https://github.com/ROCm/rocm-install-on-linux) or the [ROCm docs Linux install page](https://rocm.docs.amd.com/projects/rocm-install-on-linux/en/latest/).
 
 ## Building our documentation
 
 For a quick-start build, use the following code. For more options and detail, refer to
-[Building documentation](./contribute/building.md).
+[Building documentation](https://rocm.docs.amd.com/en/latest/contribute/building.html).
 
 ```bash
 cd docs

@@ -4,4 +4,14 @@ defaults:
 root: index
 subtrees:
 - entries:
-    - file: tutorial/install-quick
+    - file: reference/component-support
+      title: ROCm component support
+    - file: how-to/install
+      title: Install HIP SDK
+
+- caption: Conceptual
+  entries:
+  - file: conceptual/deployment-guidelines
+    title: Deployment guidelines
+  - file: conceptual/release-versioning
+    title: Release versioning
