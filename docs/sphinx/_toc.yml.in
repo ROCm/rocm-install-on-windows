@@ -8,7 +8,7 @@ subtrees:
       title: Component support
     - file: how-to/install
       title: Install HIP SDK
-    - file: reference/systen-requirements
+    - file: reference/system-requirements
       title: System Requirements
 
 - caption: Conceptual
