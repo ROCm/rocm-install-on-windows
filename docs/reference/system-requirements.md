@@ -19,7 +19,8 @@ AMD HIP SDK supports the following Windows variants.
     "Windows 11", "x86-64", "22H2 (GA)"
     "Windows Server 2022", "x86-64", "22H2 (GA)"
 
-## Windows-supported GPUs
+Windows-supported GPUs
+===============================================
 
 The table below shows supported GPUs for Radeon Pro™ and Radeon™ GPUs. Please
 click the tabs below to switch between GPU product lines. If a GPU is not listed
@@ -64,7 +65,8 @@ on this table, the GPU is not officially supported by AMD.
 
 ::::
 
-### Component support
+Component support
+===============================================
 
 ROCm components are described in [What is ROCm?](../../what-is-rocm.md) Support
 on Windows is provided with two levels on enablement.
@@ -73,15 +75,16 @@ on Windows is provided with two levels on enablement.
 * **HIP SDK**: Runtime plus additional components are listed in [Libraries](../../reference/library-index.md).
  Note that some math libraries are Linux exclusive.
 
-### Support status
+Support status
+===============================================
 
 ✅: **Supported** - AMD enables these GPUs in our software distributions for
   the corresponding ROCm product.
 ⚠️: **Deprecated** - Support will be removed in a future release.
-❌: **Unsupported** - This configuration is not enabled in our software
-  distributions.
+❌: **Unsupported** - This configuration is not enabled in our software distributions.
 
-## CPU support
+CPU support
+===============================================
 
 ROCm requires CPUs that support PCIe™ atomics. Modern CPUs after the release of
 1st generation AMD Zen CPU and Intel™ Haswell support PCIe atomics.
