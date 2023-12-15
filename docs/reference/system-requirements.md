@@ -1,14 +1,13 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Windows GPU and OS support">
-  <meta name="keywords" content="Windows support, ROCm distributions">
-</head>
+.. meta::
+   :description: Windows GPU and OS support
+   :keywords: Windows support, ROCm distributions
 
-# GPU and OS support (Windows)
+******************************************************************************
+GPU and OS support (Windows)
+******************************************************************************
 
-(windows-support)=
-
-## Supported SKUs
+Supported SKUs
+===============================================
 
 AMD HIP SDK supports the following Windows variants.
 
