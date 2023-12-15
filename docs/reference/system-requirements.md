@@ -11,11 +11,13 @@ Supported SKUs
 
 AMD HIP SDK supports the following Windows variants.
 
-| Distribution        |Processor Architectures| Validated update   |
-|---------------------|-----------------------|--------------------|
-| Windows 10          | x86-64                | 22H2 (GA)          |
-| Windows 11          | x86-64                | 22H2 (GA)          |
-| Windows Server 2022 | x86-64                |                    |
+.. csv-table::
+    :widths: 40, 30, 30
+    :header: "Distribution", "Processor Architectures", "Validated update"
+
+    "Windows 10", "x86-64", "22H2 (GA)"
+    "Windows 11", "x86-64", "22H2 (GA)"
+    "Windows Server 2022", "x86-64", "22H2 (GA)"
 
 ## Windows-supported GPUs
 
