@@ -26,48 +26,39 @@ The table below shows supported GPUs for Radeon Pro™ and Radeon™ GPUs. Pleas
 click the tabs below to switch between GPU product lines. If a GPU is not listed
 on this table, the GPU is not officially supported by AMD.
 
-::::{tab-set}
+.. tab-set::
+  .. tab-item:: Radeon Pro™
+    :sync: radeonpro
+    .. csv-table::
+      :widths: 20, 20, 20, 20, 20
+      :header: "Name", "Architecture", "LLVM Target (https://www.llvm.org/docs/AMDGPUUsage.html#processors)", "Runtime", "HIP SDK"
 
-:::{tab-item} Radeon Pro™
-:sync: radeonpro
+      "AMD Radeon Pro™ W7900", "RDNA3", "gfx1100", "✅", "✅"
+      "AMD Radeon Pro™ W7800", "RDNA3", "gfx1100", "✅", "✅"
+      "AMD Radeon Pro™ W6800", "RDNA2", "gfx1030", "✅", "✅"
+      "AMD Radeon Pro™ W6600", "RDNA2", "gfx1032", "✅", "❌"
+      "AMD Radeon Pro™ W5500", "RDNA1", "gfx1012", "❌", "❌"
+      "AMD Radeon Pro™ VII", "GCN5.1", "gfx906", "❌", "❌"
 
-.. csv-table::
-  :widths: 20, 20, 20, 20, 20
-  :header: "Name", "Architecture", "LLVM Target (https://www.llvm.org/docs/AMDGPUUsage.html#processors)", "Runtime", "HIP SDK"
+  .. tab-item:: Radeon™
+    :sync: radeon
+    .. csv-table::
+      :widths: 20, 20, 20, 20, 20
+      :header: "Name", "Architecture", "LLVM Target (https://www.llvm.org/docs/AMDGPUUsage.html#processors)", "Runtime", "HIP SDK"
 
-  "AMD Radeon Pro™ W7900", "RDNA3", "gfx1100", "✅", "✅"
-  "AMD Radeon Pro™ W7800", "RDNA3", "gfx1100", "✅", "✅"
-  "AMD Radeon Pro™ W6800", "RDNA2", "gfx1030", "✅", "✅"
-  "AMD Radeon Pro™ W6600", "RDNA2", "gfx1032", "✅", "❌"
-  "AMD Radeon Pro™ W5500", "RDNA1", "gfx1012", "❌", "❌"
-  "AMD Radeon Pro™ VII", "GCN5.1", "gfx906", "❌", "❌"
-
-:::
-
-:::{tab-item} Radeon™
-:sync: radeon
-
-.. csv-table::
-  :widths: 20, 20, 20, 20, 20
-  :header: "Name", "Architecture", "LLVM Target (https://www.llvm.org/docs/AMDGPUUsage.html#processors)", "Runtime", "HIP SDK"
-
-  "AMD Radeon™ RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
-  "AMD Radeon™ RX 7900 XT", "RDNA3", "gfx1100", "✅", "✅"
-  "AMD Radeon™ RX 7600", "RDNA3", "gfx1102", "✅", "✅"
-  "AMD Radeon™ RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅"
-  "AMD Radeon™ RX 6900 XT", "RDNA2", "gfx1030", "✅", "✅"
-  "AMD Radeon™ RX 6800 XT", "RDNA2", "gfx1030", "✅", "✅"
-  "AMD Radeon™ RX 6800", "RDNA2", "gfx1030", "✅", "✅"
-  "AMD Radeon™ RX 6750 XT", "RDNA2", "gfx1031", "✅", "❌"
-  "AMD Radeon™ RX 6700 XT", "RDNA2", "gfx1031", "✅", "❌"
-  "AMD Radeon™ RX 6700", "RDNA2", "gfx1031", "✅", "❌"
-  "AMD Radeon™ RX 6650 XT", "RDNA2", "gfx1032", "✅", "❌"
-  "AMD Radeon™ RX 6600 XT", "RDNA2", "gfx1032", "✅", "❌"
-  "AMD Radeon™ RX 6600", "RDNA2", "gfx1032", "✅", "❌"
-
-:::
-
-::::
+      "AMD Radeon™ RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
+      "AMD Radeon™ RX 7900 XT", "RDNA3", "gfx1100", "✅", "✅"
+      "AMD Radeon™ RX 7600", "RDNA3", "gfx1102", "✅", "✅"
+      "AMD Radeon™ RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅"
+      "AMD Radeon™ RX 6900 XT", "RDNA2", "gfx1030", "✅", "✅"
+      "AMD Radeon™ RX 6800 XT", "RDNA2", "gfx1030", "✅", "✅"
+      "AMD Radeon™ RX 6800", "RDNA2", "gfx1030", "✅", "✅"
+      "AMD Radeon™ RX 6750 XT", "RDNA2", "gfx1031", "✅", "❌"
+      "AMD Radeon™ RX 6700 XT", "RDNA2", "gfx1031", "✅", "❌"
+      "AMD Radeon™ RX 6700", "RDNA2", "gfx1031", "✅", "❌"
+      "AMD Radeon™ RX 6650 XT", "RDNA2", "gfx1032", "✅", "❌"
+      "AMD Radeon™ RX 6600 XT", "RDNA2", "gfx1032", "✅", "❌"
+      "AMD Radeon™ RX 6600", "RDNA2", "gfx1032", "✅", "❌"
 
 Component support
 ===============================================
