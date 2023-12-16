@@ -27,7 +27,7 @@ click the tabs below to switch between GPU product lines. If a GPU is not listed
 on this table, the GPU is not officially supported by AMD.
 
 .. tab-set::
-  .. tab-item:: Radeon Pro™
+  .. tab-item:: Radeon Pro
     :sync: radeonpro
     .. csv-table::
       :widths: 20, 20, 20, 20, 20
@@ -40,7 +40,7 @@ on this table, the GPU is not officially supported by AMD.
       "AMD Radeon Pro™ W5500", "RDNA1", "gfx1012", "❌", "❌"
       "AMD Radeon Pro™ VII", "GCN5.1", "gfx906", "❌", "❌"
 
-  .. tab-item:: Radeon™
+  .. tab-item:: Radeon
     :sync: radeon
     .. csv-table::
       :widths: 20, 20, 20, 20, 20
