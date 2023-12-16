@@ -25,6 +25,9 @@ Windows-supported GPUs
 The tables below show supported GPUs for Radeon Pro™ and Radeon™ GPUs.
 If a GPU is not listed on this table, it is not officially supported by AMD.
 
+Radeon Pro™
+~~~~~~~~~~~~~~~~~~~
+
 .. csv-table::
   :widths: 20, 20, 20, 20, 20
   :header: "Name", "Architecture", "LLVM Target (https://www.llvm.org/docs/AMDGPUUsage.html#processors)", "Runtime", "HIP SDK"
@@ -35,6 +38,9 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
   "AMD Radeon Pro™ W6600", "RDNA2", "gfx1032", "✅", "❌"
   "AMD Radeon Pro™ W5500", "RDNA1", "gfx1012", "❌", "❌"
   "AMD Radeon Pro™ VII", "GCN5.1", "gfx906", "❌", "❌"
+
+Radeon™
+~~~~~~~~~~~~~~~~~~~
 
 .. csv-table::
   :widths: 20, 20, 20, 20, 20
