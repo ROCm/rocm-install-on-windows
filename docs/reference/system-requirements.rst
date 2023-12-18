@@ -13,7 +13,7 @@ AMD HIP SDK supports the following Windows variants.
 
 .. csv-table::
   :widths: 40, 30, 30
-  :header: "Distribution", "Processor Architectures", "Validated update"
+  :header: "Distribution", "Processor architectures", "Validated update"
 
   "Windows 10", "x86-64", "22H2 (GA)"
   "Windows 11", "x86-64", "22H2 (GA)"
@@ -30,7 +30,7 @@ Radeon Pro™
 
 .. csv-table::
   :widths: 20, 20, 20, 20, 20
-  :header: "Name", "Architecture", "LLVM Target (https://www.llvm.org/docs/AMDGPUUsage.html#processors)", "Runtime", "HIP SDK"
+  :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
 
   "AMD Radeon Pro™ W7900", "RDNA3", "gfx1100", "✅", "✅"
   "AMD Radeon Pro™ W7800", "RDNA3", "gfx1100", "✅", "✅"
@@ -44,7 +44,7 @@ Radeon™
 
 .. csv-table::
   :widths: 20, 20, 20, 20, 20
-  :header: "Name", "Architecture", "LLVM Target (https://www.llvm.org/docs/AMDGPUUsage.html#processors)", "Runtime", "HIP SDK"
+  :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
 
   "AMD Radeon™ RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
   "AMD Radeon™ RX 7900 XT", "RDNA3", "gfx1100", "✅", "✅"
@@ -63,20 +63,20 @@ Radeon™
 Component support
 ===============================================
 
-ROCm components are described in [What is ROCm?](../../what-is-rocm.md) Support
+ROCm components are described in `What is ROCm? <https://rocm.docs.amd.com/en/latest/what-is-rocm.html>`_ Support
 on Windows is provided with two levels on enablement.
 
 * **Runtime**: Runtime enables the use of the HIP and OpenCL runtimes only.
-* **HIP SDK**: Runtime plus additional components are listed in [Libraries](../../reference/library-index.md).
+* **HIP SDK**: Runtime plus additional components are listed in `Libraries <https://rocm.docs.amd.com/en/latest/reference/library-index.html>`_.
  Note that some math libraries are Linux exclusive.
 
 Support status
 ===============================================
 
 ✅: **Supported** - AMD enables these GPUs in our software distributions for
-  the corresponding ROCm product.
-⚠️: **Deprecated** - Support will be removed in a future release.
-❌: **Unsupported** - This configuration is not enabled in our software distributions.
+  the corresponding ROCm product.\
+⚠️: **Deprecated** - Support will be removed in a future release.\
+❌: **Unsupported** - This configuration is not enabled in our software distributions.\
 
 CPU support
 ===============================================
