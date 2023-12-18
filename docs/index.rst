@@ -71,7 +71,7 @@ HIP SDK installation
 
         The HIP SDK installation options are listed in the following table.
 
-        .. csv-table::  HIP SDK Components for Installation
+        .. csv-table::
             :widths: 30, 30, 40
             :header: "HIP components", "Install type", "Additional options"
 
@@ -93,9 +93,9 @@ HIP SDK installation
     b. AMD display driver
 
         The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The
-        supported install options are summarized in the following table:
+        supported install options and types are summarized in the following tables:
 
-        .. csv-table::  AMD Display Driver Install Options
+        .. csv-table::
             :widths: 30, 70
             :header: "Install option", "Description"
 
@@ -103,7 +103,7 @@ HIP SDK installation
             "Install Type", "The breadth of components to be installed."
             "Factory Reset (optional)", "A Factory Reset will remove all prior versions of AMD HIP SDK and drivers. You will not be able to roll back to previously installed drivers."
 
-        .. csv-table::  AMD Display Driver Install Types
+        .. csv-table::
             :widths: 30, 70
             :header: "Install type", "Description"
 
@@ -133,10 +133,10 @@ HIP SDK installation
         :alt: Window with AMD arrow logo, futuristic background and completion notice
 
     .. note::
-        Should the installer terminate due to unexpected circumstances, or the user
-        forcibly terminates the installer, the temporary directory created under
+        Should the installer terminate due to unexpected circumstances, or you
+        forcibly terminate the installer, the temporary directory created under
         `C:\AMD` may be safely removed. Installed components will not depend on this
-        folder (unless the user specifies `C:\AMD` as an install folder explicitly).
+        folder (unless you specify `C:\AMD` as an install folder explicitly).
 
 Uninstall
 =====================================
