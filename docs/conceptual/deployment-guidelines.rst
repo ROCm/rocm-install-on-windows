@@ -36,10 +36,10 @@ SDK.
 * **ISV applications with a dependency on the HIP runtime and select HIP header-only libraries
   (rocPRIM, hipCUB, and rocThrust).**
 
-  These ISV applications require end users to install an AMD GPU driver, which has a HIP runtime library
-  bundled with it. Developers should ensure that these ISV applications have a minimum HIP runtime
-  library version associated with them. Because the HIP runtime library doesn't have semantic
-  versioning, the ISV application can't check for compatibility.
+    These ISV applications require end users to install an AMD GPU driver, which has a HIP runtime library
+    bundled with it. Developers should ensure that these ISV applications have a minimum HIP runtime
+    library version associated with them. Because the HIP runtime library doesn't have semantic
+    versioning, the ISV application can't check for compatibility.
 
     .. tip::
         We work to avoid breaking API/ABI compatibility unless the major version number of the HIP
