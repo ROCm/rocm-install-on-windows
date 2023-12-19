@@ -71,7 +71,7 @@ HIP SDK installation
 
         The HIP SDK installation options are listed in the following table.
 
-        .. csv-table::  HIP SDK Components for Installation
+        .. csv-table::
             :widths: 30, 30, 40
             :header: "HIP components", "Install type", "Additional options"
 
@@ -95,7 +95,7 @@ HIP SDK installation
         The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The
         supported install options are summarized in the following table:
 
-        .. csv-table::  AMD Display Driver Install Options
+        .. csv-table::
             :widths: 30, 70
             :header: "Install option", "Description"
 
@@ -103,7 +103,7 @@ HIP SDK installation
             "Install Type", "The breadth of components to be installed."
             "Factory Reset (optional)", "A Factory Reset will remove all prior versions of AMD HIP SDK and drivers. You will not be able to roll back to previously installed drivers."
 
-        .. csv-table::  AMD Display Driver Install Types
+        .. csv-table::
             :widths: 30, 70
             :header: "Install type", "Description"
 
