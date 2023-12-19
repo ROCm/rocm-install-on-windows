@@ -133,10 +133,9 @@ HIP SDK installation
         :alt: Window with AMD arrow logo, futuristic background and completion notice
 
     .. note::
-        Should the installer terminate due to unexpected circumstances, or you
-        forcibly terminate the installer, the temporary directory created under
-        `C:\AMD` can be safely removed. Installed components will not depend on this
-        folder (unless you explicitly specify `C:\AMD` as an install folder).
+        If the installer terminates mid-installation, the temporary directory created under `C:\AMD` can be
+        safely removed. Installed components don't depend on this folder unless you explicitly choose
+        this as the install folder.
 
 Uninstall
 =====================================

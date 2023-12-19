@@ -78,12 +78,12 @@ Install HIP SDK
             :widths: 30, 70
             :header: "Install option", "Description"
 
-            "`-install`", "Command used to install packages, both driver and applications. No output to the screen."
-            "`-install -boot`", "Silent install with auto reboot."
-            "`-install -log <absolute path>`", "Write install result code to the specified log file. The specified log file must be on a local machine. Double quotes are needed if there are spaces in the log file path."
-            "`-uninstall`", "Command to uninstall all packages installed by this installer on the system. There is no option to specify which packages to uninstall."
-            "`-uninstall -boot`", "Silent uninstall with auto reboot."
-            "`/?` or `/help`", "Shows a brief description of all switch commands."
+            "``-install``", "Command used to install packages, both driver and applications. No output to the screen."
+            "``-install -boot``", "Silent install with auto reboot."
+            "``-install -log <absolute path>``", "Write install result code to the specified log file. The specified log file must be on a local machine. Double quotes are needed if there are spaces in the log file path."
+            "``-uninstall``", "Command to uninstall all packages installed by this installer on the system. There is no option to specify which packages to uninstall."
+            "``-uninstall -boot``", "Silent uninstall with auto reboot."
+            "``/?`` or ``/help``", "Shows a brief description of all switch commands."
 
         .. note::
 
@@ -104,7 +104,7 @@ Install HIP SDK
 
             .. important::
 
-                Running the installer requires Administrator Privileges.
+                Running the installer requires Administrator privileges.
 
             To install all components:
 
@@ -172,7 +172,7 @@ Install HIP SDK
                 :width: 400
                 :alt: Icon with AMD arrow logo and User Access Control Shield overlay
 
-            The installer requires Administrator Privileges, so you may be greeted with a User Access
+            The installer requires Administrator privileges, so you may be greeted with a User Access
             Control (UAC) pop-up. Click Yes.
 
             .. image:: ../data/how-to/001-uac-light.png
@@ -248,9 +248,9 @@ Uninstall HIP SDK
 
         .. important::
 
-            Running the installer requires Administrator Privileges.
+            Running the installer requires Administrator privileges.
 
-        To uninstall all components:
+        To uninstall all components, use the following code:
 
         ..  code-block:: shell
 
