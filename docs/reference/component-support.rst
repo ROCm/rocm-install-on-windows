@@ -2,6 +2,8 @@
    :description: ROCm component support
    :keywords: components, support
 
+.. _component-support:
+
 ******************************************************************************
 ROCm component support
 ******************************************************************************
@@ -17,25 +19,24 @@ between Windows and Linux releases.
     :header: "Component", "Linux", "Windows"
 
     "Driver", "Radeon Software for Linux", "AMD Software Pro Edition"
-    "Compiler", "`hipcc`/`amdclang++`", "`hipcc`/`clang++`"
-    "Debugger", "`rocgdb`", "no debugger available"
-    "Profiler", "`rocprof`", "`Radeon GPU Profiler <https://gpuopen.com/rgp/>`_"
-    "Porting Tools", "HIPIFY", "Coming Soon"
-    "Runtime", "HIP (open sourced)", "HIP (closed source)"
+    "Compiler", "hipcc/amdclang++", "hipcc/clang++"
+    "Debugger", "`rocgdb <https://rocm.docs.amd.com/projects/ROCgdb/en/latest/>`_", "no debugger available"
+    "Profiler", "`ROCProfiler <https://rocm.docs.amd.com/projects/rocprofiler/en/latest/rocprof.html>`_", "`Radeon GPU Profiler <https://gpuopen.com/rgp/>`_"
+    "Porting Tools", "`HIPIFY <https://rocm.docs.amd.com/projects/HIPIFY/en/latest/>`_", "Coming Soon"
+    "Runtime", "`HIP <https://rocm.docs.amd.com/projects/HIP/en/latest/>`_ (open sourced)", "`HIP <https://rocm.docs.amd.com/projects/HIP/en/latest/>`_ (closed source)"
     "Math Libraries", "Supported", "Supported"
     "Primitives Libraries", "Supported", "Supported"
-    "Communication Libraries", "Supported", "Not Available"
-    "AI Libraries", "MIOpen, MIGraphX", "Not Available"
-    "System Management", "`rocm-smi-lib`, RDC, `rocminfo`", "`amdsmi`, `hipInfo`"
-    "AI Frameworks", "PyTorch, TensorFlow, etc.", "Not Available"
+    "Communication Libraries", "Supported", "Not available"
+    "AI Libraries", "`MIOpen <https://rocm.docs.amd.com/projects/MIOpen/en/latest/>`_, `MIGraphX <https://rocm.docs.amd.com/projects/AMDMIGraphX/en/latest/>`_", "Not Available"
+    "System Management", "`ROCm SMI <https://rocm.docs.amd.com/projects/rocm_smi_lib/en/latest/>`_, RDC, rocminfo", "amdsmi, hipInfo"
+    "AI Frameworks", "PyTorch, TensorFlow, etc.", "Not available"
     "CMake HIP Language", "Enabled", "Unsupported"
-    "Visual Studio", "Not applicable", "Plugin Available"
+    "Visual Studio", "Not applicable", "Plugin available"
     "HIP Ray Tracing", "Supported", "Supported"
 
-AMD is continuing to invest in Windows support and AMD plans to release enhanced
-features in subsequent revisions.
+We are continuing to invest in Windows support and plan to release enhanced features in future
+revisions.
 
 .. note::
 
-  The 5.5 Windows Installer collectively groups the Math and Primitives
-  libraries.
+  The 5.5 Windows Installer collectively groups the Math and Primitives libraries.

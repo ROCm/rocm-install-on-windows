@@ -17,12 +17,12 @@ compatible GPU is required. Please see the supported GPU guide for more details.
 HIP SDK installation
 =======================================================
 
-1. Download the installer
+1. Download the installer.
 
     Download the installer from the
     `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
 
-2. Launch the installer
+2. Launch the installer.
 
     To launch the AMD HIP SDK Installer, click the **Setup** icon shown in the following image.
 
@@ -34,10 +34,12 @@ HIP SDK installation
     User Access Control (UAC) pop-up. Click Yes.
 
     .. image:: ./data/how-to/001-uac-dark.png
+        :class: only-dark
         :width: 400
         :alt: User Access Control pop-up
 
     .. image:: ./data/how-to/001-uac-light.png
+        :class: only-light
         :width: 400
         :alt: User Access Control pop-up
 
@@ -56,7 +58,7 @@ HIP SDK installation
         :width: 400
         :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
-3. Customize the install
+3. Customize the install.
 
     When the installer launches, it displays a window that lets the user customize
     the installation. By default, all components are selected for installation.
@@ -71,7 +73,7 @@ HIP SDK installation
 
         The HIP SDK installation options are listed in the following table.
 
-        .. csv-table::  HIP SDK Components for Installation
+        .. csv-table::
             :widths: 30, 30, 40
             :header: "HIP components", "Install type", "Additional options"
 
@@ -83,7 +85,7 @@ HIP SDK installation
 
         .. note::
             The Select/DeSelect All option only applies to the installation of HIP SDK
-            components. To install the bundled AMD Display Driver, manually select the
+            components. To install the bundled AMD Display driver, manually select the
             install type.
 
         If you only want to install a few select components,
@@ -95,7 +97,7 @@ HIP SDK installation
         The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The
         supported install options are summarized in the following table:
 
-        .. csv-table::  AMD Display Driver Install Options
+        .. csv-table::
             :widths: 30, 70
             :header: "Install option", "Description"
 
@@ -103,7 +105,7 @@ HIP SDK installation
             "Install Type", "The breadth of components to be installed."
             "Factory Reset (optional)", "A Factory Reset will remove all prior versions of AMD HIP SDK and drivers. You will not be able to roll back to previously installed drivers."
 
-        .. csv-table::  AMD Display Driver Install Types
+        .. csv-table::
             :widths: 30, 70
             :header: "Install type", "Description"
 
@@ -113,9 +115,9 @@ HIP SDK installation
 
         .. note::
             You must perform a system restart for a complete installation of the
-            Display Driver.
+            Display driver.
 
-4. Install components
+4. Install components.
 
     Please wait for the installation to complete during as shown in the following image.
 
@@ -123,7 +125,7 @@ HIP SDK installation
             :width: 400
             :alt: Window with AMD arrow logo, futuristic background and progress meter
 
-5. Installation complete
+5. Complete installation.
 
     Once the installation is complete, the installer window may prompt you for a
     system restart. Click **Restart** at the lower right corner, shown in the following image.
@@ -133,24 +135,25 @@ HIP SDK installation
         :alt: Window with AMD arrow logo, futuristic background and completion notice
 
     .. note::
-        Should the installer terminate due to unexpected circumstances, or the user
-        forcibly terminates the installer, the temporary directory created under
-        `C:\AMD` may be safely removed. Installed components will not depend on this
-        folder (unless the user specifies `C:\AMD` as an install folder explicitly).
+        If the installer terminates mid-installation, the temporary directory created under `C:\AMD` can be
+        safely removed. Installed components don't depend on this folder unless you explicitly choose
+        this as the install folder.
 
 Uninstall
 =====================================
 
 All components, except visual studio plug-in should be uninstalled through
-control panel -> Add/Remove Program. Uninstallation of the HIP SDK components can be done
+control panel > Add/Remove Program. Uninstallation of the HIP SDK components can be done
 through the Windows
-Settings app. Navigate to "Apps > Installed apps", click the "..." on the far
+Settings app. Navigate to "Apps > Installed apps", click the ellipsis (...) on the far
 right next to the component to uninstall, and click "Uninstall".
 
 .. image:: ./data/how-to/014-uninstall-dark.png
+    :class: only-dark
     :width: 400
     :alt: Installed apps section of the settings app showing installed HIP SDK components
 
 .. image:: ./data/how-to/014-uninstall-light.png
+    :class: only-light
     :width: 400
     :alt: Installed apps section of the settings app showing installed HIP SDK components
