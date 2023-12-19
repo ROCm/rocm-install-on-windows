@@ -10,13 +10,6 @@ Install HIP SDK
 
 To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or follow the instructions below.
 
-**Topics:**
-
-* :ref:`Prerequisites<hip-prerequisites>`
-* :ref:`Install<hip-install>`
-* :ref:`Upgrade<hip-upgrade>`
-* :ref:`Uninstall<hip-uninstall>`
-
 .. _hip-prerequisites:
 
 Prerequisites
@@ -50,7 +43,7 @@ compatible GPU is required. Please see the
                 x64-based PC    Microsoft Windows 11 Pro    22H2
 
 
-        2. Confirm that the obtained information matches with those listed in :ref:`windows-support`.
+        2. Confirm that the obtained information matches that listed in :ref:`windows-support`.
 
     .. tab-item:: GUI
         :sync: gui

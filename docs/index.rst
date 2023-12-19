@@ -17,12 +17,12 @@ compatible GPU is required. Please see the supported GPU guide for more details.
 HIP SDK installation
 =======================================================
 
-1. Download the installer
+1. Download the installer.
 
     Download the installer from the
     `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
 
-2. Launch the installer
+2. Launch the installer.
 
     To launch the AMD HIP SDK Installer, click the **Setup** icon shown in the following image.
 
@@ -56,7 +56,7 @@ HIP SDK installation
         :width: 400
         :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
-3. Customize the install
+3. Customize the install.
 
     When the installer launches, it displays a window that lets the user customize
     the installation. By default, all components are selected for installation.
@@ -115,7 +115,7 @@ HIP SDK installation
             You must perform a system restart for a complete installation of the
             Display Driver.
 
-4. Install components
+4. Install components.
 
     Please wait for the installation to complete during as shown in the following image.
 
@@ -123,7 +123,7 @@ HIP SDK installation
             :width: 400
             :alt: Window with AMD arrow logo, futuristic background and progress meter
 
-5. Installation complete
+5. Complete installation.
 
     Once the installation is complete, the installer window may prompt you for a
     system restart. Click **Restart** at the lower right corner, shown in the following image.
