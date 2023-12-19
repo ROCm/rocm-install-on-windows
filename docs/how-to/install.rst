@@ -38,8 +38,8 @@ compatible GPU is required. Please see the
 
             ..  code-block::
 
-                CsSystemType    OsName          OSDisplayVersion
-                ------------    ------          ----------------
+                CsSystemType    OsName                      OSDisplayVersion
+                ------------    ------                      ----------------
                 x64-based PC    Microsoft Windows 11 Pro    22H2
 
 
