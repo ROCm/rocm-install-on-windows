@@ -10,13 +10,6 @@ Install HIP SDK
 
 To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or follow the instructions below.
 
-**Topics:**
-
-* :ref:`Prerequisites<hip-prerequisites>`
-* :ref:`Install<hip-install>`
-* :ref:`Upgrade<hip-upgrade>`
-* :ref:`Uninstall<hip-uninstall>`
-
 .. _hip-prerequisites:
 
 Prerequisites
@@ -45,12 +38,12 @@ compatible GPU is required. Please see the
 
             ..  code-block::
 
-                CsSystemType    OsName          OSDisplayVersion
-                ------------    ------          ----------------
+                CsSystemType    OsName                      OSDisplayVersion
+                ------------    ------                      ----------------
                 x64-based PC    Microsoft Windows 11 Pro    22H2
 
 
-        2. Confirm that the obtained information matches with those listed in :ref:`windows-support`.
+        2. Confirm that the obtained information matches that listed in :ref:`windows-support`.
 
     .. tab-item:: GUI
         :sync: gui
@@ -85,12 +78,12 @@ Install HIP SDK
             :widths: 30, 70
             :header: "Install option", "Description"
 
-            "`-install`", "Command used to install packages, both driver and applications. No output to the screen."
-            "`-install -boot`", "Silent install with auto reboot."
-            "`-install -log <absolute path>`", "Write install result code to the specified log file. The specified log file must be on a local machine. Double quotes are needed if there are spaces in the log file path."
-            "`-uninstall`", "Command to uninstall all packages installed by this installer on the system. There is no option to specify which packages to uninstall."
-            "`-uninstall -boot`", "Silent uninstall with auto reboot."
-            "`/?` or `/help`", "Shows a brief description of all switch commands."
+            "``-install``", "Command used to install packages, both driver and applications. No output to the screen."
+            "``-install -boot``", "Silent install with auto reboot."
+            "``-install -log <absolute path>``", "Write install result code to the specified log file. The specified log file must be on a local machine. Double quotes are needed if there are spaces in the log file path."
+            "``-uninstall``", "Command to uninstall all packages installed by this installer on the system. There is no option to specify which packages to uninstall."
+            "``-uninstall -boot``", "Silent uninstall with auto reboot."
+            "``/?`` or ``/help``", "Shows a brief description of all switch commands."
 
         .. note::
 
@@ -101,7 +94,7 @@ Install HIP SDK
         1. Download the installer from the
         `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
 
-        2. Launch the installer. Note that the installer is a graphical application with a `WinMain` entry
+        2. Launch the installer. Note that the installer is a graphical application with a ``WinMain`` entry
         point, even when called on the command line. This means that the application lifetime is tied to a
         window, even on headless systems where that window may not be visible.
 
@@ -111,7 +104,7 @@ Install HIP SDK
 
             .. important::
 
-                Running the installer requires Administrator Privileges.
+                Running the installer requires Administrator privileges.
 
             To install all components:
 
@@ -163,7 +156,7 @@ Install HIP SDK
 
         .. note::
 
-            You must perform a system restart for a complete installation of the Display Driver.
+            You must perform a system restart for a complete installation of the Display driver.
 
         To start the installation, follow these steps:
 
@@ -175,7 +168,7 @@ Install HIP SDK
                 :width: 400
                 :alt: Icon with AMD arrow logo and User Access Control Shield overlay
 
-            The installer requires Administrator Privileges, so you may be greeted with a User Access
+            The installer requires Administrator privileges, so you may be greeted with a User Access
             Control (UAC) pop-up. Click Yes.
 
             .. image:: ../data/how-to/001-uac-light.png
@@ -241,7 +234,7 @@ Uninstall HIP SDK
     .. tab-item:: CLI
         :sync: cli
 
-        Launch the installer. Note that the installer is a graphical application with a `WinMain` entry
+        Launch the installer. Note that the installer is a graphical application with a ``WinMain`` entry
         point, even when called on the command line. This means that the application lifetime is tied to a
         window, even on headless systems where that window may not be visible.
 
@@ -251,9 +244,9 @@ Uninstall HIP SDK
 
         .. important::
 
-            Running the installer requires Administrator Privileges.
+            Running the installer requires Administrator privileges.
 
-        To uninstall all components:
+        To uninstall all components, use the following code:
 
         ..  code-block:: shell
 
