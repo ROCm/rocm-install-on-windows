@@ -26,7 +26,7 @@ backward compatibility for applications dynamically linked to the HIP runtime.
 We recommend that ISV applications using the HIP SDK libraries distribute the HIP SDK Library as part
 of its installer package. This avoids requiring your end users to install the HIP SDK.
 
-Recommended library distribution model
+Library distribution
 ========================================================
 
 The HIP SDK is distributed via a Windows installer. This distribution system is `only intended for
@@ -36,9 +36,9 @@ SDK.
 * **ISV applications with a dependency on the HIP runtime and select HIP header-only libraries
   (rocPRIM, hipCUB, and rocThrust).**
 
-    These ISV applications require end users to install an AMD GPU driver, which has a HIP runtime library
-    bundled with it. Developers should ensure that these ISV applications have a minimum HIP runtime
-    library version associated with them. Because the HIP runtime library doesn't have semantic
+    These ISV applications require end users to install an AMD GPU driver, which has a HIP runtime
+    library bundled with it. Developers should ensure that these ISV applications have a minimum HIP
+    runtime library version associated with them. Because the HIP runtime library doesn't have semantic
     versioning, the ISV application can't check for compatibility.
 
     .. tip::
