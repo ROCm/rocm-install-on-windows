@@ -34,10 +34,12 @@ HIP SDK installation
     User Access Control (UAC) pop-up. Click Yes.
 
     .. image:: ./data/how-to/001-uac-dark.png
+        :class: only-dark
         :width: 400
         :alt: User Access Control pop-up
 
     .. image:: ./data/how-to/001-uac-light.png
+        :class: only-light
         :width: 400
         :alt: User Access Control pop-up
 
@@ -147,9 +149,11 @@ Settings app. Navigate to "Apps > Installed apps", click the ellipsis (...) on t
 right next to the component to uninstall, and click "Uninstall".
 
 .. image:: ./data/how-to/014-uninstall-dark.png
+    :class: only-dark
     :width: 400
     :alt: Installed apps section of the settings app showing installed HIP SDK components
 
 .. image:: ./data/how-to/014-uninstall-light.png
+    :class: only-light
     :width: 400
     :alt: Installed apps section of the settings app showing installed HIP SDK components
