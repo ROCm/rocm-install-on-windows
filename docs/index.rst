@@ -83,7 +83,7 @@ HIP SDK installation
 
         .. note::
             The Select/DeSelect All option only applies to the installation of HIP SDK
-            components. To install the bundled AMD Display Driver, manually select the
+            components. To install the bundled AMD Display driver, manually select the
             install type.
 
         If you only want to install a few select components,
@@ -113,7 +113,7 @@ HIP SDK installation
 
         .. note::
             You must perform a system restart for a complete installation of the
-            Display Driver.
+            Display driver.
 
 4. Install components.
 
@@ -141,7 +141,7 @@ Uninstall
 =====================================
 
 All components, except visual studio plug-in should be uninstalled through
-control panel -> Add/Remove Program. Uninstallation of the HIP SDK components can be done
+control panel > Add/Remove Program. Uninstallation of the HIP SDK components can be done
 through the Windows
 Settings app. Navigate to "Apps > Installed apps", click the ellipsis (...) on the far
 right next to the component to uninstall, and click "Uninstall".

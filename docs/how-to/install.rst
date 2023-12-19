@@ -94,7 +94,7 @@ Install HIP SDK
         1. Download the installer from the
         `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
 
-        2. Launch the installer. Note that the installer is a graphical application with a `WinMain` entry
+        2. Launch the installer. Note that the installer is a graphical application with a ``WinMain`` entry
         point, even when called on the command line. This means that the application lifetime is tied to a
         window, even on headless systems where that window may not be visible.
 
@@ -130,7 +130,7 @@ Install HIP SDK
         .. note::
 
             The Select/DeSelect All option only applies to the installation of HIP SDK
-            components. To install the bundled AMD Display Driver, manually select the
+            components. To install the bundled AMD Display driver, manually select the
             install type.
 
         .. tip::
@@ -160,7 +160,7 @@ Install HIP SDK
 
         .. note::
 
-            You must perform a system restart for a complete installation of the Display Driver.
+            You must perform a system restart for a complete installation of the Display driver.
 
         To start the installation, follow these steps:
 
@@ -238,7 +238,7 @@ Uninstall HIP SDK
     .. tab-item:: CLI
         :sync: cli
 
-        Launch the installer. Note that the installer is a graphical application with a `WinMain` entry
+        Launch the installer. Note that the installer is a graphical application with a ``WinMain`` entry
         point, even when called on the command line. This means that the application lifetime is tied to a
         window, even on headless systems where that window may not be visible.
 

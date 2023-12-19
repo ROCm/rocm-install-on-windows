@@ -41,13 +41,13 @@ SDK.
   library version associated with them. Because the HIP runtime library doesn't have semantic
   versioning, the ISV application can't check for compatibility.
 
-  .. tip::
-    We work to avoid breaking API/ABI compatibility unless the major version number of the HIP
-    runtime is incremented.
+    .. tip::
+        We work to avoid breaking API/ABI compatibility unless the major version number of the HIP
+        runtime is incremented.
 
-ISV applications can run without a warning if the driver's HIP major version is the same as that
-associated with its build compiler. You can set your ISV applications to throw a warning if the HIP
-major version is higher than that associated with its build compiler.
+    ISV applications can run without a warning if the driver's HIP major version is the same as that
+    associated with its build compiler. You can set your ISV applications to throw a warning if the HIP
+    major version is higher than that associated with its build compiler.
 
 * **ISV applications with a dependency on the HIP runtime and one or more dynamically linked
   HIP libraries (including the HIP runtime library).**
