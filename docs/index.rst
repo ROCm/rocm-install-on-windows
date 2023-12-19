@@ -95,7 +95,7 @@ HIP SDK installation
     b. AMD display driver
 
         The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The
-        supported install options are summarized in the following table:
+        supported install options and types are summarized in the following tables:
 
         .. csv-table::
             :widths: 30, 70

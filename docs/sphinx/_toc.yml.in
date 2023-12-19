@@ -5,9 +5,11 @@ root: index
 subtrees:
 - entries:
     - file: reference/component-support
-      title: ROCm component support
+      title: Component support
     - file: how-to/install
       title: Install HIP SDK
+    - file: reference/system-requirements
+      title: System requirements
 
 - caption: Conceptual
   entries:

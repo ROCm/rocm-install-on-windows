@@ -127,17 +127,13 @@ Install HIP SDK
             "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
             "Visual Studio Plugin", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
 
-        .. note::
-
-            The Select/DeSelect All option only applies to the installation of HIP SDK
-            components. To install the bundled AMD Display driver, manually select the
-            install type.
+        The ``select``/``deselect all`` options only apply to the installation of HIP SDK components. To
+        install the bundled AMD Display Driver, manually select the install type.
 
         .. tip::
 
-            Should you only wish to install a few select components,
-            DeSelecting All and then picking the individual components may be more
-            convenient.
+            Should you only wish to install a few select components, deselecting all, then selecting
+            individual components may be more convenient.
 
         The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The
         supported install options and types are summarized in the following tables:
