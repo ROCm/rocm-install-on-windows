@@ -133,10 +133,10 @@ HIP SDK installation
         :alt: Window with AMD arrow logo, futuristic background and completion notice
 
     .. note::
-        Should the installer terminate due to unexpected circumstances, or the user
-        forcibly terminates the installer, the temporary directory created under
-        `C:\AMD` may be safely removed. Installed components will not depend on this
-        folder (unless the user specifies `C:\AMD` as an install folder explicitly).
+        Should the installer terminate due to unexpected circumstances, or you
+        forcibly terminate the installer, the temporary directory created under
+        `C:\AMD` can be safely removed. Installed components will not depend on this
+        folder (unless you explicitly specify `C:\AMD` as an install folder).
 
 Uninstall
 =====================================
@@ -144,7 +144,7 @@ Uninstall
 All components, except visual studio plug-in should be uninstalled through
 control panel -> Add/Remove Program. Uninstallation of the HIP SDK components can be done
 through the Windows
-Settings app. Navigate to "Apps > Installed apps", click the "..." on the far
+Settings app. Navigate to "Apps > Installed apps", click the ellipsis (...) on the far
 right next to the component to uninstall, and click "Uninstall".
 
 .. image:: ./data/how-to/014-uninstall-dark.png
