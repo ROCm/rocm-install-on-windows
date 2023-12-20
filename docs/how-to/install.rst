@@ -20,7 +20,7 @@ only on specific host architectures, Windows Editions, and update versions.
 
 The HIP SDK is supported on Windows 10 and 11. It can be installed on a
 system without AMD GPUs to use the build toolchains, but to run HIP applications, a
-compatible GPU is required. Please see the
+compatible GPU is required. See
 :doc:`supported GPU guide<rocm:about/compatibility/windows-support>` for more details.
 
 .. tab-set::
