@@ -1,6 +1,6 @@
 .. meta::
   :description: Windows GPU and OS support
-  :keywords: Windows support, ROCm distributions
+  :keywords: Windows support, ROCm distributions, ROCm, AMD, HIP SDK, HIP
 
 .. _system-requirements-win:
 
