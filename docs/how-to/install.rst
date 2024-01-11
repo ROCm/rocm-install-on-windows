@@ -1,6 +1,6 @@
 .. meta::
    :description: Install HIP SDK
-   :keywords: Windows, install, HIP, SDK
+   :keywords: Windows, install, HIP, SDK, ROCm, AMD, HIP SDK
 
 .. _hip-install-full:
 
@@ -8,19 +8,18 @@
 Install HIP SDK
 *******************************************************************
 
-To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or follow the instructions below.
+To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or the following instructions.
 
 .. _hip-prerequisites:
 
 Prerequisites
 ===============================================
 
-Verify that your system meets all the installation requirements. The installation is only supported
-only on specific host architectures, Windows Editions, and update versions.
+Verify that your system meets all the installation requirements. The installation is only supported on
+specific host architectures, Windows Editions, and update versions.
 
-The HIP SDK is supported on Windows 10 and 11. It can be installed on a
-system without AMD GPUs to use the build toolchains, but to run HIP applications, a
-compatible GPU is required. See
+The HIP SDK is supported on Windows 10 and 11. You can install HIP on a system without AMD GPUs
+to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. See
 :doc:`supported GPU guide<rocm:about/compatibility/windows-support>` for more details.
 
 .. tab-set::
