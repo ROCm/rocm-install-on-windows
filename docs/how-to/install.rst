@@ -91,7 +91,7 @@ Install HIP SDK
         To start the installation, follow these steps:
 
         1. Download the installer from the
-        `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+        `HIP-SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
         2. Launch the installer. Note that the installer is a graphical application with a ``WinMain`` entry
         point, even when called on the command line. This means that the application lifetime is tied to a
@@ -159,7 +159,7 @@ Install HIP SDK
 
         To start the installation, follow these steps:
 
-        1. Download the installer from the `HIP SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+        1. Download the installer from the `HIP SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
         2. Launch the installer by clicking the **Setup** icon.
 
