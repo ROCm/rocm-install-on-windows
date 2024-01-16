@@ -24,7 +24,7 @@ HIP SDK installation
 1. Download the installer.
 
     Download the installer from the
-    `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+    `HIP-SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
 2. Launch the installer.
 
