@@ -1,6 +1,6 @@
 .. meta::
    :description: Install HIP SDK
-   :keywords: Windows, install, HIP, SDK
+   :keywords: Windows, install, HIP, SDK, ROCm, AMD, HIP SDK
 
 .. _hip-install-full:
 
@@ -8,19 +8,18 @@
 Install HIP SDK
 *******************************************************************
 
-To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or follow the instructions below.
+To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or the following instructions.
 
 .. _hip-prerequisites:
 
 Prerequisites
 ===============================================
 
-Verify that your system meets all the installation requirements. The installation is only supported
-only on specific host architectures, Windows Editions, and update versions.
+Verify that your system meets all the installation requirements. The installation is only supported on
+specific host architectures, Windows Editions, and update versions.
 
-The HIP SDK is supported on Windows 10 and 11. It can be installed on a
-system without AMD GPUs to use the build toolchains, but to run HIP applications, a
-compatible GPU is required. See
+The HIP SDK is supported on Windows 10 and 11. You can install HIP on a system without AMD GPUs
+to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. See
 :doc:`supported GPU guide<rocm:about/compatibility/windows-support>` for more details.
 
 .. tab-set::
@@ -92,7 +91,7 @@ Install HIP SDK
         To start the installation, follow these steps:
 
         1. Download the installer from the
-        `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+        `HIP-SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
         2. Launch the installer. Note that the installer is a graphical application with a ``WinMain`` entry
         point, even when called on the command line. This means that the application lifetime is tied to a
@@ -121,7 +120,7 @@ Install HIP SDK
             :widths: 30, 30, 40
             :header: "HIP components", "Install type", "Additional options"
 
-            "HIP SDK Core", "5.5.0", "Install location"
+            "HIP SDK Core", "5.7.0", "Install location"
             "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
             "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
             "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
@@ -135,7 +134,7 @@ Install HIP SDK
             Should you only wish to install a few select components, deselecting all, then selecting
             individual components may be more convenient.
 
-        The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The
+        The HIP SDK installer bundles an AMD Radeon Software PRO 23.30 installer. The
         supported install options and types are summarized in the following tables:
 
         .. csv-table::
@@ -160,7 +159,7 @@ Install HIP SDK
 
         To start the installation, follow these steps:
 
-        1. Download the installer from the `HIP SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+        1. Download the installer from the `HIP SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
         2. Launch the installer by clicking the **Setup** icon.
 

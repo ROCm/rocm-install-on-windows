@@ -1,18 +1,22 @@
+.. meta::
+  :description: Windows quick-start installation guide
+  :keywords: ROCm installation, AMD, ROCm, Windows, HIP, HIP SDK
+
 .. _hip-install-quick:
 
 ************************************************************************************************
 Windows quick-start installation guide
 ************************************************************************************************
 
-For a quick summary on installing HIP SDK on Windows, follow the steps listed on this page. If
-you want a more in-depth installation guide, see :ref:`hip-install-full`.
+For a quick summary on installing HIP SDK on Windows, follow the steps listed on this page. If you
+want a more in-depth installation guide, see :ref:`hip-install-full`.
 
 System requirements
 =======================================================
 
-The HIP SDK is supported on Windows 10 and 11. The HIP SDK may be installed on a
-system without AMD GPUs to use the build toolchains. To run HIP applications, a
-compatible GPU is required. Please see the supported GPU guide for more details.
+The HIP SDK is supported on Windows 10 and 11. The HIP SDK may be installed on a system without
+AMD GPUs to use the build toolchains. To run HIP applications, a compatible GPU is required. Refer to
+the supported GPU guide for more details.
 
 HIP SDK installation
 =======================================================
@@ -20,7 +24,7 @@ HIP SDK installation
 1. Download the installer.
 
     Download the installer from the
-    `HIP-SDK download page <https://www.amd.com/en/developer/rocm-hub/hip-sdk.html>`_.
+    `HIP-SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
 2. Launch the installer.
 
@@ -43,9 +47,8 @@ HIP SDK installation
         :width: 400
         :alt: User Access Control pop-up
 
-    The installer executable will temporarily extract installer packages to `C:\AMD`
-    which it will remove after installation completes. This extraction is signified
-    by the "Initializing install" window in the following image.
+    The installer executable will temporarily extract installer packages to `C:\AMD`, which it removes
+    after completing the installation. You'll see the "Initializing install" window during extraction.
 
     .. image:: ./data/how-to/002-initializing.png
         :width: 400
@@ -60,10 +63,8 @@ HIP SDK installation
 
 3. Customize the install.
 
-    When the installer launches, it displays a window that lets the user customize
-    the installation. By default, all components are selected for installation.
-    Refer to the following image for an instance when the Select All option
-    is turned on.
+    When the installer launches, it displays a window that lets you customize the installation. By default,
+    all components are selected for installation.
 
     .. image:: ./data/how-to/004-installer-window.png
         :width: 400
@@ -94,8 +95,8 @@ HIP SDK installation
 
     b. AMD display driver
 
-        The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The
-        supported install options and types are summarized in the following tables:
+        The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The supported install
+        options and types are summarized in the following tables:
 
         .. csv-table::
             :widths: 30, 70
@@ -114,8 +115,7 @@ HIP SDK installation
             "Driver Only", "Provides no user interface for AMD Software features."
 
         .. note::
-            You must perform a system restart for a complete installation of the
-            Display driver.
+            You must perform a system restart for a complete installation of the Display driver.
 
 4. Install components.
 
@@ -127,26 +127,25 @@ HIP SDK installation
 
 5. Complete installation.
 
-    Once the installation is complete, the installer window may prompt you for a
-    system restart. Click **Restart** at the lower right corner, shown in the following image.
+    Once the installation is complete, the installer window may prompt you for a system restart. Click
+    **Restart** at the lower right corner, shown in the following image.
 
     .. image:: ./data/how-to/013-install-complete.png
         :width: 400
         :alt: Window with AMD arrow logo, futuristic background and completion notice
 
     .. note::
-        If the installer terminates mid-installation, the temporary directory created under `C:\AMD` can be
-        safely removed. Installed components don't depend on this folder unless you explicitly choose
+        If the installer terminates mid-installation, you can safely remove the temporary directory created
+        under `C:\AMD`. Installed components don't depend on this folder unless you explicitly chose
         this as the install folder.
 
 Uninstall
 =====================================
 
-All components, except visual studio plug-in should be uninstalled through
-control panel > Add/Remove Program. Uninstallation of the HIP SDK components can be done
-through the Windows
-Settings app. Navigate to "Apps > Installed apps", click the ellipsis (...) on the far
-right next to the component to uninstall, and click "Uninstall".
+All components, except visual studio plug-in, should be uninstalled through Control Panel >
+Add/Remove Program. You can uninstall HIP SDK components through the Windows Settings app.
+Navigate to "Apps > Installed apps", click the ellipsis (...) on the far right next to the component you
+want to uninstall, then click "Uninstall".
 
 .. image:: ./data/how-to/014-uninstall-dark.png
     :class: only-dark

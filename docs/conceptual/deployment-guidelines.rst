@@ -1,6 +1,6 @@
 .. meta::
    :description: ROCm application deployment guidelines for Windows
-   :keywords: HIP, Windows, deployment guidelines
+   :keywords: HIP, Windows, deployment guidelines, HIP SDK
 
 ******************************************************************************************
 Application deployment guidelines for Windows

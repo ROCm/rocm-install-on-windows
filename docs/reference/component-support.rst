@@ -1,6 +1,6 @@
 .. meta::
-   :description: ROCm component support
-   :keywords: components, support
+  :description: ROCm component support
+  :keywords: components, support, ROCm, AMD, HIP SDK, HIP
 
 .. _component-support:
 
