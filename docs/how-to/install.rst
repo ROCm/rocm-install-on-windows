@@ -50,12 +50,24 @@ to use the build toolchains, but to run HIP applications, you'll need a compatib
         1. Open the **Settings** app.
 
             .. image:: ../data/how-to/000-settings-light.png
+                :class: only-light
+                :width: 400
+                :alt: Gear icon of the Windows Settings app
+
+            .. image:: ../data/how-to/000-settings-dark.png
+                :class: only-dark
                 :width: 400
                 :alt: Gear icon of the Windows Settings app
 
         2. Navigate to **System > About**.
 
             .. image:: ../data/how-to/001-about-light.png
+                :class: only-light
+                :width: 400
+                :alt: Settings app panel showing device and OS information.
+
+            .. image:: ../data/how-to/001-about-dark.png
+                :class: only-dark
                 :width: 400
                 :alt: Settings app panel showing device and OS information.
 
@@ -171,6 +183,12 @@ Install HIP SDK
             Control (UAC) pop-up. Click Yes.
 
             .. image:: ../data/how-to/001-uac-light.png
+                :class: only-light
+                :width: 400
+                :alt: User Access Control pop-up
+
+            .. image:: ../data/how-to/001-uac-dark.png
+                :class: only-dark
                 :width: 400
                 :alt: User Access Control pop-up
 
@@ -258,5 +276,11 @@ Uninstall HIP SDK
         "Apps > Installed apps" and click the ellipsis (...) on the far right next to the component you want to uninstall. Click "Uninstall".
 
         .. image:: ../data/how-to/014-uninstall-light.png
+            :class: only-light
+            :width: 400
+            :alt: Installed apps section of the settings app showing installed HIP SDK components
+
+        .. image:: ../data/how-to/014-uninstall-dark.png
+            :class: only-dark
             :width: 400
             :alt: Installed apps section of the settings app showing installed HIP SDK components
