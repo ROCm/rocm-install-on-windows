@@ -37,6 +37,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
 
       "AMD Radeon Pro™ W7900", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon Pro™ W7800", "RDNA3", "gfx1100", "✅", "✅"
+      "AMD Radeon Pro™ W7700", "RDNA3", "gfx1101", "✅", "✅"
       "AMD Radeon Pro™ W6800", "RDNA2", "gfx1030", "✅", "✅"
       "AMD Radeon Pro™ W6600", "RDNA2", "gfx1032", "✅", "❌"
       "AMD Radeon Pro™ W5500", "RDNA1", "gfx1012", "❌", "❌"
@@ -50,6 +51,8 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
 
       "AMD Radeon™ RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon™ RX 7900 XT", "RDNA3", "gfx1100", "✅", "✅"
+      "AMD Radeon™ RX 7800 XT", "RDNA3", "gfx1101", "✅", "✅"
+      "AMD Radeon™ RX 7700 XT", "RDNA3", "gfx1101", "✅", "✅"
       "AMD Radeon™ RX 7600", "RDNA3", "gfx1102", "✅", "✅"
       "AMD Radeon™ RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅"
       "AMD Radeon™ RX 6900 XT", "RDNA2", "gfx1030", "✅", "✅"
