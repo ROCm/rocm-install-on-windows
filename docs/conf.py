@@ -22,7 +22,7 @@ latex_elements = {
 }
 
 # configurations for PDF output by Read the Docs
-project = "ROCm Installation on Linux"
+project = "HIP SDK installation on windows"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2023 Advanced Micro Devices, Inc. All rights reserved."
 version = "6.0.0"
