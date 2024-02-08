@@ -24,7 +24,7 @@ AMD HIP SDK supports the following Windows variants.
 Windows-supported GPUs
 ===============================================
 
-The tables below show supported GPUs for Radeon™ PRO and Radeon™ GPUs.
+The tables below show supported GPUs for Radeon™ PRO and Radeon™.
 If a GPU is not listed on this table, it is not officially supported by AMD.
 
 .. tab-set::
