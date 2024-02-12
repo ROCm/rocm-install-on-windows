@@ -132,7 +132,7 @@ Install HIP SDK
             :widths: 30, 30, 40
             :header: "HIP components", "Install type", "Additional options"
 
-            "HIP SDK Core", "5.7.0", "Install location"
+            "HIP SDK Core", "|win_rocm_version|", "Install location"
             "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
             "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
             "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
@@ -146,8 +146,8 @@ Install HIP SDK
             Should you only wish to install a few select components, deselecting all, then selecting
             individual components may be more convenient.
 
-        The HIP SDK installer bundles an AMD Radeon Software PRO 23.30 installer. The
-        supported install options and types are summarized in the following tables:
+        The HIP SDK installer bundles an AMD Radeon Software PRO |radeon_software_pro_version| installer.
+        The supported install options and types are summarized in the following tables:
 
         .. csv-table::
             :widths: 30, 70

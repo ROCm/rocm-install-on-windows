@@ -9,8 +9,10 @@ import os
 
 from rocm_docs import ROCmDocs
 
-# ROCm version numbers
-rocm_version = '6.0.0'
+# This is the latest supported ROCm version supported by Windows
+win_rocm_version = '5.7'
+# Radeon Software Pro Installer version bundled with the HIP SDK installer
+radeon_software_pro_version = '23.30'
 
 latex_engine = "xelatex"
 latex_elements = {
@@ -51,6 +53,12 @@ external_projects_current_project = "rocm"
 
 for sphinx_var in ROCmDocs.SPHINX_VARS:
     globals()[sphinx_var] = getattr(docs_core, sphinx_var)
+
+rst_prolog = f"""
+.. |radeon_software_pro_version| replace:: {radeon_software_pro_version}
+.. |win_rocm_version| replace:: {win_rocm_version}
+"""
+
 html_theme_options = {
     "link_main_doc": True
 }
