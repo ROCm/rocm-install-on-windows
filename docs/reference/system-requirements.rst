@@ -8,6 +8,8 @@
 System requirements (Windows)
 ******************************************************************************
 
+.. _supported-skus-win:
+
 Supported SKUs
 ===============================================
 
@@ -20,6 +22,8 @@ AMD HIP SDK supports the following Windows variants.
   "Windows 10", "x86-64", "22H2 (GA)"
   "Windows 11", "x86-64", "22H2 (GA)"
   "Windows Server 2022", "x86-64", "22H2 (GA)"
+
+.. _supported-gpus-win:
 
 Windows-supported GPUs
 ===============================================
