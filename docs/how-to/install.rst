@@ -19,8 +19,8 @@ Verify that your system meets all the installation requirements. The installatio
 specific host architectures, Windows Editions, and update versions.
 
 The HIP SDK is supported on Windows 10 and 11. You can install HIP on a system without AMD GPUs
-to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. See
-:doc:`supported GPU guide<rocm:about/compatibility/windows-support>` for more details.
+to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
+the :ref:`supported-gpus-win` for more details.
 
 .. tab-set::
 
@@ -33,7 +33,7 @@ to use the build toolchains, but to run HIP applications, you'll need a compatib
 
                 Get-ComputerInfo | Format-Table CsSystemType,OSName,OSDisplayVersion
 
-                Running this command on a Windows system may result in the following output:
+            Running this command on a Windows system may result in the following output:
 
             ..  code-block::
 
@@ -42,7 +42,7 @@ to use the build toolchains, but to run HIP applications, you'll need a compatib
                 x64-based PC    Microsoft Windows 11 Pro    22H2
 
 
-        2. Confirm that the obtained information matches that listed in :ref:`windows-support`.
+        2. Confirm that the obtained information matches that listed in :ref:`Supported SKUs<supported-skus-win>`.
 
     .. tab-item:: GUI
         :sync: gui
@@ -50,16 +50,28 @@ to use the build toolchains, but to run HIP applications, you'll need a compatib
         1. Open the **Settings** app.
 
             .. image:: ../data/how-to/000-settings-light.png
+                :class: only-light
+                :width: 400
+                :alt: Gear icon of the Windows Settings app
+
+            .. image:: ../data/how-to/000-settings-dark.png
+                :class: only-dark
                 :width: 400
                 :alt: Gear icon of the Windows Settings app
 
         2. Navigate to **System > About**.
 
             .. image:: ../data/how-to/001-about-light.png
+                :class: only-light
                 :width: 400
                 :alt: Settings app panel showing device and OS information.
 
-        3. Confirm that the obtained information matches :ref:`windows-support`.
+            .. image:: ../data/how-to/001-about-dark.png
+                :class: only-dark
+                :width: 400
+                :alt: Settings app panel showing device and OS information.
+
+        3. Confirm that the obtained information matches that listed in :ref:`Supported SKUs<supported-skus-win>`.
 
 .. _hip-install:
 
@@ -120,22 +132,22 @@ Install HIP SDK
             :widths: 30, 30, 40
             :header: "HIP components", "Install type", "Additional options"
 
-            "HIP SDK Core", "5.7.0", "Install location"
+            "HIP SDK Core", "|win_rocm_version|", "Install location"
             "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
             "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
             "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
             "Visual Studio Plugin", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
 
-        The ``select``/``deselect all`` options only apply to the installation of HIP SDK components. To
-        install the bundled AMD Display Driver, manually select the install type.
+        .. note::
+            The ``select``/``deselect all`` options only apply to the installation of HIP SDK components. To
+            install the bundled AMD Display Driver, manually select the install type.
 
         .. tip::
-
             Should you only wish to install a few select components, deselecting all, then selecting
             individual components may be more convenient.
 
-        The HIP SDK installer bundles an AMD Radeon Software PRO 23.30 installer. The
-        supported install options and types are summarized in the following tables:
+        The HIP SDK installer bundles an AMD Radeon Software PRO |radeon_software_pro_version| installer.
+        The supported install options and types are summarized in the following tables:
 
         .. csv-table::
             :widths: 30, 70
@@ -171,6 +183,12 @@ Install HIP SDK
             Control (UAC) pop-up. Click Yes.
 
             .. image:: ../data/how-to/001-uac-light.png
+                :class: only-light
+                :width: 400
+                :alt: User Access Control pop-up
+
+            .. image:: ../data/how-to/001-uac-dark.png
+                :class: only-dark
                 :width: 400
                 :alt: User Access Control pop-up
 
@@ -258,5 +276,11 @@ Uninstall HIP SDK
         "Apps > Installed apps" and click the ellipsis (...) on the far right next to the component you want to uninstall. Click "Uninstall".
 
         .. image:: ../data/how-to/014-uninstall-light.png
+            :class: only-light
+            :width: 400
+            :alt: Installed apps section of the settings app showing installed HIP SDK components
+
+        .. image:: ../data/how-to/014-uninstall-dark.png
+            :class: only-dark
             :width: 400
             :alt: Installed apps section of the settings app showing installed HIP SDK components

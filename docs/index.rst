@@ -14,9 +14,9 @@ want a more in-depth installation guide, see :ref:`hip-install-full`.
 System requirements
 =======================================================
 
-The HIP SDK is supported on Windows 10 and 11. The HIP SDK may be installed on a system without
-AMD GPUs to use the build toolchains. To run HIP applications, a compatible GPU is required. Refer to
-the supported GPU guide for more details.
+The HIP SDK is supported on Windows 10 and 11. You can install HIP on a system without AMD GPUs
+to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
+the :doc:`supported GPU guide</reference/system-requirements>` for more details.
 
 HIP SDK installation
 =======================================================
@@ -47,7 +47,7 @@ HIP SDK installation
         :width: 400
         :alt: User Access Control pop-up
 
-    The installer executable will temporarily extract installer packages to `C:\AMD`, which it removes
+    The installer executable will temporarily extract installer packages to `C:\\AMD`, which it removes
     after completing the installation. You'll see the "Initializing install" window during extraction.
 
     .. image:: ./data/how-to/002-initializing.png
@@ -78,25 +78,24 @@ HIP SDK installation
             :widths: 30, 30, 40
             :header: "HIP components", "Install type", "Additional options"
 
-            "HIP SDK Core", "5.5.0", "Install location"
+            "HIP SDK Core", |win_rocm_version|, "Install location"
             "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
             "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
             "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
             "Visual Studio Plugin", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
 
         .. note::
-            The Select/DeSelect All option only applies to the installation of HIP SDK
-            components. To install the bundled AMD Display driver, manually select the
-            install type.
+            The ``select``/``deselect all`` options only apply to the installation of HIP SDK components. To
+            install the bundled AMD Display Driver, manually select the install type.
 
-        If you only want to install a few select components,
-        DeSelecting All and then picking the individual components may be more
-        convenient.
+        .. tip::
+            Should you only wish to install a few select components, deselecting all, then selecting
+            individual components may be more convenient.
 
     b. AMD display driver
 
-        The HIP SDK installer bundles an AMD Radeon Software PRO 23.10 installer. The supported install
-        options and types are summarized in the following tables:
+        The HIP SDK installer bundles an AMD Radeon Software PRO |radeon_software_pro_version| installer.
+        The supported install options and types are summarized in the following tables:
 
         .. csv-table::
             :widths: 30, 70
@@ -115,11 +114,12 @@ HIP SDK installation
             "Driver Only", "Provides no user interface for AMD Software features."
 
         .. note::
+
             You must perform a system restart for a complete installation of the Display driver.
 
 4. Install components.
 
-    Please wait for the installation to complete during as shown in the following image.
+    Please wait for the installation to complete as shown in the following image.
 
     .. image:: ./data/how-to/012-install-progress.png
             :width: 400
@@ -136,13 +136,13 @@ HIP SDK installation
 
     .. note::
         If the installer terminates mid-installation, you can safely remove the temporary directory created
-        under `C:\AMD`. Installed components don't depend on this folder unless you explicitly chose
+        under `C:\\AMD`. Installed components don't depend on this folder unless you explicitly chose
         this as the install folder.
 
 Uninstall
 =====================================
 
-All components, except visual studio plug-in, should be uninstalled through Control Panel >
+All components, except the Visual Studio plug-in, should be uninstalled through Control Panel >
 Add/Remove Program. You can uninstall HIP SDK components through the Windows Settings app.
 Navigate to "Apps > Installed apps", click the ellipsis (...) on the far right next to the component you
 want to uninstall, then click "Uninstall".

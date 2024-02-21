@@ -14,12 +14,13 @@ perspective).
 
 .. csv-table::
     :widths: 40, 30, 30
-    :header: "HIP components", "Install type", "Additional options"
+    :header: "ROCm version", "Linux support", "Windows support"
 
     "5.5", "✅", "✅"
     "5.6", "✅", "❌"
+    "5.7", "✅", "✅"
 
-ROCm Linux releases are versioned with following the Major.Minor.Patch version number system.
+ROCm Linux releases are versioned following the Major.Minor.Patch version number system.
 Windows releases are versioned with Major.Minor.
 
 In general, Windows releases trail Linux releases. If you want to support both Linux and Windows using
