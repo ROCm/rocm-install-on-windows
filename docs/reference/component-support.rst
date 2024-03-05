@@ -21,7 +21,7 @@ between Windows and Linux releases.
     "Driver", "Radeon Software for Linux", "AMD Software Pro Edition"
     "Compiler", "hipcc/amdclang++", "hipcc/clang++"
     "Debugger", "`rocgdb <https://rocm.docs.amd.com/projects/ROCgdb/en/latest/>`_", "no debugger available"
-    "Profiler", "`ROCProfiler <https://rocm.docs.amd.com/projects/rocprofiler/en/latest/rocprof.html>`_", "`Radeon GPU Profiler <https://gpuopen.com/rgp/>`_"
+    "Profiler", "`ROCProfiler <https://rocm.docs.amd.com/projects/rocprofiler/en/latest/>`_", "`Radeon GPU Profiler <https://gpuopen.com/rgp/>`_"
     "Porting Tools", "`HIPIFY <https://rocm.docs.amd.com/projects/HIPIFY/en/latest/>`_", "Coming Soon"
     "Runtime", "`HIP <https://rocm.docs.amd.com/projects/HIP/en/latest/>`_ (open sourced)", "`HIP <https://rocm.docs.amd.com/projects/HIP/en/latest/>`_ (closed source)"
     "Math Libraries", "Supported", "Supported"
