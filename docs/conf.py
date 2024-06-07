@@ -4,9 +4,6 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-import shutil
-import os
-
 from rocm_docs import ROCmDocs
 
 # This is the latest supported ROCm version supported by Windows
@@ -24,23 +21,14 @@ latex_elements = {
 }
 
 # configurations for PDF output by Read the Docs
-project = "HIP SDK installation on windows"
+project = "HIP SDK installation on Windows"
 author = "Advanced Micro Devices, Inc."
-copyright = "Copyright (c) 2023 Advanced Micro Devices, Inc. All rights reserved."
+copyright = "Copyright (c) 2023-2024 Advanced Micro Devices, Inc. All rights reserved."
 version = "6.0.0"
 release = "6.0.0"
 setting_all_article_info = True
 all_article_info_os = ["windows"]
 all_article_info_author = ""
-
-# pages with specific settings
-article_pages = [
-    {
-        "file":"release",
-        "os":["linux"],
-        "date":"2023-07-27"
-    }
-]
 
 exclude_patterns = ['temp']
 
