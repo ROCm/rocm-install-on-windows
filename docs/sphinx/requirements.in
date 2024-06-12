@@ -1,3 +1,1 @@
-rocm-docs-core==0.28.0
-Sphinx-Substitution-Extensions==2022.2.16
-sphinxcontrib.datatemplates==0.9.2
+rocm-docs-core[api_reference]==1.4.0
