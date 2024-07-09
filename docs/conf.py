@@ -34,7 +34,7 @@ exclude_patterns = ['temp']
 
 external_toc_path = "./sphinx/_toc.yml"
 
-docs_core = ROCmDocs("HIP SDK installation Windows")
+docs_core = ROCmDocs("HIP SDK installation (Windows)")
 docs_core.setup()
 
 external_projects_current_project = "rocm"
