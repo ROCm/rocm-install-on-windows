@@ -2,14 +2,14 @@
   :description: Windows quick-start installation guide
   :keywords: ROCm installation, AMD, ROCm, Windows, HIP, HIP SDK
 
-********************
-HIP SDK installation
-********************
+********************************
+HIP SDK installation for Windows
+********************************
 
-The HIP SDK on Windows includes updated versions of the
+The HIP SDK for Windows includes updated versions of the
 runtime components ``amdhip64`` and ``amd_comgr``. To use the latest
-capabilities of the HIP SDK, reference these new versions of
-the DLL binaries.
+capabilities of the HIP SDK, reference the new versions of
+these DLL binaries.
 
 * ``amdhip64_6.dll`` (formerly ``amdhip64.dll``)
 
@@ -28,8 +28,8 @@ The latest version of HIP Ray Tracing (RT) (version 2.3.12a8a07) is named
 Windows quick start installation guide
 ======================================
 
-For a quick summary on installing the HIP SDK on Windows, follow the steps listed on this page. If you
-want a more in-depth installation guide, see :ref:`hip-install-full`.
+For a quick summary on installing the HIP SDK on Windows, follow the steps listed on this page.
+Find a more detailed installation guide in :ref:`hip-install-full`.
 
 System requirements
 -------------------
