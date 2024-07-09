@@ -39,6 +39,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       :widths: 20, 20, 20, 20, 20
       :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
 
+      "AMD Radeon PRO W7900 Dual Slot", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon PRO W7900", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon PRO W7800", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon PRO W7700", "RDNA3", "gfx1101", "✅", "✅"
