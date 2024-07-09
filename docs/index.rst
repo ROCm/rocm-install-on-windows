@@ -2,24 +2,44 @@
   :description: Windows quick-start installation guide
   :keywords: ROCm installation, AMD, ROCm, Windows, HIP, HIP SDK
 
+******************
+HIP SDK on Windows
+******************
+
+The HIP SDK on Windows for ROCm now includes new versions of the
+``amdhip64`` and ``amd_comgr`` binaries in place of the old binaries:
+
+* ``amdhip64_6.dll`` replaces ``amdhip64.dll``
+* ``amd_comgr_2.dll`` replaces ``amd_comgr.dll``
+
+The latest version of HIPRT -- named ``hiprt0200364.dll`` (version 2.3.12a8a07)
+-- is included with this release.
+
+To use the latest capabilities of the HIP SDK, reference these new versions of
+the DLL files.
+
+.. note::
+
+   The HIP SDK on Windows for ROCm 6.x is not backwards compatible with previous major
+   versions such as 5.x.
+
 .. _hip-install-quick:
 
-************************************************************************************************
 Windows quick-start installation guide
-************************************************************************************************
+======================================
 
 For a quick summary on installing HIP SDK on Windows, follow the steps listed on this page. If you
 want a more in-depth installation guide, see :ref:`hip-install-full`.
 
 System requirements
-=======================================================
+-------------------
 
 The HIP SDK is supported on Windows 10 and 11. You can install HIP on a system without AMD GPUs
 to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
 the :doc:`supported GPU guide</reference/system-requirements>` for more details.
 
 HIP SDK installation
-=======================================================
+--------------------
 
 1. Download the installer.
 
@@ -140,7 +160,7 @@ HIP SDK installation
         this as the install folder.
 
 Uninstall
-=====================================
+---------
 
 All components, except the Visual Studio plug-in, should be uninstalled through Control Panel >
 Add/Remove Program. You can uninstall HIP SDK components through the Windows Settings app.
