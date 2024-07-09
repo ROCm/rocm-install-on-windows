@@ -6,9 +6,9 @@
 HIP SDK installation for Windows
 ********************************
 
-The HIP SDK for Windows is a software development kit that brings a subset of the
+The Heterogeneous-computing Interface for Portability (HIP) SDK for Windows brings a subset of the
 :doc:`ROCm <reference/component-support>` platform to Windows. It provides APIs
-and tooling that allow you to leverage the computational power of accelerators
+and tooling to leverage the computational power of accelerators
 and GPUs to create high-performance, portable applications using
 :doc:`HIP <hip:index>`.
 
