@@ -1,13 +1,22 @@
 .. meta::
-  :description: Windows quick-start installation guide
-  :keywords: ROCm installation, AMD, ROCm, Windows, HIP, HIP SDK
+  :description: HIP SDK installation for Windows
+  :keywords: ROCm installation, AMD, ROCm, Windows, HIP, HIP SDK, changelog
 
 ********************************
 HIP SDK installation for Windows
 ********************************
 
-The HIP SDK for Windows includes updated versions of the
-runtime components ``amdhip64`` and ``amd_comgr``. To use the latest
+The HIP SDK for Windows is a software development kit that brings a subset of the
+:doc:`ROCm <reference/component-support>` platform to Windows. It provides APIs
+and tooling that allow you to leverage the computational power of accelerators
+and GPUs to create high-performance, portable applications using
+:doc:`HIP <hip:index>`.
+
+HIP SDK changes
+===============
+
+As of ROCm version 6.1.2, the HIP SDK for Windows includes updated versions of
+the runtime components ``amdhip64`` and ``amd_comgr``. To use the latest
 capabilities of the HIP SDK, reference the new versions of
 these DLL binaries.
 
