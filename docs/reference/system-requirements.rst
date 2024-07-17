@@ -74,7 +74,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
 
 ⚠️: **Deprecated** - The current HIP SDK release has limited support for this hardware. Existing features and capabilities are maintained, but no new features or optimizations will be added. A future release will remove support.
 
-❌: **Unsupported** - The current HIP SDK release does not support this hardware.
+❌: **Unsupported** - The current HIP SDK release does not support this hardware. Prebuilt HIP SDK libraries are not officially supported and might cause runtime errors.
 
 Component support
 ===============================================
