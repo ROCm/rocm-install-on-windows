@@ -70,11 +70,11 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       "AMD Radeon RX 6600 XT", "RDNA2", "gfx1032", "✅", "❌"
       "AMD Radeon RX 6600", "RDNA2", "gfx1032", "✅", "❌"
 
-✅: **Supported** - AMD enables these GPUs in our software distributions for the corresponding ROCm product.
+✅: **Supported** - Official software distributions of the current HIP SDK release fully support this hardware.
 
-⚠️: **Deprecated** - Support will be removed in a future release.
+⚠️: **Deprecated** - The current HIP SDK release has limited support for this hardware. Existing features and capabilities are maintained, but no new features or optimizations will be added. A future release will remove support.
 
-❌: **Unsupported** - This configuration is not enabled in our software distributions.
+❌: **Unsupported** - The current HIP SDK release does not support this hardware. Prebuilt HIP SDK libraries are not officially supported and might cause runtime errors.
 
 Component support
 ===============================================
