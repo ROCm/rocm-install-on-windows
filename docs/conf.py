@@ -7,7 +7,7 @@
 from rocm_docs import ROCmDocs
 
 # This is the latest supported ROCm version supported by Windows
-win_rocm_version = '5.7'
+win_rocm_version = '6.1.2'
 # Radeon Software Pro Installer version bundled with the HIP SDK installer
 radeon_software_pro_version = '23.30'
 

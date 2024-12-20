@@ -6,10 +6,9 @@
 HIP SDK installation for Windows
 ********************************
 
-The Heterogeneous-computing Interface for Portability (HIP) SDK for Windows brings a subset of the
-:doc:`ROCm <reference/component-support>` platform to Windows. It provides APIs
-and tooling to leverage the computational power of accelerators
-and GPUs to create high-performance, portable applications using
+The  HIP SDK for Windows brings a subset of the :doc:`ROCm <reference/component-support>` 
+platform to Windows. It provides APIs and tooling to leverage the computational power 
+of accelerators and GPUs to create high-performance, portable applications using
 :doc:`HIP <hip:index>`.
 
 HIP SDK changes
@@ -17,8 +16,7 @@ HIP SDK changes
 
 As of ROCm version 6.1.2, the HIP SDK for Windows includes updated versions of
 the runtime components ``amdhip64`` and ``amd_comgr``. To use the latest
-capabilities of the HIP SDK, reference the new versions of
-these DLL binaries.
+capabilities of the HIP SDK, reference the new versions of these DLL binaries:
 
 * ``amdhip64_6.dll`` (formerly ``amdhip64.dll``)
 
@@ -43,7 +41,7 @@ Find a more detailed installation guide in :ref:`hip-install-full`.
 System requirements
 -------------------
 
-The HIP SDK is supported on Windows 10 and 11. You can install HIP on a system without AMD GPUs
+The HIP SDK is supported on Windows 10 and 11, and Windows Server 2022. You can install HIP on a system without AMD GPUs
 to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
 :ref:`supported-gpus-win` for more details.
 
@@ -76,7 +74,7 @@ HIP SDK installation
       :width: 400
       :alt: User Access Control pop-up
 
-   The installer executable will temporarily extract installer packages to `C:\\AMD`, which it removes
+   The installer executable will temporarily extract installer packages to ``C:\\AMD``, which it removes
    after completing the installation. You'll see the "Initializing install" window during extraction.
 
    .. image:: ./data/how-to/002-initializing.png
@@ -111,7 +109,7 @@ HIP SDK installation
          "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
          "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
          "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
-         "Visual Studio Plugin", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
+         "`Visual Studio Plugin <https://rocm.docs.amd.com/projects/hip-vs/en/latest/>`_", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
 
       .. note::
 
@@ -158,8 +156,7 @@ HIP SDK installation
 
 5. Complete installation.
 
-   Once the installation is complete, the installer window may prompt you for a system restart. Click
-   **Restart** at the lower right corner, shown in the following image.
+   After the installation is complete, the installer window might prompt you for a system restart. Click **Finish** or **Restart** in the lower-right corner, as shown in the following image.
 
    .. image:: ./data/how-to/013-install-complete.png
       :width: 400
@@ -168,8 +165,7 @@ HIP SDK installation
    .. note::
 
       If the installer terminates mid-installation, you can safely remove the temporary directory created
-      under `C:\\AMD`. Installed components don't depend on this folder unless you explicitly chose
-      this as the install folder.
+      under `C:\\AMD`. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
 
 Uninstall
 ---------
