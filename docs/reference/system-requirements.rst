@@ -25,7 +25,7 @@ AMD HIP SDK supports the following Windows variants.
 
 .. _supported-gpus-win:
 
-Windows-supported GPUs
+Windows-supported GPUs and APUs
 ===============================================
 
 The tables below show supported GPUs for AMD Radeon™ PRO and AMD Radeon™.
@@ -70,6 +70,15 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       "AMD Radeon RX 6650 XT", "RDNA2", "gfx1032", "✅", "❌"
       "AMD Radeon RX 6600 XT", "RDNA2", "gfx1032", "✅", "❌"
       "AMD Radeon RX 6600", "RDNA2", "gfx1032", "✅", "❌"
+
+  .. tab-item:: AMD APU
+
+    .. csv-table::
+      :widths: 20, 20, 20, 20, 20
+      :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
+
+      "AMD Radeon RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
+
 
 ✅: **Supported** - Official software distributions of the current HIP SDK release fully support this hardware.
 
