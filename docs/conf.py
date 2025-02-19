@@ -23,9 +23,9 @@ latex_elements = {
 # configurations for PDF output by Read the Docs
 project = "HIP SDK installation on Windows"
 author = "Advanced Micro Devices, Inc."
-copyright = "Copyright (c) 2023-2024 Advanced Micro Devices, Inc. All rights reserved."
-version = "6.0.0"
-release = "6.0.0"
+copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved."
+version = "6.1.2"
+release = "6.1.2"
 setting_all_article_info = True
 all_article_info_os = ["windows"]
 all_article_info_author = ""
