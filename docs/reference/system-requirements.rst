@@ -77,7 +77,13 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       :widths: 20, 20, 20, 20, 20
       :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
 
-      "AMD Radeon RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
+      "AMD Ryzen AI Max+ Pro 395", "RDNA3.5", "gfx1100", "✅", "✅"
+      "AMD Ryzen AI Max+ 395", "RDNA3.5", "gfx1100", "✅", "✅"
+      "AMD Ryzen AI Max Pro 390", "RDNA3.5", "gfx1100", "✅", "✅"
+      "AMD Ryzen AI Max 390", "RDNA3.5", "gfx1100", "✅", "✅"
+      "AMD Ryzen AI Max Pro 385", "RDNA3.5", "gfx1100", "✅", "✅"
+      "AMD Ryzen AI Max 385", "RDNA3.5", "gfx1100", "✅", "✅"
+      "AMD Ryzen AI Max Pro 380", "RDNA3.5", "gfx1100", "✅", "✅"
 
 
 ✅: **Supported** - Official software distributions of the current HIP SDK release fully support this hardware.
