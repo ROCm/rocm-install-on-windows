@@ -77,13 +77,13 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       :widths: 20, 20, 20, 20, 20
       :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
 
-      "AMD Ryzen AI Max+ Pro 395", "RDNA3.5", "gfx1100", "✅", "✅"
-      "AMD Ryzen AI Max+ 395", "RDNA3.5", "gfx1100", "✅", "✅"
-      "AMD Ryzen AI Max Pro 390", "RDNA3.5", "gfx1100", "✅", "✅"
-      "AMD Ryzen AI Max 390", "RDNA3.5", "gfx1100", "✅", "✅"
-      "AMD Ryzen AI Max Pro 385", "RDNA3.5", "gfx1100", "✅", "✅"
-      "AMD Ryzen AI Max 385", "RDNA3.5", "gfx1100", "✅", "✅"
-      "AMD Ryzen AI Max Pro 380", "RDNA3.5", "gfx1100", "✅", "✅"
+      "AMD Ryzen AI Max+ Pro 395", "RDNA3.5", "gfx1151", "✅", "✅"
+      "AMD Ryzen AI Max+ 395", "RDNA3.5", "gfx1151", "✅", "✅"
+      "AMD Ryzen AI Max Pro 390", "RDNA3.5", "gfx1151", "✅", "✅"
+      "AMD Ryzen AI Max 390", "RDNA3.5", "gfx1151", "✅", "✅"
+      "AMD Ryzen AI Max Pro 385", "RDNA3.5", "gfx1151", "✅", "✅"
+      "AMD Ryzen AI Max 385", "RDNA3.5", "gfx1151", "✅", "✅"
+      "AMD Ryzen AI Max Pro 380", "RDNA3.5", "gfx1151", "✅", "✅"
 
 
 ✅: **Supported** - Official software distributions of the current HIP SDK release fully support this hardware.
