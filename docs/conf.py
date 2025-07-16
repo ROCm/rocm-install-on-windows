@@ -47,6 +47,8 @@ rst_prolog = f"""
 .. |win_rocm_version| replace:: {win_rocm_version}
 """
 
+html_static_path = ["sphinx/static/js"]
+html_js_files = ["fix-version-header.js"]
 html_theme_options = {
     "link_main_doc": True
 }
