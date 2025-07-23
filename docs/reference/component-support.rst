@@ -8,6 +8,10 @@
 ROCm component support
 ******************************************************************************
 
+.. note::
+
+  As of HIP SDK version 6.4.2, HIPBlasLT is now available for windows users, supported on gfx1101 and higher.
+
 Starting with ROCm 5.5, the HIP SDK brings a subset of ROCm to developers on Windows.
 The collection of features enabled on Windows is referred to as the HIP SDK.
 These features allow developers to use the HIP runtime, HIP math libraries
