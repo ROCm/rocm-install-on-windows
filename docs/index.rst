@@ -22,8 +22,7 @@ capabilities of the HIP SDK, reference the new versions of these DLL binaries:
 
 * ``amd_comgr_2.dll`` (formerly ``amd_comgr.dll``)
 
-The latest version of HIP Ray Tracing (RT) (version 2.3.12a8a07) is named
-``hiprt0200364.dll`` as of ROCm version 6.1.2.
+The latest version of HIP Ray Tracing (RT) (version 2.5.41f6849) is named hiprt0200564.dll as of ROCm version 6.4.2.
 
 .. note::
 

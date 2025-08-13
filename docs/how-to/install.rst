@@ -18,7 +18,7 @@ Prerequisites
 Verify that your system meets all the installation requirements. The installation is only supported on
 specific host architectures, Windows Editions, and update versions.
 
-The HIP SDK is supported on Windows 10 and 11. You can install HIP on a system without AMD GPUs
+The HIP SDK is supported on Windows 10, 11, and Server 2022. You can install HIP on a system without AMD GPUs
 to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
 the :ref:`supported-gpus-win` for more details.
 
