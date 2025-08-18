@@ -39,6 +39,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       :widths: 20, 20, 20, 20, 20
       :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
 
+      "AMD Radeon AI PRO R9700", "RDNA3", "gfx1201", "✅", "✅"
       "AMD Radeon PRO W7900 Dual Slot", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon PRO W7900", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon PRO W7800", "RDNA3", "gfx1100", "✅", "✅"
@@ -54,10 +55,16 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       :widths: 20, 20, 20, 20, 20
       :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
 
+      "AMD Radeon RX 9070 XT", "RDNA3", "gfx1201", "✅", "✅"
+      "AMD Radeon RX 9070", "RDNA3", "gfx1201", "✅", "✅"
+      "AMD RX 9070 GRE", "RDNA3", "gfx1201", "✅", "✅"
+      "AMD Radeon RX 9060 XT", "RDNA3", "gfx1200", "✅", "✅"
+      "AMD Radeon RX 9060 XL", "RDNA3", "gfx1200", "✅", "✅"
       "AMD Radeon RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon RX 7900 XT", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon RX 7800 XT", "RDNA3", "gfx1101", "✅", "✅"
       "AMD Radeon RX 7700 XT", "RDNA3", "gfx1101", "✅", "✅"
+      "AMD Radeon RX 7650 GRE", "RDNA3", "gfx1102", "✅", "✅"
       "AMD Radeon RX 7600 XT", "RDNA3", "gfx1102", "✅", "✅"
       "AMD Radeon RX 7600", "RDNA3", "gfx1102", "✅", "✅"
       "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅"
