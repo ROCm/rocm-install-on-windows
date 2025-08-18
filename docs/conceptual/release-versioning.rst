@@ -23,9 +23,8 @@ perspective).
     "6.1", "✅", "✅"
     "6.2", "✅", "✅"
     "6.3", "✅", "❌"
+    "6.4", "✅", "✅"
 
-ROCm Linux releases are versioned following the Major.Minor.Patch version number system.
-Windows releases are versioned with Major.Minor.
 
 In general, Windows releases trail Linux releases. If you want to support both Linux and Windows using
 a single ROCm version, refrain from upgrading ROCm until there is a joint release.
