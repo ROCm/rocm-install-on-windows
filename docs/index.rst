@@ -52,6 +52,14 @@ HIP SDK installation
    Download the installer from the
    `HIP SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
+   The download page lists supported OSes for different available ROCm versions,
+   with a link to download the related installer. Select the download file matching
+   the ROCm version you want to install. 
+   
+   Clicking the HIP SDK download link takes you to a license page that you must
+   accept before the download will begin. Specify the location to save the download
+   file to. 
+
 2. Launch the installer.
 
    To launch the AMD HIP SDK Installer, click the **Setup** icon shown in the following image.
@@ -92,7 +100,7 @@ HIP SDK installation
    When the installer launches, it displays a window that lets you customize the installation. By default,
    all components are selected for installation.
 
-   .. image:: ./data/how-to/004-installer-window.png
+   .. image:: ./data/how-to/004-installer-window-620.png
       :width: 400
       :alt: Window with AMD arrow logo, futuristic background and activity indicator
 
