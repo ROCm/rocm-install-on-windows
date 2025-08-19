@@ -50,3 +50,7 @@ rst_prolog = f"""
 html_theme_options = {
     "link_main_doc": True
 }
+
+html_context = {
+    "docs_header_version": "6.4.2"
+}
