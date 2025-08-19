@@ -34,6 +34,10 @@ exclude_patterns = ['temp']
 
 external_toc_path = "./sphinx/_toc.yml"
 
+html_context = {
+    "docs_header_version": "6.4.2"
+}
+
 docs_core = ROCmDocs("HIP SDK installation (Windows)")
 docs_core.setup()
 
@@ -51,6 +55,3 @@ html_theme_options = {
     "link_main_doc": True
 }
 
-html_context = {
-    "docs_header_version": "6.4.2"
-}
