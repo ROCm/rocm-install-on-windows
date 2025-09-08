@@ -59,7 +59,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       "AMD Radeon RX 9070", "RDNA3", "gfx1201", "✅", "✅"
       "AMD RX 9070 GRE", "RDNA3", "gfx1201", "✅", "✅"
       "AMD Radeon RX 9060 XT", "RDNA3", "gfx1200", "✅", "✅"
-      "AMD Radeon RX 9060 XL", "RDNA3", "gfx1200", "✅", "✅"
+      "AMD Radeon RX 9060", "RDNA3", "gfx1200", "✅", "✅"
       "AMD Radeon RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon RX 7900 XT", "RDNA3", "gfx1100", "✅", "✅"
       "AMD Radeon RX 7800 XT", "RDNA3", "gfx1101", "✅", "✅"
@@ -117,3 +117,4 @@ CPU support
 
 ROCm requires CPUs that support PCIe™ atomics. Modern CPUs after the release of 1st generation
 AMD Zen CPU and Intel™ Haswell support PCIe atomics.
+
