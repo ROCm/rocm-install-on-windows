@@ -10,6 +10,8 @@ subtrees:
       title: Install HIP SDK
     - file: reference/system-requirements
       title: System requirements
+    - file: reference/limitations
+      title: Limitations
 
 - caption: Conceptual
   entries:
