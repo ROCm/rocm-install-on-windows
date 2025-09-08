@@ -55,6 +55,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       :widths: 20, 20, 20, 20, 20
       :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
 
+
       "AMD Radeon RX 9070 XT", "RDNA4", "gfx1201", "✅", "✅"
       "AMD Radeon RX 9070", "RDNA4", "gfx1201", "✅", "✅"
       "AMD RX 9070 GRE", "RDNA4", "gfx1201", "✅", "✅"
@@ -117,3 +118,4 @@ CPU support
 
 ROCm requires CPUs that support PCIe™ atomics. Modern CPUs after the release of 1st generation
 AMD Zen CPU and Intel™ Haswell support PCIe atomics.
+
