@@ -8,7 +8,7 @@ HIP SDK installation for Windows
 
 The  HIP SDK for Windows brings a subset of the :doc:`ROCm <reference/component-support>` 
 platform to Windows. It provides APIs and tooling to leverage the computational power 
-of accelerators and GPUs to create high-performance, portable applications using
+of GPUs to create high-performance, portable applications using
 :doc:`HIP <hip:index>`.
 
 HIP SDK changes
