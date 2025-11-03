@@ -1,18 +1,1 @@
-# HIP SDK installation documentation (Windows)
-
-This repository contains installation instructions for the HIP SDK on Windows, along with installation-related information.
-
-For Linux-related installation information, refer to the [Linux installation GitHub repository](https://github.com/ROCm/rocm-install-on-linux) or the [ROCm docs Linux install page](https://rocm.docs.amd.com/projects/rocm-install-on-linux/en/latest/).
-
-## Building our documentation
-
-For a quick-start build, use the following code. For more options and detail, refer to
-[Building documentation](https://rocm.docs.amd.com/en/latest/contribute/building.html).
-
-```bash
-cd docs
-
-pip3 install -r sphinx/requirements.txt
-
-python3 -m sphinx -T -E -b html -d _build/doctrees -D language=en . _build/html
-```
+cmake -G "Ninja" -DCMAKE_C_COMPILER="C:/Users/CHRN/test/.venv/Lib/site-packages/_rocm_sdk_devel/lib/llvm/bin/clang.exe" -DOFFLOAD_BUNDLER_COMMAND="C:/Users/CHRN/test/.venv/Lib/site-packages/_rocm_sdk_devel/lib/llvm/bin/clang-offload-bundler.exe" -DCMAKE_CXX_COMPILER="C:/Users/CHRN/test/.venv/Lib/site-packages/_rocm_sdk_devel/lib/llvm/bin/clang++.exe" -DCMAKE_HIP_COMPILER="C:/Users/CHRN/test/.venv/Lib/site-packages/_rocm_sdk_devel/lib/llvm/bin/clang++.exe" -DCMAKE_RC_COMPILER="C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/rc.exe"  -DLLVM_MC_COMMAND="C:/Users/CHRN/test/.venv/Lib/site-packages/_rocm_sdk_devel/lib/llvm/bin/llvm-mc.exe" -DCMAKE_HIP_ARCHITECTURES="gfx1151" -DCMAKE_BUILD_TYPE=Release -S . -B build
