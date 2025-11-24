@@ -50,3 +50,6 @@ rst_prolog = f"""
 html_theme_options = {
     "link_main_doc": True
 }
+
+# Disable table and figure numbering
+numfig = False
