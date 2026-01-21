@@ -8,18 +8,36 @@
 HIP SDK Debugger for Windows
 *******************************************************************
 
+
+
+Section 1 : Prerequisites
+=========================
+Windows ROCgdb is included in the HIP SDK installer from version 7.1.1. Supported SKUs can be found here: <Link to “System Requirements” page>. For ROCgdb to functional properly in the preview release, the driver included with the HIP SDK package must be used.
+
+Section 2: Install
+==================
+Windows ROCgdb can be installed by checking the “AMD ROCm Debugger (ROCgdb)” option (see below) during installation of the HIP SDK package.
+
+
+
 List of Windows ROCgdb limitations
 =================================
 
-The “AMD GPU restrictions” section of the ROCgdb manual now lists the Windows-specific restrictions at the bottom. Source here:
+ROCgdb on Windows has the following limitations currently:
 
-https://github.com/AMD-ROCm-Internal/ROCgdb/blob/70687c121649de0d217fadae7cfd71937c0deed6/gdb/doc/gdb.texinfo#L30499
+* Windows is supported only on the ‘gfx120x’ architectures (‘gfx1200’ and ‘gfx1201’).
 
-This would be rendered at the bottom of this page: `AMD GPU (Debugging with ROCGDB) <https://rocm.docs.amd.com/projects/ROCgdb/en/latest/ROCgdb/gdb/doc/gdb/AMD-GPU.html#AMD-GPU-Restrictions>`_.
+* Multi-GPU configurations involving more than one AMD GPU are not supported.
 
-.. note::
-   This page is generated from the latest Linux ROCm release, and does not contain the Windows changes.
-   It will be rendered and present in the copy of the ROCgdb manual that is included with the HIP SDK (always installed when you install the debugger).
+* Generating or loading AMD GPU core dumps is not supported on Windows.
+
+* Python scripting is not supported.
+
+* Due to an AMD HIP runtime limitation, it is not currently possible to pass intercepted signals (SIGFPE, SIGSEGV, etc.) to the inferior, even if the user requests otherwise. Signals are always suppressed by the runtime.
+
+* The HIPCC compiler on Windows defaults to producing PDB files containing CodeView debug information for the host code. ROCgdb does not support this debug format. To enable host code debugging, pass the -gdwarf -Wl,-debug:dwarf options to HIPCC to generate DWARF debug information instead, which ROCgdb supports.
+
+* The HIPCC compiler on Windows emits host code that targets the Microsoft x64 ABI conventions and MSVC C++ ABI. ROCgdb does not fully support these, which may lead to incorrect symbol names, misprinted C++ objects, and similar issues when debugging host code. These limitations do not affect debugging AMD GPU device-side code.
 
 Hello World example
 ===================
@@ -131,5 +149,5 @@ Debugging GPU code with ROCgdb on Windows is just like on Linux, as you’ll see
         6         *out = a + b;
         (gdb)
 
-That’s it! See the ROCgdb documentation for more details.
+That’s it!  You can find more information about ROCgdb in the copy of the ROCgdb manual that is installed with the HIP SDK. The manual is located under the `share\html` subdirectory, for example, for an SDK installed at `C:\Program Files\AMD\ROCm\7.1`, the manual is located under `C:\Program Files\AMD\ROCm\7.1\share\html`.
 
