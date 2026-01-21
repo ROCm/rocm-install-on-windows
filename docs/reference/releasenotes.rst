@@ -10,7 +10,7 @@ Release Notes
 
 .. _known-issues-win:
 
-6.4.2 known issues
+7.1.1 known issues
 ===============================================
 
 
