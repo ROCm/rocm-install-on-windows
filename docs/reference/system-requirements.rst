@@ -34,7 +34,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
   .. tab-item:: AMD Radeon PRO
 
     .. csv-table::
-      :widths: 20, 20, 20, 20, 20
+      :widths: 20, 20, 20, 20, 20, 20
       :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK", "AMD ROCm Debugger"
 
 
@@ -52,7 +52,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
   .. tab-item:: AMD Radeon
 
     .. csv-table::
-      :widths: 20, 20, 20, 20, 20
+      :widths: 20, 20, 20, 20, 20, 20
       :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK", "AMD ROCm Debugger"
 
 
