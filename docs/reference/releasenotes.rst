@@ -15,7 +15,7 @@ Release Notes
 
 
 .. note::
-   **AMD HIP SDK for Windows 7.1.1 — Release Notes**
+   **AMD HIP SDK for Windows 7.1.1 — Release Notes**  
    This page documents the release history, new features, improvements, limitations, and known issues for the AMD HIP SDK on Windows. It is organized for developers, QA, and partner teams who need a reliable, reference-style view of what changed across releases.
 
  
