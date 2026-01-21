@@ -8,9 +8,9 @@
 System requirements (Windows)
 ******************************************************************************
 
-.. _supported-skus-win:
+.. _supported-oses-win:
 
-Supported SKUs
+Supported OSes
 ===============================================
 
 AMD HIP SDK supports the following Windows variants.
@@ -19,9 +19,7 @@ AMD HIP SDK supports the following Windows variants.
   :widths: 40, 30, 30
   :header: "Distribution", "Processor architectures", "Validated update"
 
-  "Windows 10", "x86-64", "22H2 (GA)"
   "Windows 11", "x86-64", "22H2 (GA)"
-  "Windows Server 2022", "x86-64", "22H2 (GA)"
 
 .. _supported-gpus-win:
 
@@ -37,48 +35,50 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
 
     .. csv-table::
       :widths: 20, 20, 20, 20, 20
-      :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
+      :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK", "AMD ROCm Debugger"
 
 
-      "AMD Radeon AI PRO R9700", "RDNA4", "gfx1201", "✅", "✅"
-      "AMD Radeon PRO W7900 Dual Slot", "RDNA3", "gfx1100", "✅", "✅"
-      "AMD Radeon PRO W7900", "RDNA3", "gfx1100", "✅", "✅"
-      "AMD Radeon PRO W7800", "RDNA3", "gfx1100", "✅", "✅"
-      "AMD Radeon PRO W7700", "RDNA3", "gfx1101", "✅", "✅"
-      "AMD Radeon PRO W6800", "RDNA2", "gfx1030", "✅", "✅"
-      "AMD Radeon PRO W6600", "RDNA2", "gfx1032", "✅", "❌"
-      "AMD Radeon PRO W5500", "RDNA1", "gfx1012", "❌", "❌"
-      "AMD Radeon PRO VII", "GCN5.1", "gfx906", "❌", "❌"
+      "AMD Radeon AI PRO R9700", "RDNA4", "gfx1201", "✅", "✅", "✅"
+      "AMD Radeon PRO W7900 Dual Slot", "RDNA3", "gfx1100", "✅", "✅", "❌"
+      "AMD Radeon PRO W7900", "RDNA3", "gfx1100", "✅", "✅", "❌"
+      "AMD Radeon PRO W7800", "RDNA3", "gfx1100", "✅", "✅", "❌"
+      "AMD Radeon PRO W7700", "RDNA3", "gfx1101", "✅", "✅", "❌"
+      "AMD Radeon PRO W6800", "RDNA2", "gfx1030", "✅", "✅", "❌"
+      "AMD Radeon PRO W6600", "RDNA2", "gfx1032", "✅", "❌", "❌"
+      "AMD Radeon PRO W5500", "RDNA1", "gfx1012", "❌", "❌", "❌"
+      "AMD Radeon PRO VII", "GCN5.1", "gfx906", "❌", "❌", "❌"
 
   .. tab-item:: AMD Radeon
 
     .. csv-table::
       :widths: 20, 20, 20, 20, 20
-      :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK"
+      :header: "Name", "Architecture", "LLVM target", "Runtime", "HIP SDK", "AMD ROCm Debugger"
 
 
-      "AMD Radeon RX 9070 XT", "RDNA4", "gfx1201", "✅", "✅"
-      "AMD Radeon RX 9070", "RDNA4", "gfx1201", "✅", "✅"
-      "AMD RX 9070 GRE", "RDNA4", "gfx1201", "✅", "✅"
-      "AMD Radeon RX 9060 XT", "RDNA4", "gfx1200", "✅", "✅"
-      "AMD Radeon RX 9060", "RDNA4", "gfx1200", "✅", "✅"
-      "AMD Radeon RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅"
-      "AMD Radeon RX 7900 XT", "RDNA3", "gfx1100", "✅", "✅"
-      "AMD Radeon RX 7800 XT", "RDNA3", "gfx1101", "✅", "✅"
-      "AMD Radeon RX 7700 XT", "RDNA3", "gfx1101", "✅", "✅"
-      "AMD Radeon RX 7650 GRE", "RDNA3", "gfx1102", "✅", "✅"
-      "AMD Radeon RX 7600 XT", "RDNA3", "gfx1102", "✅", "✅"
-      "AMD Radeon RX 7600", "RDNA3", "gfx1102", "✅", "✅"
-      "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅"
-      "AMD Radeon RX 6900 XT", "RDNA2", "gfx1030", "✅", "✅"
-      "AMD Radeon RX 6800 XT", "RDNA2", "gfx1030", "✅", "✅"
-      "AMD Radeon RX 6800", "RDNA2", "gfx1030", "✅", "✅"
-      "AMD Radeon RX 6750 XT", "RDNA2", "gfx1031", "✅", "❌"
-      "AMD Radeon RX 6700 XT", "RDNA2", "gfx1031", "✅", "❌"
-      "AMD Radeon RX 6700", "RDNA2", "gfx1031", "✅", "❌"
-      "AMD Radeon RX 6650 XT", "RDNA2", "gfx1032", "✅", "❌"
-      "AMD Radeon RX 6600 XT", "RDNA2", "gfx1032", "✅", "❌"
-      "AMD Radeon RX 6600", "RDNA2", "gfx1032", "✅", "❌"
+      "AMD Radeon RX 9070 XT", "RDNA4", "gfx1201", "✅", "✅", "✅"
+      "AMD Radeon RX 9070", "RDNA4", "gfx1201", "✅", "✅", "✅"
+      "AMD RX 9070 GRE", "RDNA4", "gfx1201", "✅", "✅", "✅"
+      "AMD Radeon RX 9060 XT", "RDNA4", "gfx1200", "✅", "✅", "❌"
+      "AMD Radeon RX 9060", "RDNA4", "gfx1200", "✅", "✅", "❌"
+      "AMD Radeon RX 7900 XTX", "RDNA3", "gfx1100", "✅", "✅", "❌"
+      "AMD Radeon RX 7900 XT", "RDNA3", "gfx1100", "✅", "✅", "❌"
+      "AMD Radeon RX 7800 XT", "RDNA3", "gfx1101", "✅", "✅", "❌"
+      "AMD Radeon RX 7700 XT", "RDNA3", "gfx1101", "✅", "✅", "❌"
+      "AMD Radeon RX 7650 GRE", "RDNA3", "gfx1102", "✅", "✅", "❌"
+      "AMD Radeon RX 7600 XT", "RDNA3", "gfx1102", "✅", "✅", "❌"
+      "AMD Radeon RX 7600", "RDNA3", "gfx1102", "✅", "✅", "❌"
+      "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
+      "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
+      "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
+      "AMD Radeon RX 6900 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
+      "AMD Radeon RX 6800 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
+      "AMD Radeon RX 6800", "RDNA2", "gfx1030", "✅", "✅", "❌"
+      "AMD Radeon RX 6750 XT", "RDNA2", "gfx1031", "✅", "❌", "❌"
+      "AMD Radeon RX 6700 XT", "RDNA2", "gfx1031", "✅", "❌", "❌"
+      "AMD Radeon RX 6700", "RDNA2", "gfx1031", "✅", "❌", "❌"
+      "AMD Radeon RX 6650 XT", "RDNA2", "gfx1032", "✅", "❌", "❌"
+      "AMD Radeon RX 6600 XT", "RDNA2", "gfx1032", "✅", "❌", "❌"
+      "AMD Radeon RX 6600", "RDNA2", "gfx1032", "✅", "❌", "❌"
 
   .. tab-item:: AMD APU
 

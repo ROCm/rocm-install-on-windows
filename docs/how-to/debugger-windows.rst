@@ -18,7 +18,8 @@ Section 2: Install
 ==================
 Windows ROCgdb can be installed by checking the “AMD ROCm Debugger (ROCgdb)” option (see below) during installation of the HIP SDK package.
 
-
+.. image:: media/gdb.png
+   :alt: AMD ROCm Debugger
 
 List of Windows ROCgdb limitations
 =================================
@@ -149,5 +150,5 @@ Debugging GPU code with ROCgdb on Windows is just like on Linux, as you’ll see
         6         *out = a + b;
         (gdb)
 
-That’s it!  You can find more information about ROCgdb in the copy of the ROCgdb manual that is installed with the HIP SDK. The manual is located under the `share\html` subdirectory, for example, for an SDK installed at `C:\Program Files\AMD\ROCm\7.1`, the manual is located under `C:\Program Files\AMD\ROCm\7.1\share\html`.
+That’s it!  You can find more information about ROCgdb in the copy of the ROCgdb manual that is installed with the HIP SDK. The manual is located under the ``share\html`` subdirectory, for example, for an SDK installed at ``C:\Program Files\AMD\ROCm\7.1``, the manual is located under ``C:\Program Files\AMD\ROCm\7.1\share\html``.
 
