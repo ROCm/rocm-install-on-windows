@@ -9,7 +9,7 @@ subtrees:
     - file: how-to/install
       title: Install HIP SDK
     - file: how-to/debugger-windows
-      title: HIP SDK Debugger for Windows
+      title: AMD ROCm Debugger for Windows
     - file: reference/system-requirements
       title: System requirements
     - file: reference/limitations
