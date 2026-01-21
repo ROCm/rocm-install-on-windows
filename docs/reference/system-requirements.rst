@@ -48,6 +48,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       "AMD Radeon PRO W5500", "RDNA1", "gfx1012", "❌", "❌", "❌"
       "AMD Radeon PRO VII", "GCN5.1", "gfx906", "❌", "❌", "❌"
 
+
   .. tab-item:: AMD Radeon
 
     .. csv-table::
@@ -79,6 +80,7 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       "AMD Radeon RX 6650 XT", "RDNA2", "gfx1032", "✅", "❌", "❌"
       "AMD Radeon RX 6600 XT", "RDNA2", "gfx1032", "✅", "❌", "❌"
       "AMD Radeon RX 6600", "RDNA2", "gfx1032", "✅", "❌", "❌"
+
 
   .. tab-item:: AMD APU
 
