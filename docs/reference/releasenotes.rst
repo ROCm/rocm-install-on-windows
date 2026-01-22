@@ -2,16 +2,11 @@
   :description: Windows GPU and OS support
   :keywords: Windows support, ROCm distributions, ROCm, AMD, HIP SDK, HIP
 
-.. _limitations-win:
+.. _releasenotes-win:
 
 ******************************************************************************
 Release Notes
 ******************************************************************************
-
-.. _known-issues-win:
-
-7.1.1 known issues
-===============================================
 
 
 .. note::
@@ -72,10 +67,9 @@ Known Issues
 Quick Links
 ===========
 
-`AMD HIP SDK for Windows Download <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html#downloads>`_
+* `AMD HIP SDK for Windows Download <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html#downloads>`_
 
-`HIP SDK installation for Windows — HIP SDK installation (Windows) <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/index.html#supported-operating-systems-and-hardware>`_
+* `HIP SDK installation for Windows — HIP SDK installation (Windows) <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/index.html#supported-operating-systems-and-hardware>`_
 
-For the latest list of supported operating systems and GPUs, refer to the page `System requirements (Windows) — HIP SDK installation (Windows) <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/reference/system-requirements.html>`_
+* For the latest list of supported operating systems and GPUs, refer to the page `System requirements (Windows) — HIP SDK installation (Windows) <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/reference/system-requirements.html>`_
 
-`AMD ROCm Debugger for Windows <https://amd.atlassian.net/wiki/spaces/SWPMTO/pages/1208592273>`_

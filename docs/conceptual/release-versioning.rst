@@ -24,7 +24,7 @@ perspective).
     "6.2", "✅", "✅"
     "6.3", "✅", "❌"
     "6.4", "✅", "✅"
-
+    "7.1", "✅", "✅"
 
 In general, Windows releases trail Linux releases. If you want to support both Linux and Windows using
 a single ROCm version, refrain from upgrading ROCm until there is a joint release.

@@ -14,19 +14,19 @@ of GPUs to create high-performance, portable applications using
 HIP SDK changes
 ===============
 
-As of ROCm version 6.1.2, the HIP SDK for Windows includes updated versions of
+As of ROCm version 7.1.1, the HIP SDK for Windows includes updated versions of
 the runtime components ``amdhip64`` and ``amd_comgr``. To use the latest
 capabilities of the HIP SDK, reference the new versions of these DLL binaries:
 
-* ``amdhip64_6.dll`` (formerly ``amdhip64.dll``)
+* ``amdhip64_7.dll`` (formerly ``amdhip64.dll``)
 
-* ``amd_comgr_2.dll`` (formerly ``amd_comgr.dll``)
+* ``amd_comgr_3.dll`` (formerly ``amd_comgr.dll``)
 
-The latest version of HIP Ray Tracing (RT) (version 2.5.41f6849) is named hiprt0200564.dll as of ROCm version 6.4.2.
+The latest version of HIP Ray Tracing (RT) (version 3.0.21d4f81) is named hiprt0300064.dll as of ROCm version 7.1.1.
 
 .. note::
 
-   The HIP SDK on Windows for ROCm 6.x is not backwards compatible with previous major
+   The HIP SDK on Windows for ROCm 7.x is not backwards compatible with previous major
    versions such as 5.x.
 
 .. _hip-install-quick:
@@ -81,7 +81,7 @@ HIP SDK installation
       :width: 400
       :alt: User Access Control pop-up
 
-   The installer executable will temporarily extract installer packages to ``C:\\AMD``, which it removes
+   The installer executable will temporarily extract installer packages to ``C:\AMD``, which it removes
    after completing the installation. You'll see the "Initializing install" window during extraction.
 
    .. image:: ./data/how-to/002-initializing.png
@@ -172,7 +172,7 @@ HIP SDK installation
    .. note::
 
       If the installer terminates mid-installation, you can safely remove the temporary directory created
-      under `C:\\AMD`. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
+      under `C:\AMD`. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
 
 Uninstall
 ---------

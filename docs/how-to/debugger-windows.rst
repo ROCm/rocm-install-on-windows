@@ -12,7 +12,7 @@ AMD ROCm Debugger for Windows
 
 Section 1 : Prerequisites
 =========================
-Windows ROCgdb is included in the HIP SDK installer from version 7.1.1. Supported SKUs can be found here: `System requirements <../reference/system-requirements.rst>`_. For ROCgdb to functional properly in the preview release, the driver included with the HIP SDK package must be used.
+Windows ROCgdb is included in the HIP SDK installer from version 7.1.1. Supported SKUs can be found here: `System requirements <../reference/system-requirements.rst>`_ . For ROCgdb to functional properly in the preview release, the driver included with the HIP SDK package must be used.
 
 Section 2: Install
 ==================
