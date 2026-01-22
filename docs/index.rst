@@ -112,7 +112,7 @@ HIP SDK installation
          :widths: 30, 30, 40
          :header: "HIP components", "Install type", "Additional options"
 
-         "HIP SDK Core", |win_rocm_version|, "Install location"
+         "HIP SDK Core", 7.1.1, "Install location"
          "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
          "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
          "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
@@ -130,7 +130,7 @@ HIP SDK installation
 
    b. AMD display driver
 
-      The HIP SDK installer bundles an AMD Radeon Software PRO |radeon_software_pro_version| installer.
+      The HIP SDK installer bundles an AMD Radeon Software PRO 25.30 installer.
       The supported install options and types are summarized in the following tables:
 
       .. csv-table::

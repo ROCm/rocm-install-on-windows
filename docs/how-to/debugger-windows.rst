@@ -8,11 +8,11 @@
 AMD ROCm Debugger for Windows
 *******************************************************************
 
-
+.. _system-requirements:
 
 Section 1 : Prerequisites
 =========================
-Windows ROCgdb is included in the HIP SDK installer from version 7.1.1. Supported SKUs can be found here: `System requirements <../reference/system-requirements.rst>`_ . For ROCgdb to functional properly in the preview release, the driver included with the HIP SDK package must be used.
+Windows ROCgdb is included in the HIP SDK installer from version 7.1.1. Supported SKUs can be found here: :doc:`System requirements <../reference/system-requirements>` . For ROCgdb to functional properly in the preview release, the driver included with the HIP SDK package must be used.
 
 Section 2: Install
 ==================
@@ -103,7 +103,7 @@ Debugging GPU code with ROCgdb on Windows is just like on Linux, as you’ll see
 
     Notes:
 
-    - The ``--offload-arch=gfx1201`` option targets Navi48 GPU (for example, Radeon RX 9070 XT). For Navi44 (for example, Radeon RX 9060 XT), use ``--offload-arch=gfx1200`` instead.
+    - The ``--offload-arch=gfx1201`` option targets AMD Radeon RX 9070 series products.  For AMD Radeon RX 9060 series products, use ``--offload-arch=gfx1200`` instead.
     - The ``-gdwarf -Wl,-debug:dwarf`` options instruct ``hipcc`` to emit DWARF debug information for the host code. Otherwise, ``hipcc`` emits PDB (Microsoft) debug information, which ROCgdb does not yet understand.
     - The ``-O0`` option disables compiler optimizations.
 
