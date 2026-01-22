@@ -117,6 +117,7 @@ HIP SDK installation
          "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
          "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
          "`Visual Studio Plugin <https://rocm.docs.amd.com/projects/hip-vs/en/latest/>`_", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
+         "AMD ROCm Debugger", "Full, Partial, None", "AMD ROCm Debugger (ROCgdb)"
 
       .. note::
 

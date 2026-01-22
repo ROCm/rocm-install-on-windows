@@ -147,7 +147,7 @@ Install HIP SDK
             Should you only wish to install a few select components, deselecting all, then selecting
             individual components may be more convenient.
 
-        The HIP SDK installer bundles an AMD Radeon Software PRO |radeon_software_pro_version| installer.
+        The HIP SDK installer bundles an AMD Radeon Software PRO 25.30 installer.
         The supported install options and types are summarized in the following tables:
 
         .. csv-table::
