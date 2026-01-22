@@ -51,9 +51,6 @@ html_theme_options = {
 extensions = ["rocm_docs"]
 
 
-for sphinx_var in ROCmDocs.SPHINX_VARS:
-    globals()[sphinx_var] = getattr(docs_core, sphinx_var)
-
 rst_prolog = f"""
 .. |radeon_software_pro_version| replace:: {radeon_software_pro_version}
 .. |win_rocm_version| replace:: {win_rocm_version}
