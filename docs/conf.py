@@ -34,9 +34,6 @@ exclude_patterns = ['temp']
 
 external_toc_path = "./sphinx/_toc.yml"
 
-docs_core = ROCmDocs("HIP SDK installation (Windows)")
-docs_core.setup()
-
 external_projects_current_project = "rocm"
 html_theme = "rocm_docs_theme"
 html_theme_options = {
@@ -52,6 +49,9 @@ html_theme_options = {
         "Support": "https://github.com/ROCm/ROCm/issues/new/choose",
     },
 }
+
+docs_core = ROCmDocs("HIP SDK installation (Windows)")
+docs_core.setup()
 
 
 for sphinx_var in ROCmDocs.SPHINX_VARS:
