@@ -5,7 +5,7 @@
 .. _releasenotes-win:
 
 ******************************************************************************
-Release Notes
+Release notes
 ******************************************************************************
 
 
@@ -16,13 +16,13 @@ Release Notes
 
  
 
-What’s New
+What’s new
 ==========
 1. Support for ROCm 7.1.1 
 
 2. Introduction of the AMD ROCm Debugger on Windows
 
-Fixed Issues
+Fixed issues
 ============
 
 * Intermittent compilation errors while running cooperative_groups examples due to ds_gws_barrier on AMD Radeon™ RX 9060 and RX 9070 series products.
@@ -50,7 +50,7 @@ The following items reflect the current state of HIP SDK for Windows and the ROC
 
 * **ABI compatibility**: HIPCC emits host code targeting Microsoft x64 ABI and MSVC C++ ABI. ROCgdb does not fully support these, which may cause incorrect symbol names or misprinted C++ objects during host debugging. Device-side GPU debugging is not affected..
 
-Known Issues
+Known issues
 ============
 
 * Intermittent application crash may be observed while running long-duration rocFFT workloads on AMD Ryzen AI Max series processors and AMD Radeon RX 7600 series graphics products.
@@ -65,12 +65,12 @@ Known Issues
 
 * Intermittent TDR (Timeout Detection and Recovery) may be observed while debugging with AMD ROCm Debugger for Windows, which may result in a system crash with error code 0x116.
 
-Quick Links
+Quick links
 ===========
 
 * `AMD HIP SDK for Windows Download <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html#downloads>`_
 
 * `HIP SDK installation for Windows — HIP SDK installation (Windows) <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/index.html#supported-operating-systems-and-hardware>`_
 
-* For the latest list of supported operating systems and GPUs, refer to the page `System requirements (Windows) — HIP SDK installation (Windows) <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/reference/system-requirements.html>`_
+* `System requirements (Windows) — HIP SDK installation (Windows) <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/reference/system-requirements.html>`_
 
