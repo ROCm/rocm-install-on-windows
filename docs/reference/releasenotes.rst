@@ -11,6 +11,7 @@ Release Notes
 
 .. note::
    **AMD HIP SDK for Windows 7.1.1 — Release Notes**  
+   
    This page documents the release history, new features, improvements, limitations, and known issues for the AMD HIP SDK on Windows. It is organized for developers, QA, and partner teams who need a reliable, reference-style view of what changed across releases.
 
  
@@ -19,7 +20,7 @@ What’s New
 ==========
 1. Support for ROCm 7.1.1 
 
-2. Introduction of the ROCm Debugger for Windows.
+2. Introduction of the AMD ROCm Debugger on Windows
 
 Fixed Issues
 ============
@@ -35,19 +36,19 @@ The following items reflect the current state of HIP SDK for Windows and the ROC
 
 **ROCm Debugger (ROCgdb) on Windows Limitations**
 
-* Architecture support: Windows is currently supported on the AMD Radeon™ RX 9000 series graphics products. Other architectures are not supported with AMD ROCm Debugger for Windows.
+* **Architecture support**: Windows is currently supported on the AMD Radeon™ RX 9000 series graphics products. Other architectures are not supported with AMD ROCm Debugger for Windows.
 
-* Multi-GPU: Configurations with more than one AMD GPU are not supported with AMD ROCm Debugger for Windows.
+* **Multi-GPU**: Configurations with more than one AMD GPU are not supported with AMD ROCm Debugger for Windows.
 
-* Core dumps: Generating or loading AMD GPU core dumps is not supported on Windows.
+* **Core dumps**: Generating or loading AMD GPU core dumps is not supported on Windows.
 
-* Python scripting: Not supported.
+* **Python scripting**: Not supported.
 
-* Signals: Due to a HIP runtime limitation, intercepted signals (SIGFPE, SIGSEGV, etc.) cannot currently be passed through to the inferior on Windows; signals are always suppressed by the runtime.
+* **Signals**: Due to a HIP runtime limitation, intercepted signals (SIGFPE, SIGSEGV, etc.) cannot currently be passed through to the inferior on Windows; signals are always suppressed by the runtime.
 
-* Host debug info: HIPCC on Windows defaults to PDB/CodeView for host debug info, which ROCgdb does not support. Workaround: compile with -gdwarf -Wl,-debug:dwarf to emit DWARF host debug info supported by ROCgdb.
+* **Host debug info**: HIPCC on Windows defaults to PDB/CodeView for host debug info, which ROCgdb does not support. Workaround: compile with -gdwarf -Wl,-debug:dwarf to emit DWARF host debug info supported by ROCgdb.
 
-* ABI compatibility: HIPCC emits host code targeting Microsoft x64 ABI and MSVC C++ ABI. ROCgdb does not fully support these, which may cause incorrect symbol names or misprinted C++ objects during host debugging. Device-side GPU debugging is not affected..
+* **ABI compatibility**: HIPCC emits host code targeting Microsoft x64 ABI and MSVC C++ ABI. ROCgdb does not fully support these, which may cause incorrect symbol names or misprinted C++ objects during host debugging. Device-side GPU debugging is not affected..
 
 Known Issues
 ============
