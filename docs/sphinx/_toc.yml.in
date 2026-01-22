@@ -8,10 +8,12 @@ subtrees:
       title: Component support
     - file: how-to/install
       title: Install HIP SDK
+    - file: how-to/debugger-windows
+      title: AMD ROCm Debugger for Windows
     - file: reference/system-requirements
       title: System requirements
-    - file: reference/limitations
-      title: Limitations
+    - file: reference/releasenotes
+      title: Release notes
 
 - caption: Conceptual
   entries:

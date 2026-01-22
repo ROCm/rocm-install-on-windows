@@ -10,7 +10,7 @@ ROCm component support
 
 .. note::
 
-  As of HIP SDK version 6.4.2, HIPBlasLT is now available for Windows users, supported on gfx1101 and higher.
+  As of HIP SDK version >=6.4.2, HIPBlasLT is now available for Windows users, supported on gfx1101 and higher.
 
 Starting with ROCm 5.5, the HIP SDK brings a subset of ROCm to developers on Windows.
 The collection of features enabled on Windows is referred to as the HIP SDK.
@@ -24,7 +24,7 @@ between Windows and Linux releases.
 
     "Driver", "Radeon Software for Linux", "AMD Software Pro Edition"
     "Compiler", "hipcc/amdclang++", "hipcc/clang++"
-    "Debugger", "`rocgdb <https://rocm.docs.amd.com/projects/ROCgdb/en/latest/>`_", "no debugger available"
+    "Debugger", "`rocgdb <https://rocm.docs.amd.com/projects/ROCgdb/en/latest/>`_", "`ROCm component support — HIP SDK installation (Windows) <https://advanced-micro-devices-demo--123.com.readthedocs.build/projects/install-on-windows/en/123/how-to/debugger-windows.html>`_"
     "Profiler", "`ROCProfiler <https://rocm.docs.amd.com/projects/rocprofiler/en/latest/>`_", "`Radeon GPU Profiler <https://gpuopen.com/rgp/>`_"
     "Porting Tools", "`HIPIFY <https://rocm.docs.amd.com/projects/HIPIFY/en/latest/>`_", "`HIPIFY <https://rocm.docs.amd.com/projects/HIPIFY/en/latest/>`_"
     "Runtime", "`HIP <https://rocm.docs.amd.com/projects/HIP/en/latest/>`_ (open sourced)", "`HIP <https://rocm.docs.amd.com/projects/HIP/en/latest/>`_ (closed source)"

@@ -18,7 +18,7 @@ Prerequisites
 Verify that your system meets all the installation requirements. The installation is only supported on
 specific host architectures, Windows Editions, and update versions.
 
-The HIP SDK is supported on Windows 10, 11, and Server 2022. You can install HIP on a system without AMD GPUs
+The HIP SDK is supported on Windows 11. You can install HIP on a system without AMD GPUs
 to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
 the :ref:`supported-gpus-win` for more details.
 
@@ -132,11 +132,12 @@ Install HIP SDK
             :widths: 30, 30, 40
             :header: "HIP components", "Install type", "Additional options"
 
-            "HIP SDK Core", "|win_rocm_version|", "Install location"
+            "HIP SDK Core", "7.1.1", "Install location"
             "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
             "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
             "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
             "Visual Studio Plugin", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
+            "AMD ROCm Debugger", "Full, Partial, None", "AMD ROCm Debugger (ROCgdb)"
 
         .. note::
             The ``select``/``deselect all`` options only apply to the installation of HIP SDK components. To
@@ -146,7 +147,7 @@ Install HIP SDK
             Should you only wish to install a few select components, deselecting all, then selecting
             individual components may be more convenient.
 
-        The HIP SDK installer bundles an AMD Radeon Software PRO |radeon_software_pro_version| installer.
+        The HIP SDK installer bundles an AMD Radeon Software PRO 25.30 installer.
         The supported install options and types are summarized in the following tables:
 
         .. csv-table::

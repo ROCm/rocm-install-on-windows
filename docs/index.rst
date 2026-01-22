@@ -14,19 +14,19 @@ of GPUs to create high-performance, portable applications using
 HIP SDK changes
 ===============
 
-As of ROCm version 6.1.2, the HIP SDK for Windows includes updated versions of
+As of ROCm version 7.1.1, the HIP SDK for Windows includes updated versions of
 the runtime components ``amdhip64`` and ``amd_comgr``. To use the latest
 capabilities of the HIP SDK, reference the new versions of these DLL binaries:
 
-* ``amdhip64_6.dll`` (formerly ``amdhip64.dll``)
+* ``amdhip64_7.dll`` (formerly ``amdhip64.dll``)
 
-* ``amd_comgr_2.dll`` (formerly ``amd_comgr.dll``)
+* ``amd_comgr_3.dll`` (formerly ``amd_comgr.dll``)
 
-The latest version of HIP Ray Tracing (RT) (version 2.5.41f6849) is named hiprt0200564.dll as of ROCm version 6.4.2.
+The latest version of HIP Ray Tracing (RT) (version 3.0.21d4f81) is named hiprt0300064.dll as of ROCm version 7.1.1.
 
 .. note::
 
-   The HIP SDK on Windows for ROCm 6.x is not backwards compatible with previous major
+   The HIP SDK on Windows for ROCm 7.x is not backwards compatible with previous major
    versions such as 5.x.
 
 .. _hip-install-quick:
@@ -40,7 +40,7 @@ Find a more detailed installation guide in :ref:`hip-install-full`.
 System requirements
 -------------------
 
-The HIP SDK is supported on Windows 10 and 11, and Windows Server 2022. You can install HIP on a system without AMD GPUs
+The HIP SDK is supported on Windows 11. You can install HIP on a system without AMD GPUs
 to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
 :ref:`supported-gpus-win` for more details.
 
@@ -81,7 +81,7 @@ HIP SDK installation
       :width: 400
       :alt: User Access Control pop-up
 
-   The installer executable will temporarily extract installer packages to ``C:\\AMD``, which it removes
+   The installer executable will temporarily extract installer packages to ``C:\AMD``, which it removes
    after completing the installation. You'll see the "Initializing install" window during extraction.
 
    .. image:: ./data/how-to/002-initializing.png
@@ -112,11 +112,12 @@ HIP SDK installation
          :widths: 30, 30, 40
          :header: "HIP components", "Install type", "Additional options"
 
-         "HIP SDK Core", |win_rocm_version|, "Install location"
+         "HIP SDK Core", 7.1.1, "Install location"
          "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
          "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
          "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
          "`Visual Studio Plugin <https://rocm.docs.amd.com/projects/hip-vs/en/latest/>`_", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
+         "AMD ROCm Debugger", "Full, Partial, None", "AMD ROCm Debugger (ROCgdb)"
 
       .. note::
 
@@ -130,7 +131,7 @@ HIP SDK installation
 
    b. AMD display driver
 
-      The HIP SDK installer bundles an AMD Radeon Software PRO |radeon_software_pro_version| installer.
+      The HIP SDK installer bundles an AMD Radeon Software PRO 25.30 installer.
       The supported install options and types are summarized in the following tables:
 
       .. csv-table::
@@ -172,7 +173,7 @@ HIP SDK installation
    .. note::
 
       If the installer terminates mid-installation, you can safely remove the temporary directory created
-      under `C:\\AMD`. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
+      under `C:\AMD`. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
 
 Uninstall
 ---------
