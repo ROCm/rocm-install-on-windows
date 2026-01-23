@@ -48,6 +48,7 @@ html_theme_options = {
         "Infinity Hub": "https://www.amd.com/en/developer/resources/infinity-hub.html",
         "Support": "https://github.com/ROCm/ROCm/issues/new/choose",
     },
+    "link_main_doc": True,
 }
 extensions = ["rocm_docs"]
 
@@ -56,8 +57,3 @@ rst_prolog = f"""
 .. |radeon_software_pro_version| replace:: {radeon_software_pro_version}
 .. |win_rocm_version| replace:: {win_rocm_version}
 """
-
-html_theme_options = {
-    "link_main_doc": True
-}
-
