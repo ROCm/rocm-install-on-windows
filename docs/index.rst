@@ -9,7 +9,7 @@ HIP SDK installation for Windows
 The  HIP SDK for Windows brings a subset of the ROCm platform to Windows as described in :doc:`ROCm component support <./conceptual/component-support>`.
 It provides the runtime, APIs, and tooling to leverage the computational power of AMD GPUs to create high-performance, portable applications using the :doc:`HIP programming language <hip:index>`.
 
-The HIP SDK can run on your Windows system with Microsoft Visual Studio Code, and even includes solutions for use with the tool. However, it also has standalone tools like
+The HIP SDK can run on your Windows system with Microsoft Visual Studio Code, including solutions for use with the tool. The HIP SDK has standalone tools like
 compilers, profilers, and debuggers for use in your own development environment. 
 
 The HIP SDK code is open and hosted at https://github.com/ROCm/rocm-install-on-windows.
