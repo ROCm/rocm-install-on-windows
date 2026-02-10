@@ -3,21 +3,28 @@ defaults:
   maxdepth: 6
 root: index
 subtrees:
-- entries:
-    - file: reference/component-support
-      title: Component support
-    - file: how-to/install
-      title: Install HIP SDK
-    - file: how-to/debugger-windows
-      title: AMD ROCm Debugger for Windows
-    - file: reference/system-requirements
-      title: System requirements
-    - file: reference/releasenotes
-      title: Release notes
+- caption: Install
+  entries:
+  - file: reference/system-requirements
+    title: System requirements
+  - file: install/install
+    title: Install HIP SDK
 
 - caption: Conceptual
   entries:
+  - file: conceptual/component-support
+    title: Component support
   - file: conceptual/deployment-guidelines
     title: Deployment guidelines
-  - file: conceptual/release-versioning
-    title: Release versioning
+
+- caption: How to
+  entries:
+    - file: how-to/debugger-windows
+      title: Use ROCm Debugger for Windows
+
+- caption: About
+  entries:
+    - file: about/releasenotes
+      title: Release notes
+    - file: about/release-versioning
+      title: Release versioning

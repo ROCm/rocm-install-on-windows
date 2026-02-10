@@ -107,7 +107,7 @@ Component support
 ===============================================
 
 ROCm components are described in :doc:`What is ROCm? <rocm:what-is-rocm>` Support on Windows
-is provided with two levels on enablement.
+is provided with two levels of enablement.
 
 * **Runtime**: Runtime enables the use of the HIP and OpenCL runtimes only.
 * **HIP SDK**: Runtime plus additional HIP components (as listed in
