@@ -5,22 +5,23 @@
 .. _component-support:
 
 ******************************************************************************
-Supported components of ROCm
+ROCm components supported in HIP SDK
 ******************************************************************************
-
-.. note::
-
-  As of HIP SDK version >=6.4.2, HIPBlasLT is now available for Windows users, supported on gfx1101 and higher.
 
 The HIP SDK brings a subset of ROCm to developers on Windows. The collection of features enabled on Windows
 is referred to as the HIP SDK. These features allow developers to use the HIP runtime, HIP math libraries
 and HIP Primitive libraries. The following table shows the differences between Windows and Linux releases.
 
+.. note::
+
+   HIPBlasLT is now available for Windows users in HIP SDK version 6.4.2 and later, supported on gfx1101.
+
+
 .. csv-table::
     :widths: 40, 30, 30
     :header: "Component", "Linux", "Windows"
 
-    "Driver", "Radeon Software for Linux", "AMD Software Pro Edition"
+    "Driver", "`AMD GPU driver <https://www.amd.com/en/support/download/drivers.html>`_", "AMD GPU driver"
     "Compiler", "hipcc/amdclang++", "hipcc/clang++"
     "Debugger", "`rocgdb <https://rocm.docs.amd.com/projects/ROCgdb/en/latest/>`_", ":doc:`ROCm Debugger for Windows <../how-to/debugger-windows>`"
     "Profiler", "`ROCProfiler <https://rocm.docs.amd.com/projects/rocprofiler/en/latest/>`_", "`Radeon GPU Profiler <https://gpuopen.com/rgp/>`_"
