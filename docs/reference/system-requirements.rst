@@ -103,19 +103,6 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
 
 ❌: **Unsupported** - The current HIP SDK release does not support this hardware. Prebuilt HIP SDK libraries are not officially supported and might cause runtime errors.
 
-ROCm support on Windows
-===============================================
-
-ROCm components are described in :doc:`What is ROCm? <rocm:what-is-rocm>` Support on Windows
-is provided with two levels of enablement.
-
-* **Runtime**: Runtime enables the use of the HIP and OpenCL runtimes only.
-* **HIP SDK**: Runtime plus additional HIP components (as listed in
-  :doc:`API libraries <rocm:reference/api-libraries>`).
-
-.. note::
-  Some math libraries are Linux exclusive.
-
 CPU support
 ===============================================
 

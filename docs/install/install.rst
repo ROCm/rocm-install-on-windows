@@ -8,7 +8,7 @@
 Install HIP SDK
 *******************************************************************
 
-To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or the more detailed instructions in :ref:`hip-install`. See :ref:`system-requirements-win` for more information on the required environment.  
+To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or the instructions in :ref:`hip-cli-install`. See :ref:`system-requirements-win` for more information on the required environment.  
 
 .. _hip-install-quick:
 
@@ -143,7 +143,7 @@ For a quick summary on installing the HIP SDK on Windows, follow the steps liste
    .. note::
 
       If the installer terminates mid-installation, you can safely remove the temporary directory created
-      under `C:\AMD`. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
+      under ``C:\AMD``. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
 
 .. _hip-cli-install:
 

@@ -21,7 +21,7 @@ latex_elements = {
 }
 
 # configurations for PDF output by Read the Docs
-project = "HIP SDK on Windows"
+project = "HIP SDK for Windows"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved."
 version = "7.1.1"
@@ -34,7 +34,7 @@ exclude_patterns = ['temp']
 
 external_toc_path = "./sphinx/_toc.yml"
 
-docs_core = ROCmDocs("HIP SDK installation (Windows)")
+docs_core = ROCmDocs("HIP SDK for Windows")
 docs_core.setup()
 
 external_projects_current_project = "rocm"
