@@ -3,7 +3,7 @@
    :keywords: HIP, Windows, deployment guidelines, HIP SDK
 
 ******************************************************************************************
-Application deployment guidelines for Windows
+Application deployment guidelines for HIP SDK
 ******************************************************************************************
 
 The HIP SDK consists of the AMD GPU Driver, HIP runtime, and HIP Libraries. These three parts are
@@ -19,7 +19,7 @@ HIP runtime version and AMD GPU driver as minimum version requirements.
    an AMD GPU Driver.
 
 Independent Software Vendors (ISVs) deploying applications using the HIP SDK depend on the AMD
-GPU drivers, HIP runtime library and HIP SDK libraries. Our support policies for developer tools allow
+GPU drivers, HIP runtime library and HIP SDK libraries. AMD's support policies for developer tools allow
 Independent Software Vendors (ISVs) the stability to plan the usage of a tool chain--AMD provides
 backward compatibility for applications dynamically linked to the HIP runtime.
 
