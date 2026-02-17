@@ -21,7 +21,7 @@ latex_elements = {
 }
 
 # configurations for PDF output by Read the Docs
-project = "HIP SDK installation on Windows"
+project = "HIP SDK on Windows"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved."
 version = "7.1.1"
@@ -65,4 +65,3 @@ rst_prolog = f"""
 html_theme_options = {
     "link_main_doc": True
 }
-

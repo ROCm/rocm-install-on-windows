@@ -8,81 +8,14 @@
 Install HIP SDK
 *******************************************************************
 
-To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or the more detailed instructions in :ref:`hip-install`. See :ref:`system-requirements-win` and :ref:`sdk-prereqs` for more information on the required environment.  
-
-.. _sdk-prereqs:
-
-Prerequisites
-=============
-
-Verify that your system meets all the installation requirements. The installation is only supported on
-specific host architectures, Windows Editions, and update versions.
-
-The HIP SDK is supported on Windows 11. You can install HIP on a system without AMD GPUs
-to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
-the :ref:`supported-gpus-win` for more details.
-
-.. tab-set::
-
-    .. tab-item:: CLI
-        :sync: cli
-
-        1. Type the following command on your system from a PowerShell command-line interface (CLI):
-
-            ..  code-block::
-
-                Get-ComputerInfo | Format-Table CsSystemType,OSName,OSDisplayVersion
-
-            Running this command on a Windows system may result in the following output:
-
-            ..  code-block::
-
-                CsSystemType    OsName                      OSDisplayVersion
-                ------------    ------                      ----------------
-                x64-based PC    Microsoft Windows 11 Pro    22H2
-
-
-        2. Confirm that the obtained information matches that listed in :ref:`Supported SKUs<supported-skus-win>`.
-
-    .. tab-item:: GUI
-        :sync: gui
-
-        1. Open the **Settings** app.
-
-            .. image:: ../data/install/000-settings-light.png
-                :class: only-light
-                :width: 400
-                :alt: Gear icon of the Windows Settings app
-
-            .. image:: ../data/install/000-settings-dark.png
-                :class: only-dark
-                :width: 400
-                :alt: Gear icon of the Windows Settings app
-
-        2. Navigate to **System > About**.
-
-            .. image:: ../data/install/001-about-light.png
-                :class: only-light
-                :width: 400
-                :alt: Settings app panel showing device and OS information.
-
-            .. image:: ../data/install/001-about-dark.png
-                :class: only-dark
-                :width: 400
-                :alt: Settings app panel showing device and OS information.
-
-        3. Confirm that the obtained information matches that listed in :ref:`Supported SKUs<supported-skus-win>`.
+To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or the more detailed instructions in :ref:`hip-install`. See :ref:`system-requirements-win` for more information on the required environment.  
 
 .. _hip-install-quick:
 
-Windows quick start installation guide
-======================================
+HIP SDK quick start installation
+================================
 
 For a quick summary on installing the HIP SDK on Windows, follow the steps listed on this page. 
-
-
-HIP SDK installation
---------------------
 
 1. Download the installer.
 
@@ -212,173 +145,50 @@ HIP SDK installation
       If the installer terminates mid-installation, you can safely remove the temporary directory created
       under `C:\AMD`. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
 
-.. _hip-install:
+.. _hip-cli-install:
 
-Install HIP SDK
-===============================================
+HIP SDK command line installation
+=================================
 
-The following information provides more detailed installation instructions. 
+The following information provides instructions for installing from the command line. To start the installation, follow these steps:
 
-.. _hip-prerequisites:
+1. Download the installer from the
+`HIP-SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
-Command-line and GUI Installation 
----------------------------------
+2. Launch the installer. Note that the installer is a graphical application with a ``WinMain`` entry
+point, even when called on the command line. This means that the application lifetime is tied to a
+window, even on headless systems where that window may not be visible.
 
-.. tab-set::
+..  code-block:: shell
 
-    .. tab-item:: CLI
-        :sync: cli
+    Start-Process $InstallerExecutable -ArgumentList $InstallerArgs -NoNewWindow -Wait
 
-        CLI options are listed in the following table:
+.. important::
 
-        .. csv-table::
-            :widths: 30, 70
-            :header: "Install option", "Description"
+    Running the installer requires Administrator privileges.
 
-            "``-install``", "Command used to install packages, both driver and applications. No output to the screen."
-            "``-install -boot``", "Silent install with auto reboot."
-            "``-install -log <absolute path>``", "Write install result code to the specified log file. The specified log file must be on a local machine. Double quotes are needed if there are spaces in the log file path."
-            "``-uninstall``", "Command to uninstall all packages installed by this installer on the system. There is no option to specify which packages to uninstall."
-            "``-uninstall -boot``", "Silent uninstall with auto reboot."
-            "``/?`` or ``/help``", "Shows a brief description of all switch commands."
+Command line options are listed in the following table:
 
-        .. note::
+.. csv-table::
+    :widths: 30, 70
+    :header: "Install option", "Description"
 
-            Unlike the GUI, the CLI doesn't support selectively installing parts of the SDK bundle.
+    "``-install``", "Command used to install packages, both driver and applications. No output to the screen."
+    "``-install -boot``", "Silent install with auto reboot."
+    "``-install -log <absolute path>``", "Write install result code to the specified log file. The specified log file must be on a local machine. Double quotes are needed if there are spaces in the log file path."
+    "``-uninstall``", "Command to uninstall all packages installed by this installer on the system. There is no option to specify which packages to uninstall."
+    "``-uninstall -boot``", "Silent uninstall with auto reboot."
+    "``/?`` or ``/help``", "Shows a brief description of all switch commands."
 
-        To start the installation, follow these steps:
+.. note::
 
-        1. Download the installer from the
-        `HIP-SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
+    Unlike the GUI, the CLI doesn't support selectively installing parts of the SDK bundle.
 
-        2. Launch the installer. Note that the installer is a graphical application with a ``WinMain`` entry
-        point, even when called on the command line. This means that the application lifetime is tied to a
-        window, even on headless systems where that window may not be visible.
+To install all components:
 
-            ..  code-block:: shell
+..  code-block:: shell
 
-                Start-Process $InstallerExecutable -ArgumentList $InstallerArgs -NoNewWindow -Wait
-
-            .. important::
-
-                Running the installer requires Administrator privileges.
-
-            To install all components:
-
-            ..  code-block:: shell
-
-                Start-Process ~\Downloads\Setup.exe -ArgumentList '-install','-log',"${env:USERPROFILE}\installer_log.txt" -NoNewWindow -Wait
-
-    .. tab-item:: GUI
-        :sync: gui
-
-        The HIP SDK installation options are listed in the following table.
-
-        .. csv-table::
-            :widths: 30, 30, 40
-            :header: "HIP components", "Install type", "Additional options"
-
-            "HIP SDK Core", "7.1.1", "Install location"
-            "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
-            "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
-            "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
-            "Visual Studio Plugin", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
-            "AMD ROCm Debugger", "Full, Partial, None", "AMD ROCm Debugger (ROCgdb)"
-
-        .. note::
-            The ``select``/``deselect all`` options only apply to the installation of HIP SDK components. To
-            install the bundled AMD Display Driver, manually select the install type.
-
-        .. tip::
-            Should you only wish to install a few select components, deselecting all, then selecting
-            individual components may be more convenient.
-
-        The HIP SDK installer bundles an AMD Radeon Software PRO 25.30 installer.
-        The supported install options and types are summarized in the following tables:
-
-        .. csv-table::
-            :widths: 30, 70
-            :header: "Install option", "Description"
-
-            "Install Location", "Location on disk to store driver files."
-            "Install Type", "The breadth of components to be installed."
-            "Factory Reset (optional)", "A Factory Reset will remove all prior versions of AMD HIP SDK and drivers. You will not be able to roll back to previously installed drivers."
-
-        .. csv-table::
-            :widths: 30, 70
-            :header: "Install type", "Description"
-
-            "Full Install", "Provides all AMD Software features and controls for gaming, recording, streaming, and tweaking the performance on your graphics hardware."
-            "Minimal Install", "Provides only the basic controls for AMD Software features and does not include advanced features such as performance tweaking or recording and capturing content."
-            "Driver Only", "Provides no user interface for AMD Software features."
-
-        .. note::
-
-            You must perform a system restart for a complete installation of the Display driver.
-
-        To start the installation, follow these steps:
-
-        1. Download the installer from the `HIP SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
-
-        2. Launch the installer by clicking the **Setup** icon.
-
-            .. image:: ../data/install/000-setup-icon.png
-                :width: 400
-                :alt: Icon with AMD arrow logo and User Access Control Shield overlay
-
-            The installer requires Administrator privileges, so you may be greeted with a User Access
-            Control (UAC) pop-up. Click Yes.
-
-            .. image:: ../data/install/001-uac-light.png
-                :class: only-light
-                :width: 400
-                :alt: User Access Control pop-up
-
-            .. image:: ../data/install/001-uac-dark.png
-                :class: only-dark
-                :width: 400
-                :alt: User Access Control pop-up
-
-            The installer executable temporarily extracts installer packages to `C:\AMD`; it removes these
-            after the installation completes.
-
-            .. image:: ../data/install/002-initializing.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and progress counter
-
-            The installer detects your system configuration to determine which installable components
-            are applicable to your system.
-
-            .. image:: ../data/install/003-detecting-system-config.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and activity indicator
-
-        3. Customize your installation.
-
-            .. image:: ../data/install/004-installer-window.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and activity indicator
-
-            When the installer launches, it displays a window that lets you customize your installation. By
-            default, all components are selected.
-
-        4. Wait for the installation to complete.
-
-            .. image:: ../data/install/012-install-progress.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and progress meter
-
-            When installation is complete, the installer window may prompt you for a system restart.
-
-            .. image:: ../data/install/013-install-complete.png
-                :width: 400
-                :alt: Window with AMD arrow logo, futuristic background and completion notice
-
-            .. important::
-
-                If the installer terminates mid-installation, the temporary directory created under `C:\AMD` can be
-                safely removed. Installed components don't depend on this folder unless you explicitly choose this
-                as the install folder.
+    Start-Process ~\Downloads\Setup.exe -ArgumentList '-install','-log',"${env:USERPROFILE}\installer_log.txt" -NoNewWindow -Wait
 
 .. _env-setup:
 
