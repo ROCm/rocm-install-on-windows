@@ -8,7 +8,7 @@
 Install HIP SDK
 *******************************************************************
 
-To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or the instructions in :ref:`hip-cli-install`. See :ref:`system-requirements-win` for more information on the required environment.  
+To install the HIP SDK on Windows, use the :ref:`hip-install-quick` or the instructions in :ref:`hip-cli-install`. See :ref:`system-requirements-win` for more information about the required environment.  
 
 .. _hip-install-quick:
 
@@ -22,13 +22,13 @@ For a quick summary on installing the HIP SDK on Windows, follow the steps liste
    Download the installer from the
    `HIP SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
 
-   The download page lists supported OSes for different available ROCm versions,
-   with a link to download the related installer. Select the download file matching
-   the ROCm version you want to install. 
-   
+   The download page lists supported OSes for each available ROCm version,
+   and a link to download the corresponding installer. Select the download file matching
+   the ROCm version you want to install.    
+
    Clicking the HIP SDK download link takes you to a license page that you must
-   accept before the download will begin. Specify the location to save the download
-   file to. 
+   accept before the download will begin. Specify the location to save the downloaded
+   file.
 
 2. Launch the installer.
 
@@ -38,8 +38,8 @@ For a quick summary on installing the HIP SDK on Windows, follow the steps liste
       :width: 50
       :alt: Icon with AMD arrow logo and User Access Control Shield overlay
 
-   The installer requires Administrator Privileges, so you may be greeted with a
-   User Access Control (UAC) pop-up. Click Yes.
+   The installer requires Windows Administrator privileges, so the
+   User Access Control (UAC) dialog box might display. Click Yes.
 
    .. image:: ../data/install/001-uac-dark.png
       :class: only-dark
@@ -59,7 +59,7 @@ For a quick summary on installing the HIP SDK on Windows, follow the steps liste
       :alt: Window with AMD arrow logo, futuristic background and progress counter
 
    The installer will then detect your system configuration to determine which installable components
-   are applicable to your system.
+   are applicable.
 
    .. image:: ../data/install/003-detecting-system-config.png
       :width: 400
@@ -126,7 +126,7 @@ For a quick summary on installing the HIP SDK on Windows, follow the steps liste
 
 4. Install components.
 
-   Please wait for the installation to complete as shown in the following image.
+   Wait for the installation to complete, as shown in the following image.
 
    .. image:: ../data/install/012-install-progress.png
       :width: 400
@@ -150,7 +150,7 @@ For a quick summary on installing the HIP SDK on Windows, follow the steps liste
 HIP SDK command line installation
 =================================
 
-The following information provides instructions for installing from the command line. To start the installation, follow these steps:
+The following information provides instructions for installing from the Windows command line. To start the installation, follow these steps:
 
 1. Download the installer from the
 `HIP-SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
