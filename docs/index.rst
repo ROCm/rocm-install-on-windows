@@ -1,193 +1,45 @@
 .. meta::
-  :description: HIP SDK installation for Windows
+  :description: HIP SDK for Windows
   :keywords: ROCm installation, AMD, ROCm, Windows, HIP, HIP SDK, changelog
 
 ********************************
-HIP SDK installation for Windows
+HIP SDK for Windows
 ********************************
 
-The  HIP SDK for Windows brings a subset of the :doc:`ROCm <reference/component-support>` 
-platform to Windows. It provides APIs and tooling to leverage the computational power 
-of GPUs to create high-performance, portable applications using
-:doc:`HIP <hip:index>`.
+HIP SDK for Windows provides a subset of the ROCm platform to Microsoft Windows as described in
+:doc:`ROCm component support in HIP SDK <./conceptual/component-support>`. It provides the runtime,
+APIs, and tooling to leverage the computational power of AMD GPUs to create high-performance,
+portable applications using the :doc:`HIP programming language <hip:index>`.
 
-HIP SDK changes
-===============
+The HIP SDK consists of the AMD GPU Driver, HIP runtime, and HIP Libraries. These three parts are
+distributed in the HIP SDK installer. The HIP SDK is intended for developer distribution. This is in
+contrast to the AMD GPU driver, which is intended for all end users.
 
-As of ROCm version 7.1.1, the HIP SDK for Windows includes updated versions of
-the runtime components ``amdhip64`` and ``amd_comgr``. To use the latest
-capabilities of the HIP SDK, reference the new versions of these DLL binaries:
+HIP SDK can run on your Windows system with Microsoft Visual Studio Code, and even includes solutions for use with the tool. However, it also has standalone tools like
+compilers, profilers, and debuggers for use in your own development environment. 
 
-* ``amdhip64_7.dll`` (formerly ``amdhip64.dll``)
+HIP SDK code is open and hosted at https://github.com/ROCm/rocm-install-on-windows.
 
-* ``amd_comgr_3.dll`` (formerly ``amd_comgr.dll``)
+The documentation is structured as follows:
 
-The latest version of HIP Ray Tracing (RT) (version 3.0.21d4f81) is named hiprt0300064.dll as of ROCm version 7.1.1.
+.. grid:: 2
+  :gutter: 3
 
-.. note::
+  .. grid-item-card:: Installation
 
-   The HIP SDK on Windows for ROCm 7.x is not backwards compatible with previous major
-   versions such as 5.x.
+    * :doc:`System requirements for HIP SDK <./reference/system-requirements>`
+    * :doc:`Install HIP SDK for Windows <./install/install>`
 
-.. _hip-install-quick:
+  .. grid-item-card:: Conceptual
 
-Windows quick start installation guide
-======================================
+    * :doc:`ROCm component support in HIP SDK <./conceptual/component-support>`
+    * :doc:`Deployment guidelines <./conceptual/deployment-guidelines>`
 
-For a quick summary on installing the HIP SDK on Windows, follow the steps listed on this page.
-Find a more detailed installation guide in :ref:`hip-install-full`.
+  .. grid-item-card:: How to
 
-System requirements
--------------------
+    * :doc:`Use ROCm Debugger for Windows <./how-to/debugger-windows>`
 
-The HIP SDK is supported on Windows 11. You can install HIP on a system without AMD GPUs
-to use the build toolchains, but to run HIP applications, you'll need a compatible GPU. Refer to
-:ref:`supported-gpus-win` for more details.
+  .. grid-item-card:: About
 
-HIP SDK installation
---------------------
-
-1. Download the installer.
-
-   Download the installer from the
-   `HIP SDK download page <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html>`_.
-
-   The download page lists supported OSes for different available ROCm versions,
-   with a link to download the related installer. Select the download file matching
-   the ROCm version you want to install. 
-   
-   Clicking the HIP SDK download link takes you to a license page that you must
-   accept before the download will begin. Specify the location to save the download
-   file to. 
-
-2. Launch the installer.
-
-   To launch the AMD HIP SDK Installer, click the **Setup** icon shown in the following image.
-
-   .. image:: ./data/how-to/000-setup-icon.png
-      :width: 50
-      :alt: Icon with AMD arrow logo and User Access Control Shield overlay
-
-   The installer requires Administrator Privileges, so you may be greeted with a
-   User Access Control (UAC) pop-up. Click Yes.
-
-   .. image:: ./data/how-to/001-uac-dark.png
-      :class: only-dark
-      :width: 400
-      :alt: User Access Control pop-up
-
-   .. image:: ./data/how-to/001-uac-light.png
-      :class: only-light
-      :width: 400
-      :alt: User Access Control pop-up
-
-   The installer executable will temporarily extract installer packages to ``C:\AMD``, which it removes
-   after completing the installation. You'll see the "Initializing install" window during extraction.
-
-   .. image:: ./data/how-to/002-initializing.png
-      :width: 400
-      :alt: Window with AMD arrow logo, futuristic background and progress counter
-
-   The installer will then detect your system configuration to determine which installable components
-   are applicable to your system.
-
-   .. image:: ./data/how-to/003-detecting-system-config.png
-      :width: 400
-      :alt: Window with AMD arrow logo, futuristic background and activity indicator
-
-3. Customize the install.
-
-   When the installer launches, it displays a window that lets you customize the installation. By default,
-   all components are selected for installation.
-
-   .. image:: ./data/how-to/004-installer-window-620.png
-      :width: 400
-      :alt: Window with AMD arrow logo, futuristic background and activity indicator
-
-   a. HIP SDK installer
-
-      The HIP SDK installation options are listed in the following table.
-
-      .. csv-table::
-         :widths: 30, 30, 40
-         :header: "HIP components", "Install type", "Additional options"
-
-         "HIP SDK Core", 7.1.1, "Install location"
-         "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
-         "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
-         "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"
-         "`Visual Studio Plugin <https://rocm.docs.amd.com/projects/hip-vs/en/latest/>`_", "Full, Partial, None", "Visual Studio 2017, 2019, 2022 Plugin"
-         "AMD ROCm Debugger", "Full, Partial, None", "AMD ROCm Debugger (ROCgdb)"
-
-      .. note::
-
-         The ``select``/``deselect all`` options only apply to the installation of HIP SDK components. To
-         install the bundled AMD Display Driver, manually select the install type.
-
-      .. tip::
-
-         Should you only wish to install a few select components, deselecting all, then selecting
-         individual components may be more convenient.
-
-   b. AMD display driver
-
-      The HIP SDK installer bundles an AMD Radeon Software PRO 25.30 installer.
-      The supported install options and types are summarized in the following tables:
-
-      .. csv-table::
-         :widths: 30, 70
-         :header: "Install option", "Description"
-
-         "Install Location", "Location on disk to store driver files."
-         "Install Type", "The breadth of components to be installed."
-         "Factory Reset (optional)", "A Factory Reset will remove all prior versions of AMD HIP SDK and drivers. You will not be able to roll back to previously installed drivers."
-
-      .. csv-table::
-         :widths: 30, 70
-         :header: "Install type", "Description"
-
-         "Full Install", "Provides all AMD Software features and controls for gaming, recording, streaming, and tweaking the performance on your graphics hardware."
-         "Minimal Install", "Provides only the basic controls for AMD Software features and does not include advanced features such as performance tweaking or recording and capturing content."
-         "Driver Only", "Provides no user interface for AMD Software features."
-
-      .. note::
-
-         You must perform a system restart for a complete installation of the Display driver.
-
-4. Install components.
-
-   Please wait for the installation to complete as shown in the following image.
-
-   .. image:: ./data/how-to/012-install-progress.png
-      :width: 400
-      :alt: Window with AMD arrow logo, futuristic background and progress meter
-
-5. Complete installation.
-
-   After the installation is complete, the installer window might prompt you for a system restart. Click **Finish** or **Restart** in the lower-right corner, as shown in the following image.
-
-   .. image:: ./data/how-to/013-install-complete.png
-      :width: 400
-      :alt: Window with AMD arrow logo, futuristic background and completion notice
-
-   .. note::
-
-      If the installer terminates mid-installation, you can safely remove the temporary directory created
-      under `C:\AMD`. Installed components don't depend on this folder unless you explicitly chose this as the install folder.
-
-Uninstall
----------
-All components, except the Visual Studio plug-in, should be uninstalled through Control Panel >
-Add/Remove Program. You can uninstall HIP SDK components through the Windows Settings app.
-Navigate to "Apps > Installed apps", click the ellipsis (...) on the far right next to the component you
-want to uninstall, then click "Uninstall".
-
-.. image:: ./data/how-to/014-uninstall-dark.png
-    :class: only-dark
-    :width: 400
-    :alt: Installed apps section of the settings app showing installed HIP SDK components
-
-.. image:: ./data/how-to/014-uninstall-light.png
-    :class: only-light
-    :width: 400
-    :alt: Installed apps section of the settings app showing installed HIP SDK components
+    * :doc:`HIP SDK release notes<./about/releasenotes>`
+    * :doc:`HIP SDK release versions <./about/release-versioning>`

@@ -21,7 +21,7 @@ latex_elements = {
 }
 
 # configurations for PDF output by Read the Docs
-project = "HIP SDK installation on Windows"
+project = "HIP SDK for Windows"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2026 Advanced Micro Devices, Inc. All rights reserved."
 version = "7.1.1"
@@ -33,6 +33,9 @@ all_article_info_author = ""
 exclude_patterns = ['temp']
 
 external_toc_path = "./sphinx/_toc.yml"
+
+docs_core = ROCmDocs("HIP SDK for Windows")
+docs_core.setup()
 
 external_projects_current_project = "rocm"
 html_theme = "rocm_docs_theme"
@@ -57,3 +60,7 @@ rst_prolog = f"""
 .. |radeon_software_pro_version| replace:: {radeon_software_pro_version}
 .. |win_rocm_version| replace:: {win_rocm_version}
 """
+
+html_theme_options = {
+    "link_main_doc": True
+}
