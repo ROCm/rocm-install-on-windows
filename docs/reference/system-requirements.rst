@@ -5,7 +5,7 @@
 .. _system-requirements-win:
 
 ******************************************************************************
-System requirements for Windows
+System requirements (Windows)
 ******************************************************************************
 
 .. _supported-oses-win:
@@ -13,7 +13,7 @@ System requirements for Windows
 Supported OSes
 ===============================================
 
-AMD HIP SDK supports the following Microsoft Windows variants.
+AMD HIP SDK supports the following Windows variants.
 
 .. csv-table::
   :widths: 40, 30, 30
@@ -43,8 +43,8 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       "AMD Radeon PRO W7900", "RDNA3", "gfx1100", "✅", "✅", "❌"
       "AMD Radeon PRO W7800", "RDNA3", "gfx1100", "✅", "✅", "❌"
       "AMD Radeon PRO W7700", "RDNA3", "gfx1101", "✅", "✅", "❌"
-      "AMD Radeon PRO W6800", "RDNA2", "gfx1030", "✅", "✅", "❌"
-      "AMD Radeon PRO W6600", "RDNA2", "gfx1032", "✅", "❌", "❌"
+      "AMD Radeon PRO W6800", "RDNA2", "gfx1030", "❌", "❌", "❌"
+      "AMD Radeon PRO W6600", "RDNA2", "gfx1032", "❌", "❌", "❌"
       "AMD Radeon PRO W5500", "RDNA1", "gfx1012", "❌", "❌", "❌"
       "AMD Radeon PRO VII", "GCN5.1", "gfx906", "❌", "❌", "❌"
 
@@ -68,18 +68,16 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
       "AMD Radeon RX 7650 GRE", "RDNA3", "gfx1102", "✅", "✅", "❌"
       "AMD Radeon RX 7600 XT", "RDNA3", "gfx1102", "✅", "✅", "❌"
       "AMD Radeon RX 7600", "RDNA3", "gfx1102", "✅", "✅", "❌"
-      "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
-      "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
-      "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
-      "AMD Radeon RX 6900 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
-      "AMD Radeon RX 6800 XT", "RDNA2", "gfx1030", "✅", "✅", "❌"
-      "AMD Radeon RX 6800", "RDNA2", "gfx1030", "✅", "✅", "❌"
-      "AMD Radeon RX 6750 XT", "RDNA2", "gfx1031", "✅", "❌", "❌"
-      "AMD Radeon RX 6700 XT", "RDNA2", "gfx1031", "✅", "❌", "❌"
-      "AMD Radeon RX 6700", "RDNA2", "gfx1031", "✅", "❌", "❌"
-      "AMD Radeon RX 6650 XT", "RDNA2", "gfx1032", "✅", "❌", "❌"
-      "AMD Radeon RX 6600 XT", "RDNA2", "gfx1032", "✅", "❌", "❌"
-      "AMD Radeon RX 6600", "RDNA2", "gfx1032", "✅", "❌", "❌"
+      "AMD Radeon RX 6950 XT", "RDNA2", "gfx1030", "❌", "❌", "❌"
+      "AMD Radeon RX 6900 XT", "RDNA2", "gfx1030", "❌", "❌", "❌"
+      "AMD Radeon RX 6800 XT", "RDNA2", "gfx1030", "❌", "❌", "❌"
+      "AMD Radeon RX 6800", "RDNA2", "gfx1030", "❌", "❌", "❌"
+      "AMD Radeon RX 6750 XT", "RDNA2", "gfx1031", "❌", "❌", "❌"
+      "AMD Radeon RX 6700 XT", "RDNA2", "gfx1031", "❌", "❌", "❌"
+      "AMD Radeon RX 6700", "RDNA2", "gfx1031", "❌", "❌", "❌"
+      "AMD Radeon RX 6650 XT", "RDNA2", "gfx1032", "❌", "❌", "❌"
+      "AMD Radeon RX 6600 XT", "RDNA2", "gfx1032", "❌", "❌", "❌"
+      "AMD Radeon RX 6600", "RDNA2", "gfx1032", "❌", "❌", "❌"
 
 
   .. tab-item:: AMD APU
@@ -103,8 +101,22 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
 
 ❌: **Unsupported** - The current HIP SDK release does not support this hardware. Prebuilt HIP SDK libraries are not officially supported and might cause runtime errors.
 
+Component support
+===============================================
+
+ROCm components are described in :doc:`What is ROCm? <rocm:what-is-rocm>` Support on Windows
+is provided with two levels on enablement.
+
+* **Runtime**: Runtime enables the use of the HIP and OpenCL runtimes only.
+* **HIP SDK**: Runtime plus additional HIP components (as listed in
+  :doc:`API libraries <rocm:reference/api-libraries>`).
+
+.. note::
+  Some math libraries are Linux exclusive.
+
 CPU support
 ===============================================
 
 ROCm requires CPUs that support PCIe™ atomics. Modern CPUs after the release of 1st generation
 AMD Zen CPU and Intel™ Haswell support PCIe atomics.
+
