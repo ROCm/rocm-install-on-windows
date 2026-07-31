@@ -36,7 +36,7 @@ The following items reflect the current state of HIP SDK for Windows and the ROC
 * **Python scripting**: Not supported.
 * **Signals**: Due to a HIP runtime limitation, intercepted signals (SIGFPE, SIGSEGV, etc.) cannot currently be passed through to the inferior on Windows; signals are always suppressed by the runtime.
 * **Host debug info**: HIPCC on Windows defaults to PDB/CodeView for host debug info, which ROCgdb does not support. Workaround: compile with -gdwarf -Wl,-debug:dwarf to emit DWARF host debug info supported by ROCgdb.
-* **ABI compatibility**: HIPCC emits host code targeting Microsoft x64 ABI and MSVC C++ ABI. ROCgdb does not fully support these, which may cause incorrect symbol names or misprinted C++ objects during host debugging. Device-side GPU debugging is not affected..
+* **ABI compatibility**: HIPCC emits host code targeting Microsoft x64 ABI and MSVC C++ ABI. ROCgdb does not fully support these, which may cause incorrect symbol names or misprinted C++ objects during host debugging. Device-side GPU debugging is not affected.
 
 Known issues
 ============
@@ -45,8 +45,9 @@ Known issues
 * rocSPARSE may experience hipMemcpy errors & test abort in some cases.
 * Applications using the HIP 6 runtime (amdhip64_6.dll) show ~20% lower performance on Strix Halo with Adrenalin 26.10-branch drivers (26.6.2, 26.6.4). Applications on the HIP 7 runtime (amdhip64_7.dll) are unaffected.
 
+
 Quick links
-===========
+============
 
 * `AMD HIP SDK for Windows Download <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html#downloads>`_
 * `HIP SDK for Windows — HIP SDK for Windows 7.2 documentation <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/index.html#supported-operating-systems-and-hardware>`_
