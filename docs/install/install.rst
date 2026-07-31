@@ -82,7 +82,7 @@ For a quick summary on installing the HIP SDK on Windows, follow the steps liste
          :widths: 30, 30, 40
          :header: "HIP components", "Install type", "Additional options"
 
-         "HIP SDK Core", 7.2, "Install location"
+         "HIP SDK Core", 7.2.0, "Install location"
          "HIP Libraries", "Full, Partial, None", "Runtime, Development (Libs and headers)"
          "HIP Runtime Compiler", "Full, Partial, None", "Runtime, Development (headers)"
          "HIP Ray Tracing", "Full, Partial, None", "Runtime, Development (headers)"

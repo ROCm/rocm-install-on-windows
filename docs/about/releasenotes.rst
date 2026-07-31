@@ -5,14 +5,14 @@
 .. _releasenotes-win:
 
 ******************************************************************************
-AMD HIP SDK for Windows 7.2 — Release Notes
+AMD HIP SDK for Windows 7.2.0 — Release Notes
 ******************************************************************************
 
 This page documents the release history, new features, improvements, limitations, and known issues for the AMD HIP SDK on Windows. It is organized for developers, QA, and partner teams who need a reliable, reference-style view of what changed across releases.
 
 What’s new
 ==========
-1. Support for ROCm 7.2 
+1. Support for ROCm 7.2.0 
 
 2. Support for AMD Ryzen™ AI 300 Series, AMD Ryzen™ AI 400 Series, and AMD Ryzen™ AI Max 400 Series and AMD Ryzen™ AI Max+ 400 Series.
 
@@ -50,6 +50,6 @@ Quick links
 ============
 
 * `AMD HIP SDK for Windows Download <https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html#downloads>`_
-* `HIP SDK for Windows — HIP SDK for Windows 7.2 documentation <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/index.html#supported-operating-systems-and-hardware>`_
+* `HIP SDK for Windows — HIP SDK for Windows 7.2.0 documentation <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/index.html#supported-operating-systems-and-hardware>`_
 * For the latest list of supported operating systems and GPUs, see `System requirements (Windows) <https://rocm.docs.amd.com/projects/install-on-windows/en/latest/reference/system-requirements.html>`_
 * `HIP Debugger <https://amd.atlassian.net/wiki/spaces/SWPMTO/pages/1809761685?xpis=eyJicmlkZ2UiOiJzbWFydExpbmtzIiwiaWQiOiIxNzg1NDM4ODYxODAxIiwic291cmNlIjoiY29uZmx1ZW5jZSJ9>`_
