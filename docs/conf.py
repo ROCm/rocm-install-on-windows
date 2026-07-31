@@ -61,6 +61,3 @@ rst_prolog = f"""
 .. |win_rocm_version| replace:: {win_rocm_version}
 """
 
-html_theme_options = {
-    "link_main_doc": True
-}

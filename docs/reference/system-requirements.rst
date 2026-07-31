@@ -5,7 +5,7 @@
 .. _system-requirements-win:
 
 ******************************************************************************
-System requirements (Windows)
+System requirements for Windows
 ******************************************************************************
 
 .. _supported-oses-win:
@@ -13,7 +13,7 @@ System requirements (Windows)
 Supported OSes
 ===============================================
 
-AMD HIP SDK supports the following Windows variants.
+AMD HIP SDK supports the following Microsoft Windows variants.
 
 .. csv-table::
   :widths: 40, 30, 30
@@ -106,22 +106,8 @@ If a GPU is not listed on this table, it is not officially supported by AMD.
 
 ❌: **Unsupported** - The current HIP SDK release does not support this hardware. Prebuilt HIP SDK libraries are not officially supported and might cause runtime errors.
 
-Component support
-===============================================
-
-ROCm components are described in :doc:`What is ROCm? <rocm:what-is-rocm>` Support on Windows
-is provided with two levels on enablement.
-
-* **Runtime**: Runtime enables the use of the HIP and OpenCL runtimes only.
-* **HIP SDK**: Runtime plus additional HIP components (as listed in
-  :doc:`API libraries <rocm:reference/api-libraries>`).
-
-.. note::
-  Some math libraries are Linux exclusive.
-
 CPU support
 ===============================================
 
 ROCm requires CPUs that support PCIe™ atomics. Modern CPUs after the release of 1st generation
 AMD Zen CPU and Intel™ Haswell support PCIe atomics.
-
