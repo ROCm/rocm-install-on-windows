@@ -5,46 +5,30 @@
 .. _releasenotes-win:
 
 ******************************************************************************
-AMD HIP SDK for Windows 7.1.1 — Release Notes
+AMD HIP SDK for Windows 7.2 — Release Notes
 ******************************************************************************
 
 This page documents the release history, new features, improvements, limitations, and known issues for the AMD HIP SDK on Windows. It is organized for developers, QA, and partner teams who need a reliable, reference-style view of what changed across releases.
 
 What’s new
 ==========
-1. Support for ROCm 7.1.1 
+1. Support for ROCm 7.2 
 
-2. Introduction of the AMD ROCm Debugger on Windows
-
-HIP SDK changes
-===============
-
-As of ROCm version 7.1.1, the HIP SDK for Windows includes updated versions of
-the runtime components ``amdhip64`` and ``amd_comgr``. To use the latest
-capabilities of the HIP SDK, reference the new versions of these DLL binaries:
-
-* ``amdhip64_7.dll`` (formerly ``amdhip64.dll``)
-
-* ``amd_comgr_3.dll`` (formerly ``amd_comgr.dll``)
-
-The latest version of HIP Ray Tracing (RT) (version 3.0.21d4f81) is named hiprt0300064.dll as of ROCm version 7.1.1.
-
-.. important::
-
-   The HIP SDK on Windows for ROCm 7.x is not backwards compatible with previous versions.
+2. Support for AMD Ryzen™ AI 300 Series, AMD Ryzen™ AI 400 Series, and AMD Ryzen™ AI Max 400 Series and AMD Ryzen™ AI Max+ 400 Series.
 
 Fixed issues
 ============
 
-* Intermittent compilation errors while running cooperative_groups examples due to ds_gws_barrier on AMD Radeon™ RX 9060 and RX 9070 series products.
-* Manual build failures for various math libraries are fixed.
+* Various performance improvements to ROCm Debugger (ROCgdb) on Windows
+
+* Improved stability with various math libraries.
 
 Limitations
 ===========
 
 The following items reflect the current state of HIP SDK for Windows and the ROCm Debugger (ROCgdb) as documented in internal notes and public guidance. Where applicable, workarounds are provided.
 
-**Limitations of ROCm Debugger (ROCgdb) on Windows**
+**ROCm Debugger (ROCgdb) on Windows Limitations**
 
 * **Architecture support**: Windows is currently supported on the AMD Radeon™ RX 9000 series graphics products. Other architectures are not supported with AMD ROCm Debugger for Windows.
 * **Multi-GPU**: Configurations with more than one AMD GPU are not supported with AMD ROCm Debugger for Windows.
@@ -57,9 +41,8 @@ The following items reflect the current state of HIP SDK for Windows and the ROC
 Known issues
 ============
 
-* Intermittent application crash may be observed while running long-duration rocFFT workloads on AMD Ryzen AI Max series processors and AMD Radeon RX 7600 series graphics products.
-* Intermittent system or application crash may be observed while running long-duration rocFFT or rocSPARSE workloads on AMD Ryzen™ AI Max 380, 390, and AMD Radeon™ RX 7000 series products.
-* Intermittent script failure may be observed while using hipify-clang with the VS2019 MSVC toolchain.
-* Intermittent failure may be observed while executing HIP memory API calls on AMD Radeon™ RX 9070 series products.
-* TDR (Timeout Detection and Recovery) may be observed while running Orochi tests on AMD Radeon™ RX 7000 series products with multi-GPU configurations.
-* Intermittent TDR (Timeout Detection and Recovery) may be observed while debugging with AMD ROCm Debugger for Windows, which may result in a system crash with error code 0x116.
+* Intermittent soft hang may be observed in rocPRIM rocprim.device_adjacent_find.
+* rocSPARSE may experience hipMemcpy errors & test abort in some cases.
+* Applications using the HIP 6 runtime (amdhip64_6.dll) show ~20% lower performance on Strix Halo with Adrenalin 26.10-branch drivers (26.6.2, 26.6.4). Applications on the HIP 7 runtime (amdhip64_7.dll) are unaffected.
+
+Quick links

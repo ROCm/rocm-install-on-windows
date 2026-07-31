@@ -8,7 +8,7 @@
 AMD ROCm Debugger for Windows
 *******************************************************************
 
-The AMD ROCm Debugger for Windows is an AMD source-level debugger based on the GNU Debugger (GDB). Windows ROCgdb is included in the HIP SDK installer from version 7.1.1, and enables heterogeneous debugging on the ROCm software that consists of an x86-based host architecture along with supported AMD GPUs. For Windows ROCgdb to functional properly the driver included with the HIP SDK package must be used.
+The AMD ROCm Debugger for Windows is an AMD source-level debugger based on the GNU Debugger (GDB). Windows ROCgdb is included in the HIP SDK installer from version 7.2, and enables heterogeneous debugging on the ROCm software that consists of an x86-based host architecture along with supported AMD GPUs. For Windows ROCgdb to functional properly the driver included with the HIP SDK package must be used.
 
 Installation
 ============
