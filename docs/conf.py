@@ -42,6 +42,7 @@ html_theme = "rocm_docs_theme"
 html_theme_options = {
     "flavor": "generic",
     "header_title": f"ROCm™ Software 7.2.0",
+    "announcement": "This is legacy documentation. For the latest ROCm documentation, visit <a href='https://rocm.docs.amd.com'>rocm.docs.amd.com</a>.",
     "nav_secondary_items": {
         "GitHub": "https://github.com/ROCm/rocm-install-on-windows",
         "Community": "https://github.com/ROCm/ROCm/discussions",
@@ -60,4 +61,5 @@ rst_prolog = f"""
 .. |radeon_software_pro_version| replace:: {radeon_software_pro_version}
 .. |win_rocm_version| replace:: {win_rocm_version}
 """
+
 
