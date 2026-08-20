@@ -32,7 +32,7 @@ and HIP Primitive libraries. The following table shows the differences between W
     "Communication Libraries", "Supported", "Not available"
     "AI Libraries", "`MIOpen <https://rocm.docs.amd.com/projects/MIOpen/en/latest/>`_, `MIGraphX <https://rocm.docs.amd.com/projects/AMDMIGraphX/en/latest/>`_", "Not available"
     "System Management", "`ROCm SMI <https://rocm.docs.amd.com/projects/rocm_smi_lib/en/latest/>`_, `RDC <https://rocm.docs.amd.com/projects/rdc/en/latest/index.html>`__, `rocminfo <https://rocm.docs.amd.com/projects/rocminfo/en/latest/index.html>`__", "hipInfo"
-    "AI Frameworks", "`PyTorch, TensorFlow, etc. <https://rocm.docs.amd.com/en/latest/how-to/deep-learning-rocm.html>`__", "Not available"
+    "AI Frameworks", "`PyTorch, TensorFlow, etc. <https://rocm.docs.amd.com/en/latest/ai-ecosystem.html>`__", "Not available"
     "CMake HIP Language", "Enabled", "Unsupported"
     "Visual Studio", "Not applicable", "Plugin available"
     "`HIP Ray Tracing <https://gpuopen.com/hiprt/>`__", "Supported", "Supported"
