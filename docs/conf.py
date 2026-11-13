@@ -65,3 +65,6 @@ html_theme_options = {
     "announcement": "This is legacy documentation. For the latest ROCm documentation, visit <a href='https://rocm.docs.amd.com' style='color: #6bb5ff;'>rocm.docs.amd.com</a>.",
     "link_main_doc": True
 }
+
+# Disable table and figure numbering
+numfig = False
